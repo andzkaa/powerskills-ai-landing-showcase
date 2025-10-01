@@ -11,53 +11,55 @@ const About: React.FC = () => {
             <div className="flex items-center space-x-4 mb-6">
               <PowerDots animated />
               <span className="text-primary font-inter font-semibold tracking-wide uppercase text-sm">
-                About PowerSkills.ai
+                O PowerSkills.ai
               </span>
             </div>
-            
+
             <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl text-foreground mb-8 leading-tight">
-              Where Technology Meets
+              Gdzie technologia spotyka
               <br />
-              <span className="gradient-text">Human Potential</span>
+              <span className="gradient-text">ludzki potencjał</span>
             </h2>
-            
+
             <div className="space-y-6 text-muted-foreground font-inter leading-relaxed">
               <p className="text-lg">
-                <strong className="text-foreground">Our Mission:</strong> PowerSkills.ai supports people and organizations 
-                in developing the competencies of the future – skills that truly have power. We create a space where 
-                technology and human potential meet to activate development, creativity, and agency.
+                <strong className="text-foreground">Nasza misja:</strong> PowerSkills.ai wspiera ludzi i organizacje w zdobywaniu realnych kompetencji przyszłości – umiejętności, które przekładają się na przewagę i konkretne rezultaty.
+                Tworzymy przestrzeń, w której technologia staje się sojusznikiem codziennych wyzwań, a AI pomaga rozwijać kreatywność, sprawczość i skuteczność – niezależnie od Twojej roli: lidera, nauczyciela, rodzica czy odkrywcy nowych możliwości.
               </p>
-              
+
               <p className="text-lg">
-                <strong className="text-foreground">Our Vision:</strong> To be a recognizable brand in the field of education 
-                and development of future competencies, inspiring action, simplifying the complexity of the AI world, 
-                and giving people concrete tools to enter the future with courage.
+                <strong className="text-foreground">Nasza wizja:</strong> Być pierwszym wyborem w edukacji praktycznych umiejętności przyszłości – marką rozpoznawalną za inspirowanie do działania,
+                upraszczanie złożoności świata AI i dostarczanie konkretnych, gotowych narzędzi. Chcemy odczarować technologie, sprawiać, by były dostępne dla każdego
+                i dawały odwagę oraz przewagę na każdym etapie życia i kariery.
+
+
               </p>
             </div>
-            
+
             <div className="mt-8 p-6 bg-primary/5 rounded-2xl border border-primary/10">
-              <h3 className="font-anton text-xl text-foreground mb-4">Our Approach</h3>
+              <h3 className="font-anton text-xl text-foreground mb-4">Nasze podejście</h3>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="font-inter font-medium text-foreground">Professional & Modern</span>
+                  <span className="font-inter font-medium text-foreground">Profesjonalnie i nowocześnie
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="font-inter font-medium text-foreground">Accessible & Substantive</span>
+                  <span className="font-inter font-medium text-foreground">Dostępnie i konkretnie</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="font-inter font-medium text-foreground">Energetic & Concrete</span>
+                  <span className="font-inter font-medium text-foreground">Energetycznie i realnie</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full" />
-                  <span className="font-inter font-medium text-foreground">Engaged & Responsible</span>
+                  <span className="font-inter font-medium text-foreground">Zaangażowanie i odpowiedzialność</span>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative">
               <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl p-8 backdrop-blur-sm">
@@ -68,18 +70,19 @@ const About: React.FC = () => {
                         <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2" />
                       </div>
                     </div>
-                    <h4 className="font-anton text-2xl text-foreground mb-2">AI Training</h4>
-                    <p className="text-muted-foreground font-inter text-sm">Cutting-edge curriculum</p>
+                    <h4 className="font-anton text-2xl text-foreground mb-2">Szkolenia z AI</h4>
+                    <p className="text-muted-foreground font-inter text-sm">Programy oparte na najnowszych technologiach i praktycznych zastosowaniach</p>
                   </div>
-                  
+
                   <div className="bg-card/80 rounded-2xl p-6 text-center backdrop-blur-sm">
                     <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                       <PowerDots className="scale-75" />
                     </div>
-                    <h4 className="font-anton text-2xl text-foreground mb-2">Future Skills</h4>
-                    <p className="text-muted-foreground font-inter text-sm">Tomorrow's competencies</p>
+                    <h4 className="font-anton text-2xl text-foreground mb-2">Umiejętności przyszłości
+                    </h4>
+                    <p className="text-muted-foreground font-inter text-sm">Kompetencje, które dziś otwierają drzwi do jutra</p>
                   </div>
-                  
+
                   <div className="bg-card/80 rounded-2xl p-6 text-center backdrop-blur-sm col-span-2">
                     <div className="flex justify-center mb-4">
                       <div className="flex space-x-2">
@@ -88,12 +91,12 @@ const About: React.FC = () => {
                         ))}
                       </div>
                     </div>
-                    <h4 className="font-anton text-2xl text-foreground mb-2">Human-Centered Technology</h4>
-                    <p className="text-muted-foreground font-inter text-sm">Technology with a human approach</p>
+                    <h4 className="font-anton text-2xl text-foreground mb-2">Technologia skupiona na człowieku</h4>
+                    <p className="text-muted-foreground font-inter text-sm">AI i narzędzia cyfrowe, które realnie wspierają ludzi w codziennych wyzwaniach</p>
                   </div>
                 </div>
               </div>
-              
+
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/20 rounded-full animate-float" />
               <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-primary/30 rounded-full animate-float" style={{ animationDelay: '1s' }} />
             </div>

@@ -6,7 +6,7 @@ import PowerDots from './PowerDots';
 const services = [
   {
     icon: GraduationCap,
-    title: "Teachers",
+    title: "Nauczyciele",
     description: "Empower educators with AI tools and methodologies to enhance learning experiences and prepare students for the future.",
     features: ["AI-Enhanced Teaching", "Digital Pedagogy", "Future Skills Framework"]
   },
@@ -44,22 +44,22 @@ const Services: React.FC = () => {
           <div className="flex items-center justify-center space-x-4 mb-6">
             <PowerDots animated />
             <span className="text-primary font-inter font-semibold tracking-wide uppercase text-sm">
-              Our Services
+              Nasze usługi
             </span>
             <PowerDots animated />
           </div>
           <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-            Activate Your <span className="gradient-text">Potential</span>
+            Uwolnij swój <span className="gradient-text">Potencjał</span>
           </h2>
           <p className="text-xl text-muted-foreground font-inter font-light max-w-3xl mx-auto">
-            We provide comprehensive AI training solutions for diverse audiences, 
-            ensuring everyone can harness the power of artificial intelligence.
+            Oferujemy praktyczne programy rozwoju kompetencji przyszłości – od AI po cyfrowe umiejętności – dla różnych grup odbiorców.
+            Każdy znajdzie tutaj ścieżkę, dzięki której sztuczna inteligencja stanie się realnym wsparciem w codziennym życiu i pracy.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card 
+            <Card
               key={service.title}
               className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -71,11 +71,11 @@ const Services: React.FC = () => {
                   </div>
                   <h3 className="font-anton text-2xl text-foreground">{service.title}</h3>
                 </div>
-                
+
                 <p className="text-muted-foreground font-inter leading-relaxed mb-6">
                   {service.description}
                 </p>
-                
+
                 <div className="space-y-3">
                   {service.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center space-x-3">
@@ -84,7 +84,7 @@ const Services: React.FC = () => {
                     </div>
                   ))}
                 </div>
-                
+
                 <div className="mt-6 pt-6 border-t border-border/50">
                   <PowerDots className="justify-center opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
