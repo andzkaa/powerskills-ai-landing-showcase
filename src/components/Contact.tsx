@@ -19,25 +19,25 @@ const Contact: React.FC = () => {
             <PowerDots animated />
           </div>
           <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-            Rozpocznij Swoją <span className="gradient-text">Przygodę z AI</span>
+            Dołącz do <span className="gradient-text">AI-Lab</span>
           </h2>
           <p className="text-xl text-muted-foreground font-inter font-light max-w-3xl mx-auto">
-            Jesteś gotowy, by odkryć swój potencjał? Skontaktuj się z nami, by poznać nasze programy szkoleniowe i zobaczyć,
-            jak możemy pomóc Ci rozwinąć kompetencje, które dadzą Ci przewagę w przyszłości – praktycznie, konkretnie, na Twoich warunkach.
+            Nie musisz być programistą – wystarczy ciekawość. Pokażemy Ci drogę od pierwszego promptu do realnych efektów, 
+            które poczujesz już następnego dnia. Bo AI nie jest dla wybranych – jest dla każdego, kto chce uczyć się szybciej i żyć mądrzej.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <Card className="border-border/50 bg-card/50 backdrop-blur-sm animate-fade-in">
             <CardContent className="p-8">
-              <h3 className="font-anton text-2xl text-foreground mb-6">Send us a message</h3>
+              <h3 className="font-anton text-2xl text-foreground mb-6">Napisz do nas</h3>
 
               <form className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-foreground font-inter font-medium mb-2">Name</label>
+                    <label className="block text-foreground font-inter font-medium mb-2">Imię</label>
                     <Input
-                      placeholder="Your name"
+                      placeholder="Twoje imię"
                       className="bg-background/80 border-border/50 focus:border-primary font-inter"
                     />
                   </div>
@@ -45,31 +45,31 @@ const Contact: React.FC = () => {
                     <label className="block text-foreground font-inter font-medium mb-2">Email</label>
                     <Input
                       type="email"
-                      placeholder="your@email.com"
+                      placeholder="twoj@email.com"
                       className="bg-background/80 border-border/50 focus:border-primary font-inter"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-foreground font-inter font-medium mb-2">Subject</label>
+                  <label className="block text-foreground font-inter font-medium mb-2">Temat</label>
                   <Input
-                    placeholder="How can we help you?"
+                    placeholder="W czym możemy pomóc?"
                     className="bg-background/80 border-border/50 focus:border-primary font-inter"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-foreground font-inter font-medium mb-2">Message</label>
+                  <label className="block text-foreground font-inter font-medium mb-2">Wiadomość</label>
                   <Textarea
-                    placeholder="Tell us about your training needs..."
+                    placeholder="Opowiedz nam o swoich potrzebach szkoleniowych..."
                     rows={6}
                     className="bg-background/80 border-border/50 focus:border-primary font-inter resize-none"
                   />
                 </div>
 
                 <Button className="w-full bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25">
-                  Send Message
+                  Wyślij wiadomość
                 </Button>
               </form>
             </CardContent>
@@ -85,7 +85,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-anton text-lg text-foreground">Email</h4>
-                      <p className="text-muted-foreground font-inter">contact@powerskills.ai</p>
+                      <p className="text-muted-foreground font-inter">kontakt@powerskills.ai</p>
                     </div>
                   </div>
                 </CardContent>
@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
                       <Phone className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-anton text-lg text-foreground">Phone</h4>
+                      <h4 className="font-anton text-lg text-foreground">Telefon</h4>
                       <p className="text-muted-foreground font-inter">+48 123 456 789</p>
                     </div>
                   </div>
@@ -112,17 +112,17 @@ const Contact: React.FC = () => {
                       <MapPin className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-anton text-lg text-foreground">Location</h4>
-                      <p className="text-muted-foreground font-inter">Warsaw, Poland</p>
+                      <h4 className="font-anton text-lg text-foreground">Lokalizacja</h4>
+                      <p className="text-muted-foreground font-inter">Szczecin, Polska</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
               <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/10">
-                <h4 className="font-anton text-xl text-foreground mb-4">Ready to get started?</h4>
+                <h4 className="font-anton text-xl text-foreground mb-4">Gotowy na start?</h4>
                 <p className="text-muted-foreground font-inter mb-4">
-                  Join thousands of learners who are already developing their AI skills with PowerSkills.ai
+                  Dołącz do ludzi, którzy już nauczyli się mówić językiem przyszłości i wykorzystują AI na co dzień
                 </p>
                 <PowerDots className="opacity-70" />
               </div>

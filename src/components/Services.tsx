@@ -6,33 +6,27 @@ import PowerDots from './PowerDots';
 const services = [
   {
     icon: GraduationCap,
-    title: "Nauczyciele",
-    description: "Empower educators with AI tools and methodologies to enhance learning experiences and prepare students for the future.",
-    features: ["AI-Enhanced Teaching", "Digital Pedagogy", "Future Skills Framework"]
+    title: "Warsztaty AI",
+    description: "Kamerlane szkolenia w Szczecinie i okolicy, gdzie teoria spotyka się z praktyką. Od pierwszego promptu do realnych efektów.",
+    features: ["Praktyczne promptowanie", "Automatyzacja zadań", "Gotowe narzędzia AI"]
   },
   {
     icon: Users,
-    title: "Students",
-    description: "Develop critical thinking, creativity, and AI literacy skills essential for success in the digital age.",
-    features: ["AI Literacy", "Creative Problem Solving", "Digital Competencies"]
+    title: "AI-Lab lokalny",
+    description: "Społeczność ludzi, którzy uczą się przez praktykę. Żadnych masowych kursów online – tylko konkretne rozwiązania, które działają.",
+    features: ["Uczenie przez działanie", "Wsparcie trenerów", "Lokalna społeczność"]
   },
   {
     icon: Building,
-    title: "Hotels & Organizations",
-    description: "Transform your workforce with comprehensive AI training programs tailored to your industry needs.",
-    features: ["Custom Training Programs", "Industry Solutions", "Organizational Development"]
-  },
-  {
-    icon: Heart,
-    title: "Women's Programs",
-    description: "Specialized courses designed to empower women in technology and AI, fostering inclusion and diversity.",
-    features: ["Women in Tech", "Leadership Development", "Mentorship Programs"]
+    title: "Szkolenia dla firm",
+    description: "Programy szkoleniowe dopasowane do potrzeb Twojej organizacji. Zwiększ efektywność zespołu dzięki AI.",
+    features: ["Szkolenia na miarę", "Automatyzacja procesów", "Oszczędność czasu"]
   },
   {
     icon: Sparkles,
-    title: "Individual Growth",
-    description: "Personal development programs for individuals seeking to enhance their AI skills and digital competencies.",
-    features: ["Personal Learning Paths", "Skill Assessment", "Career Advancement"]
+    title: "90 dni wsparcia",
+    description: "Po szkoleniu otrzymujesz wyzwania i wsparcie, by utrzymać tempo rozwoju i utrwalić nowe umiejętności.",
+    features: ["Ciągły rozwój", "Praktyczne wyzwania", "Indywidualne wsparcie"]
   }
 ];
 
@@ -44,20 +38,20 @@ const Services: React.FC = () => {
           <div className="flex items-center justify-center space-x-4 mb-6">
             <PowerDots animated />
             <span className="text-primary font-inter font-semibold tracking-wide uppercase text-sm">
-              Nasze usługi
+              Co oferujemy
             </span>
             <PowerDots animated />
           </div>
           <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-            Uwolnij swój <span className="gradient-text">Potencjał</span>
+            Od promptu do <span className="gradient-text">Efektu</span>
           </h2>
           <p className="text-xl text-muted-foreground font-inter font-light max-w-3xl mx-auto">
-            Oferujemy praktyczne programy rozwoju kompetencji przyszłości – od AI po cyfrowe umiejętności – dla różnych grup odbiorców.
-            Każdy znajdzie tutaj ścieżkę, dzięki której sztuczna inteligencja stanie się realnym wsparciem w codziennym życiu i pracy.
+            Każda lekcja kończy się gotowym narzędziem, które działa w praktyce. Nie teoria – konkret: 
+            pisanie CV, planowanie budżetu, automatyzacja maili. Wychodzisz z rozwiązaniami, które od razu oszczędzają czas.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <Card
               key={service.title}

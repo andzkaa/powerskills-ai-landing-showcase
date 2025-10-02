@@ -17,30 +17,29 @@ const Hero: React.FC = () => {
           <div className="flex items-center space-x-4 mb-6 animate-fade-in">
             <PowerDots animated className="text-primary" />
             <span className="text-primary font-inter font-semibold tracking-wide uppercase text-sm">
-              Uwolnij swój potencjał
+              Język przyszłości
             </span>
           </div>
 
           <h1 className="font-anton text-6xl md:text-7xl lg:text-8xl leading-tight mb-6 animate-fade-in">
-            <span className="text-foreground">Rozwijaj</span>
+            <span className="text-foreground">Kompetencje</span>
             <br />
-            <span className="gradient-text">Umiejętności</span>
+            <span className="gradient-text">Jutra</span>
             <br />
-            <span className="text-foreground">Przyszłości</span>
+            <span className="text-foreground">Dziś w Twoich Rękach</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground font-inter font-light leading-relaxed mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            PowerSkills.ai to wsparcie dla osób i organizacji w zdobywaniu realnych kompetencji przyszłości – takich, które dają przewagę i praktyczną wartość.
-            Tworzymy przestrzeń, gdzie technologia spotyka się z ludzkim potencjałem i codziennymi wyzwaniami. Wspieramy Twoją zmianę, krok po kroku, inspirując do odwagi i działania w świecie AI.
+            W świecie, w którym technologia zmienia się szybciej niż program szkolny, potrzebne są nowe umiejętności – <strong className="text-foreground">powerskills</strong>. 
+            Pokazujemy, jak zamienić strach w ciekawość, teorię w działanie, a działanie w efekty: oszczędność czasu, lepszą organizację pracy i więcej przestrzeni na rozwój.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Button className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 animate-power-glow">
-              <a href="#contact">Napisz do nas</a>
+              <a href="#contact">Dołącz do AI-Lab</a>
             </Button>
             <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300">
-              <a href="#services">o szkoleniach</a>
-
+              <a href="#about">Dowiedz się więcej</a>
             </Button>
           </div>
         </div>
