@@ -29,6 +29,9 @@ const Header: React.FC = () => {
             <a href="#services" className="text-foreground hover:text-primary transition-colors font-inter font-medium">
               Szkolenia
             </a>
+            <a href="#education" className="text-foreground hover:text-primary transition-colors font-inter font-medium">
+              Edukacja
+            </a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors font-inter font-medium">
               O nas
             </a>
