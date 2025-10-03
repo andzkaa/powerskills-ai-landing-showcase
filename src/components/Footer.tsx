@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             </div>
             <PowerDots />
             <p className="text-muted-foreground font-inter leading-relaxed">
-              Empowering the future through AI education and human potential development.
+              Tworzymy przyszłość dzięki edukacji AI i rozwojowi ludzkiego potencjału.
             </p>
           </div>
 
