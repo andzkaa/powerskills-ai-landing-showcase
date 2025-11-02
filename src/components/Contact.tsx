@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
             <CardContent className="p-8">
               <h3 className="font-anton text-2xl text-foreground mb-6">Napisz do nas</h3>
 
-              <form className="space-y-6" onSubmit={handleSubmit} noValidate>
+              <form className="space-y-6" onSubmit={handleSubmit} >
                 {/* honeypot anty-spam */}
                 <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hidden" />
                 {/* opcjonalne metadane */}
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                       id="name"
                       name="name"
                       placeholder="Twoje imię"
-                      required
+                      
                       className="bg-background/80 border-border/50 focus:border-primary font-inter"
                     />
                   </div>
