@@ -29,7 +29,7 @@ const Matura = () => {
   }, []);
 
   const handleRegister = () => {
-    alert('Formularz rejestracji – do uzupełnienia w React component');
+    window.location.href = 'https://forms.gle/X2pbsYjYgsvCRMEUA';
   };
 
   return (
@@ -580,9 +580,9 @@ const Matura = () => {
 
         <section className="hero">
           <div className="container">
-            <h1>Matura to bzdura?<br />Zrób ją z AI!</h1>
+            <h1>Maturalny Upgrade z AI.<br />Ucz się szybciej — 67 vibes.</h1>
             <p>3,5-godzinny warsztat dla maturzystów – jak używać AI mądrze, legalnie i efektywnie w nauce.</p>
-            <a href="#pricing" className="btn">Zarezerwuj miejsce – 399 zł</a>
+            <a href="https://forms.gle/X2pbsYjYgsvCRMEUA" className="btn" target="_blank" rel="noopener noreferrer">Zarezerwuj miejsce – 399 zł</a>
           </div>
         </section>
 
@@ -738,14 +738,14 @@ const Matura = () => {
 
         <section className="pricing" id="pricing">
           <div className="container">
-            <h2>Pricing</h2>
+            <h2>Cena</h2>
             <div className="pricing-card">
               <p style={{color: 'var(--color-text-light)', marginBottom: 'var(--space-8)', fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600}}>Od osoby</p>
               <div className="price"><span className="price-currency">zł</span>399</div>
               
               <ul className="included-list">
                 <li>3,5 godzin warsztatu live</li>
-                <li>Nagranie (dostęp dożywotni)</li>
+                {/* <li>Nagranie (dostęp dożywotni)</li> */}
                 <li>Promptbook "Twój Plan Maturalny 2.0"</li>
                 <li>Szablony do Notion AI</li>
                 <li>Dostęp do grupy Telegram/Discord</li>
@@ -753,7 +753,7 @@ const Matura = () => {
               </ul>
 
               <p style={{marginBottom: 'var(--space-32)', color: 'var(--color-text-light)', fontSize: '14px'}}>
-                Grupy 5+ – rabat grupowy. Napisz: <a href="mailto:hello@powerskills.ai" style={{color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 600}}>hello@powerskills.ai</a>
+                Grupy 5+ – rabat grupowy. Napisz: <a href="mailto:hello@powerskills.ai" style={{color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 600}}>contact@powerskills.ai</a>
               </p>
 
               <button className="btn btn-primary" onClick={handleRegister}>
@@ -766,17 +766,17 @@ const Matura = () => {
         <section className="final-cta">
           <div className="container">
             <h2>Gotowy na zmianę?</h2>
-            <p>Zarezerwuj miejsce na warsztat "Matura to bzdura" już teraz.</p>
-            <a href="#pricing" className="btn">Dołącz – 399 zł</a>
+            <p>Zarezerwuj miejsce na warsztat "Maturalny Upgrade z AI. Ucz się szybciej — 67 vibes." już teraz.</p>
+            <a href="https://forms.gle/X2pbsYjYgsvCRMEUA" className="btn" target="_blank" rel="noopener noreferrer">Dołącz – 399 zł</a>
           </div>
         </section>
 
         <footer>
           <div className="container">
             <p style={{fontSize: '16px', fontWeight: 500}}>© 2025 PowerSkills.ai – Edukacja AI dla przyszłości</p>
-            <p>Pytania? <a href="mailto:hello@powerskills.ai">hello@powerskills.ai</a> | <a href="/">Strona główna</a></p>
+            <p>Pytania? <a href="mailto:hello@powerskills.ai">contact@powerskills.ai</a> | <a href="/">Strona główna</a></p>
             <p style={{fontSize: '13px', marginTop: 'var(--space-24)', opacity: 0.7}}>
-              Warsztat prowadzi Anna Hawryluk-Wiraszka, AI Educator & Founder PowerSkills
+              Warsztat prowadzi Anna Hawryluk-Wiraszka oraz Artur Ciszczoń, AI Educators & Founders PowerSkills.ai
             </p>
           </div>
         </footer>
