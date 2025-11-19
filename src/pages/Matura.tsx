@@ -753,7 +753,7 @@ const Matura = () => {
               </ul>
 
               <p style={{marginBottom: 'var(--space-32)', color: 'var(--color-text-light)', fontSize: '14px'}}>
-                Grupy 5+ – rabat grupowy. Napisz: <a href="mailto:hello@powerskills.ai" style={{color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 600}}>contact@powerskills.ai</a>
+                Grupy 5+ – rabat grupowy. Napisz: <a href="mailto:contact@powerskills.ai" style={{color: 'var(--color-primary)', textDecoration: 'none', fontWeight: 600}}>contact@powerskills.ai</a>
               </p>
 
               <button className="btn btn-primary" onClick={handleRegister}>
@@ -774,7 +774,7 @@ const Matura = () => {
         <footer>
           <div className="container">
             <p style={{fontSize: '16px', fontWeight: 500}}>© 2025 PowerSkills.ai – Edukacja AI dla przyszłości</p>
-            <p>Pytania? <a href="mailto:hello@powerskills.ai">contact@powerskills.ai</a> | <a href="/">Strona główna</a></p>
+            <p>Pytania? <a href="mailto:contact@powerskills.ai">contact@powerskills.ai</a> | <a href="/">Strona główna</a></p>
             <p style={{fontSize: '13px', marginTop: 'var(--space-24)', opacity: 0.7}}>
               Warsztat prowadzi Anna Hawryluk-Wiraszka oraz Artur Ciszczoń, AI Educators & Founders PowerSkills.ai
             </p>
