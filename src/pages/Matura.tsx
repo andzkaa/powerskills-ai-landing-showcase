@@ -40,7 +40,7 @@ const Matura = () => {
             --color-primary-dark: #18b332;
             --color-primary-light: #2ef04d;
             --color-secondary: #FF6B6B;
-            --color-bg: #FAFAFA;
+            --color-bg: #F5F5F5;
             --color-surface: #FFFFFF;
             --color-text: #1a1a1a;
             --color-text-light: #6B7280;
@@ -591,28 +591,28 @@ const Matura = () => {
             <h2>Co Cię blokuje w nauce?</h2>
             <div className="problems-grid">
               <div className="problem-card">
-                <h4>📚 Przytłoczenie materiałem</h4>
-                <p>Matma, polski, angielski... Za dużo na raz. Nie wiesz, od czego zacząć, czujesz się przytłoczony.</p>
+                <h4>📚 Totalny overload</h4>
+                <p>Matma, polski, angielski – wszystko naraz. Nie ogarniasz od czego zacząć i masz już mental crash.</p>
               </div>
               <div className="problem-card">
                 <h4>⏰ Brak planu</h4>
                 <p>Nauka bez planu = chaos. Nie ma czasu? To zarządzaj lepiej – nie ucz się więcej.</p>
               </div>
               <div className="problem-card">
-                <h4>🤖 AI = ściąga?</h4>
-                <p>Słyszałeś o ChatGPT. Ale jak z niego korzystać bez plagiaryzmu? Kiedy to ok, a kiedy przekraczasz granicę?</p>
+                <h4>💔 Zero motywacji</h4>
+                <p>Nauka do matury wydaje się bezsensowna. Pytanie "Po co mi to?" zabija każdy impuls do otwarcia podręcznika.</p>
               </div>
               <div className="problem-card">
-                <h4>😴 Nuda</h4>
+                <h4>🤖 Stres i presja</h4>
+                <p>Countdown do matury, oczekiwania rodziny, presja rówieśników. Wszystko paraliżuje zamiast motywować.</p>
+              </div>
+              <div className="problem-card">
+                <h4>😴 Nuda level max</h4>
                 <p>Klasyczne metody nauki = ziewanie. Szukasz czegoś bardziej interaktywnego, kreatywnego, żywego.</p>
               </div>
               <div className="problem-card">
-                <h4>🚫 Strach przed technologią</h4>
-                <p>Nowe narzędzia AI są wszędzie, ale nikt Cię nie nauczył, jak je faktycznie używać. Niepewność i poczucie "nie ogarniam tego".</p>
-              </div>
-              <div className="problem-card">
-                <h4>💔 Brak motywacji</h4>
-                <p>Nauka do matury wydaje się bezsensowna. Pytanie: "Po co mi to?" zabija każdy impuls do otwarcia podręcznika.</p>
+                <h4>🚫 AI – nie wiem jak</h4>
+                <p>Słyszysz o ChatGPT, ale jak z tego korzystać bez plagiaryzmu? Gdzie jest granica? Nikt Cię nie nauczył.</p>
               </div>
             </div>
           </div>
@@ -621,13 +621,13 @@ const Matura = () => {
         <section className="modules" id="modules">
           <div className="container">
             <h2>Program warsztatu</h2>
-            <h3 style={{textAlign: 'center', marginBottom: 'var(--space-32)', color: 'var(--color-text-light)', fontWeight: 400}}>3,5 godzin + bonus 15 min konsultacja 1-on-1</h3>
+            <h3 style={{textAlign: 'center', marginBottom: 'var(--space-32)', color: 'var(--color-text-light)', fontWeight: 400}}>3,5 godzin</h3>
             <div className="modules-list">
               <div className="module">
                 <div className="module-time">15 min</div>
                 <div className="module-content">
-                  <h4>🎯 Wprowadzenie: Czemu AI nie jest Twoim wrogiem?</h4>
-                  <p>Odkrywamy mit. AI to narzędzie, które wspomoże Twoją naukę – a nie zastąpi Cię.</p>
+                  <h4>🎯 Wprowadzenie: Dlaczego AI nie jest Twoim wrogiem?</h4>
+                  <p>Obalamy mit. AI to narzędzie – nie zastąpi Cię, tylko pomoże w nauce.</p>
                   <div className="module-goal">✓ Zmiana mindset'u</div>
                 </div>
               </div>
@@ -645,7 +645,7 @@ const Matura = () => {
                 <div className="module-time">25 min</div>
                 <div className="module-content">
                   <h4>📝 Język polski z AI: "Esej bez stresu"</h4>
-                  <p>Jak analizować lektury, pisać eseje z AI wsparcie – bez plagiaryzmu.</p>
+                  <p>Jak analizować lektury, pisać eseje ze wsparciem AI – bez plagiaryzmu.</p>
                   <div className="module-goal">✓ Case study: tekst ucznia vs. tekst AI – kto lepszy?</div>
                 </div>
               </div>
@@ -653,7 +653,7 @@ const Matura = () => {
               <div className="module">
                 <div className="module-time">25 min</div>
                 <div className="module-content">
-                  <h4>🔢 Matematyka z AI: "Zrozum, nie przepisz"</h4>
+                  <h4>🔢 Matematyka z AI: "Zrozum, nie przepisuj"</h4>
                   <p>Photomath, Math Solver, GeoGebra. AI do nauki, nie do ściągania.</p>
                   <div className="module-goal">✓ Mini-challenge: kto szybciej zrozumie zadanie?</div>
                 </div>
@@ -705,17 +705,17 @@ const Matura = () => {
               <div className="benefit-card">
                 <div className="benefit-icon">🎯</div>
                 <h4>Konkretne narzędzia</h4>
-                <p>Nie teoria. Każdy prompt testowany na rzeczywistych maturzystach.</p>
+                <p>Nie teoria. Każdy prompt testowany na prawdziwych maturzystach.</p>
               </div>
               <div className="benefit-card">
                 <div className="benefit-icon">🏆</div>
-                <h4>Granie i rywalizacja</h4>
+                <h4>Grywalizacja</h4>
                 <p>Nie będziesz się nudzić. Będziesz się bawić i rywalizować.</p>
               </div>
               <div className="benefit-card">
                 <div className="benefit-icon">📲</div>
-                <h4>Dostęp na całe życie</h4>
-                <p>Nagrania, promptbook, szablony – ciągle twoje po warsztacie.</p>
+                <h4>Dostęp forever</h4>
+                <p>Nagrania, promptbook, szablony – Twoje na zawsze.</p>
               </div>
               <div className="benefit-card">
                 <div className="benefit-icon">👥</div>
@@ -729,7 +729,7 @@ const Matura = () => {
               </div>
               <div className="benefit-card">
                 <div className="benefit-icon">🚀</div>
-                <h4>Przewaga konkurencyjna</h4>
+                <h4>Twój power-up</h4>
                 <p>Rozumiesz AI lepiej niż twoi konkurenci do matury.</p>
               </div>
             </div>
@@ -745,11 +745,8 @@ const Matura = () => {
               
               <ul className="included-list">
                 <li>3,5 godzin warsztatu live</li>
-                {/* <li>Nagranie (dostęp dożywotni)</li> */}
                 <li>Promptbook "Twój Plan Maturalny 2.0"</li>
-                <li>Szablony do Notion AI</li>
-                <li>Dostęp do grupy Telegram/Discord</li>
-                <li>Bonus: konsultacja 1-on-1 (15 min)</li>
+                <li>Dostęp do grupy Discord</li>
               </ul>
 
               <p style={{marginBottom: 'var(--space-32)', color: 'var(--color-text-light)', fontSize: '14px'}}>
