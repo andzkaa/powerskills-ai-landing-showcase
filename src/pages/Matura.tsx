@@ -621,7 +621,7 @@ const Matura = () => {
         <section className="modules" id="modules">
           <div className="container">
             <h2>Program warsztatu</h2>
-            <h3 style={{textAlign: 'center', marginBottom: 'var(--space-32)', color: 'var(--color-text-light)', fontWeight: 400}}>3,5 godzin</h3>
+            <h3 style={{textAlign: 'center', marginBottom: 'var(--space-32)', color: 'var(--color-text-light)', fontWeight: 400}}>3,5 godzinny warsztat ;p </h3>
             <div className="modules-list">
               <div className="module">
                 <div className="module-time">15 min</div>
