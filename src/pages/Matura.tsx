@@ -715,7 +715,7 @@ const Matura = () => {
               <div className="benefit-card">
                 <div className="benefit-icon">📲</div>
                 <h4>Dostęp forever</h4>
-                <p>Nagrania, promptbook, szablony – Twoje na zawsze.</p>
+                <p> promptbook, szablony – Twoje na zawsze.</p>
               </div>
               <div className="benefit-card">
                 <div className="benefit-icon">👥</div>
