@@ -238,7 +238,7 @@ const CopilotPresentation = () => {
         }
 
         .slide-content {
-            color: #ddd;
+            color: #fff;
             font-size: 24px;
             line-height: 1.8;
         }
@@ -253,6 +253,7 @@ const CopilotPresentation = () => {
             padding-left: 48px;
             position: relative;
             font-size: 28px;
+            color: #fff;
         }
 
         .slide-content li::before {
@@ -267,6 +268,10 @@ const CopilotPresentation = () => {
         .slide-content strong {
             color: var(--color-primary);
             font-weight: 600;
+        }
+
+        .slide-content p {
+            color: #fff;
         }
 
         /* DIAGRAM */
@@ -304,6 +309,7 @@ const CopilotPresentation = () => {
             align-items: center;
             gap: 16px;
             font-size: 22px;
+            color: #fff;
         }
 
         .legend-color {
@@ -328,6 +334,7 @@ const CopilotPresentation = () => {
             text-align: left;
             border-bottom: 1px solid rgba(255,255,255,0.1);
             font-size: 22px;
+            color: #fff;
         }
 
         .slide-table th {
@@ -516,10 +523,10 @@ const CopilotPresentation = () => {
                   <div style={{textAlign: 'center'}}>
                     <h1>Microsoft Copilot Studio</h1>
                     <h3>Kompletny Przewodnik</h3>
-                    <p style={{fontSize: '28px', color: '#999', marginTop: '64px'}}>
+                    <p style={{fontSize: '28px', color: '#ddd', marginTop: '64px'}}>
                       Przewodnik po wszystkich sekcjach i możliwościach platformy
                     </p>
-                    <p style={{fontSize: '24px', color: '#666', marginTop: '32px'}}>
+                    <p style={{fontSize: '24px', color: '#bbb', marginTop: '32px'}}>
                       Naciśnij → lub SPACJĘ aby kontynuować
                     </p>
                   </div>
@@ -786,22 +793,22 @@ Jeśli nie znasz odpowiedzi, skieruj do HR."
                     <div className="slide-content">
                       <div style={{marginBottom: '32px'}}>
                         <strong style={{fontSize: '28px', color: 'var(--color-primary)'}}>Q:</strong>
-                        <span style={{fontSize: '28px', marginLeft: '16px'}}>Czy muszę umieć programować?</span>
-                        <p style={{marginTop: '12px', marginLeft: '48px', color: '#999'}}>
+                        <span style={{fontSize: '28px', marginLeft: '16px', color: '#fff'}}>Czy muszę umieć programować?</span>
+                        <p style={{marginTop: '12px', marginLeft: '48px', color: '#ddd'}}>
                           Nie! Wszystko robisz przez interfejs graficzny. Platforma jest no-code/low-code.
                         </p>
                       </div>
                       <div style={{marginBottom: '32px'}}>
                         <strong style={{fontSize: '28px', color: 'var(--color-primary)'}}>Q:</strong>
-                        <span style={{fontSize: '28px', marginLeft: '16px'}}>Ile trwa stworzenie pierwszego agenta?</span>
-                        <p style={{marginTop: '12px', marginLeft: '48px', color: '#999'}}>
+                        <span style={{fontSize: '28px', marginLeft: '16px', color: '#fff'}}>Ile trwa stworzenie pierwszego agenta?</span>
+                        <p style={{marginTop: '12px', marginLeft: '48px', color: '#ddd'}}>
                           Prosty agent FAQ – nawet w 2 godziny.
                         </p>
                       </div>
                       <div style={{marginBottom: '32px'}}>
                         <strong style={{fontSize: '28px', color: 'var(--color-primary)'}}>Q:</strong>
-                        <span style={{fontSize: '28px', marginLeft: '16px'}}>Czy integruje się z CRM?</span>
-                        <p style={{marginTop: '12px', marginLeft: '48px', color: '#999'}}>
+                        <span style={{fontSize: '28px', marginLeft: '16px', color: '#fff'}}>Czy integruje się z CRM?</span>
+                        <p style={{marginTop: '12px', marginLeft: '48px', color: '#ddd'}}>
                           Tak, przez Dynamics 365, Power Automate lub REST API.
                         </p>
                       </div>
