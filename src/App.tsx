@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Matura from "./pages/Matura";
+import CopilotPresentation from "./pages/CopilotPresentation";
 
 
 const queryClient = new QueryClient();
@@ -21,6 +22,8 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
           <Route path="/matura" element={<Matura />} />
+          <Route path="/copilot-presentation" element={<CopilotPresentation />} />
+
 
         </Routes>
       </BrowserRouter>
