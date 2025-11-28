@@ -2,23 +2,7 @@ import { useEffect } from 'react';
 
 const Matura = () => {
   useEffect(() => {
-    useEffect(() => {
-      // 1. Załaduj skrypt gtag.js
-      const script = document.createElement('script');
-      script.async = true;
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-YV2S8NRGES';
-      document.head.appendChild(script);
-  
-      // 2. Skonfiguruj dataLayer i gtag
-      (window as any).dataLayer = (window as any).dataLayer || [];
-      function gtag(...args: any[]) {
-        (window as any).dataLayer.push(args);
-      }
-      (window as any).gtag = gtag;
-  
-      gtag('js', new Date());
-      gtag('config', 'G-YV2S8NRGES');
-    }, []);
+    
     // Smooth scroll for anchor links with offset for sticky header
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
