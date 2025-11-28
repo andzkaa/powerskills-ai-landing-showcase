@@ -2,12 +2,34 @@ import { useEffect } from 'react';
 
 const Matura = () => {
   useEffect(() => {
-    
-    // Smooth scroll for anchor links with offset for sticky header
+    // --- GA4 TYLKO NA PODSTRONIE MATURA ---
+
+    // jeśli gtag nie jest jeszcze zdefiniowany – konfigurujemy
+    if (!(window as any).gtag) {
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      function gtag(...args: any[]) {
+        (window as any).dataLayer.push(args);
+      }
+      (window as any).gtag = gtag;
+
+      const script = document.createElement('script');
+      script.async = true;
+      script.src =
+        'https://www.googletagmanager.com/gtag/js?id=G-YV2S8NRGES';
+      document.head.appendChild(script);
+    }
+
+    // pageview tylko dla tej strony
+    (window as any).gtag('js', new Date());
+    (window as any).gtag('config', 'G-YV2S8NRGES', {
+      page_path: '/matura', // możesz zmienić na faktyczny path, jeśli inny
+    });
+
+    // --- SMOOTH SCROLL jak wcześniej ---
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const anchor = target.closest('a');
-      
+
       if (anchor && anchor.getAttribute('href')?.startsWith('#')) {
         e.preventDefault();
         const id = anchor.getAttribute('href')?.substring(1);
@@ -15,18 +37,23 @@ const Matura = () => {
         if (element) {
           const headerOffset = 80; // Height of sticky header
           const elementPosition = element.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
 
           window.scrollTo({
             top: offsetPosition,
-            behavior: 'smooth'
+            behavior: 'smooth',
           });
         }
       }
     };
 
     document.addEventListener('click', handleAnchorClick);
-    return () => document.removeEventListener('click', handleAnchorClick);
+
+    // cleanup
+    return () => {
+      document.removeEventListener('click', handleAnchorClick);
+    };
   }, []);
 
   const handleRegister = () => {
