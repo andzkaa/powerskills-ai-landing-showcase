@@ -1,16 +1,32 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
+// Import images - add your files to src/assets folder
+// import aiHrLabLogo from '@/assets/AI HR LAB czarne tło.png';
+// import backgroundImage from '@/assets/background.png';
+
+// Fallback to existing assets for now
+import aiHrLabLogo from '@/assets/logo.png';
+import backgroundImage from '@/assets/hero-bg.jpg';
+
 const HR = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200 relative overflow-hidden font-be-vietnam">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-30">
+    <div className="min-h-screen relative overflow-hidden font-be-vietnam">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-blue-100/80 to-blue-200/80"></div>
+      </div>
+
+      {/* Old Background Pattern - keeping for fallback */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="hexagons" x="0" y="0" width="200" height="173.2" patternUnits="userSpaceOnUse">
               <polygon points="100,0 150,43.3 150,129.9 100,173.2 50,129.9 50,43.3"
-                       fill="none" stroke="#93c5fd" strokeWidth="0.5" opacity="0.5"/>
+                       fill="none" stroke="#93c5fd" strokeWidth="0.5" opacity="0.3"/>
               <circle cx="100" cy="86.6" r="2" fill="#3b82f6" opacity="0.3"/>
               <circle cx="50" cy="43.3" r="1.5" fill="#3b82f6" opacity="0.2"/>
               <circle cx="150" cy="43.3" r="1.5" fill="#3b82f6" opacity="0.2"/>
@@ -24,11 +40,11 @@ const HR = () => {
       <div className="relative z-10 container mx-auto px-4 py-12 max-w-4xl">
         {/* Logo */}
         <div className="flex justify-center mb-12">
-          <svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
-            <text x="10" y="60" fontFamily="serif" fontSize="64" fontStyle="italic" fontWeight="bold" fill="#000">A</text>
-            <text x="55" y="60" fontFamily="serif" fontSize="64" fontStyle="italic" fontWeight="bold" fill="#2563eb">I</text>
-            <circle cx="105" cy="15" r="8" fill="#2563eb"/>
-          </svg>
+          <img
+            src={aiHrLabLogo}
+            alt="AI HR LAB Logo"
+            className="h-24 md:h-32 w-auto object-contain"
+          />
         </div>
 
         {/* Hero Section */}
