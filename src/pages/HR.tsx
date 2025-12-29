@@ -54,7 +54,7 @@ const HR = () => {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Warsztat AI dla HR-ów
+            Warsztat AI dla HR-owców
             </h1>
             <p className="text-xl md:text-2xl text-white mb-4">
               ze Szczecina
@@ -85,7 +85,7 @@ const HR = () => {
             </li>
           </ul>
           <p className="text-lg text-gray-800 font-semibold">
-            To zapraszam Cię na dwudniowe szkolenie zaprojektowane specjalnie dla HR-ów ze Szczecina i regionu.
+            To zapraszamy Cię na dwudniowe szkolenie zaprojektowane specjalnie dla HR-ów ze Szczecina i regionu.
           </p>
         </div>
 
