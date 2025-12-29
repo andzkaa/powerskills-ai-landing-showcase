@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button';
 // import backgroundImage from '@/assets/background.png';
 
 // Fallback to existing assets for now
-import aiHrLabLogo from '@/assets/logo.png';
-import backgroundImage from '@/assets/hero-bg.jpg';
+import aiHrLabLogo from '@/assets/HR.png';
+import backgroundImage from '@/assets/bgrhr.png';
 
 const HR = () => {
   return (
@@ -49,14 +49,15 @@ const HR = () => {
           </div>
         </div>
 
+
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              AI HR LAB
+            Warsztat AI dla HR-ów
             </h1>
             <p className="text-xl md:text-2xl text-white mb-4">
-              Warsztat AI dla HR-ów ze Szczecina
+              ze Szczecina
             </p>
             <p className="text-lg text-white max-w-2xl mx-auto">
               To nie jest event z prezentacjami.<br/>
@@ -168,7 +169,7 @@ const HR = () => {
 
         {/* Footer */}
         <div className="mt-16 text-center text-white text-sm">
-          <p>Pytania? Skontaktuj się: <a href="mailto:kontakt@powerskills.ai" className="text-blue-300 hover:underline">kontakt@powerskills.ai</a></p>
+          <p>Pytania? Skontaktuj się: <a href="mailto:kontakt@powerskills.ai" className="text-blue-300 hover:underline">contact@powerskills.ai</a></p>
         </div>
         </div>
       </div>
