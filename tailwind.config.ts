@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         anton: ['Anton', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        'be-vietnam': ['Be Vietnam Pro', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Matura from "./pages/Matura";
 import CopilotPresentation from "./pages/CopilotPresentation";
 import Copilot from "./pages/Copilot";
+import HR from "./pages/HR";
 
 
 
@@ -21,14 +22,12 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/hr" element={<HR />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
           <Route path="/matura" element={<Matura />} />
           <Route path="/copilot-presentation" element={<CopilotPresentation />} />
           <Route path="/copilot" element={<Copilot />} />
-
-
-
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
