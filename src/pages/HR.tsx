@@ -17,7 +17,7 @@ const HR = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-blue-100/80 to-blue-200/80"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Old Background Pattern - keeping for fallback */}
