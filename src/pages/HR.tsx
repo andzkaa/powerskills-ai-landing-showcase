@@ -49,11 +49,11 @@ const HR = () => {
 
         {/* Hero Section */}
         <div className="text-center mb-16">
-          {/* <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            AI HR LAB
-          </h1> */}
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          Warsztat AI dla HR-ów
+                    </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-4">
-            Warsztat AI dla HR-ów ze Szczecina
+            ze Szczecina
           </p>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             To nie jest event z prezentacjami.<br/>
