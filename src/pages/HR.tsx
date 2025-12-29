@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 // import backgroundImage from '@/assets/background.png';
 
 // Fallback to existing assets for now
-import aiHrLabLogo from '@/assets/HR.png';
+import aiHrLabLogo from '@/assets/HRwhite.png';
 import backgroundImage from '@/assets/bgrhr.png';
 
 const HR = () => {
@@ -91,7 +91,7 @@ const HR = () => {
 
         {/* How It Works */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Jak to działa</h2>
+          <h2 className="text-3xl font-bold text-white mb-6 text-center">Jak to działa</h2>
           <div className="space-y-6">
             <div className="bg-white/70 backdrop-blur-sm rounded-lg p-6 border-l-4 border-blue-600">
               <h3 className="font-bold text-gray-900 mb-2">Przed szkoleniem</h3>
@@ -161,7 +161,7 @@ const HR = () => {
           <Button
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-6 text-lg font-semibold rounded-lg shadow-xl"
-            onClick={() => window.open('https://forms.office.com/your-form-link', '_blank')}
+            onClick={() => window.open('https://forms.office.com/r/cLgQKs5rKt', '_blank')}
           >
             Zapisz się na warsztat
           </Button>
