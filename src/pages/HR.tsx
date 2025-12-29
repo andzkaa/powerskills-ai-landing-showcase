@@ -37,29 +37,32 @@ const HR = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4 py-12 max-w-4xl">
-        {/* Logo */}
-        <div className="flex justify-center mb-12">
-          <img
-            src={aiHrLabLogo}
-            alt="AI HR LAB Logo"
-            className="h-24 md:h-32 w-auto object-contain"
-          />
+      <div className="relative z-10">
+        {/* Logo - White background bar */}
+        <div className="bg-white py-8 mb-12">
+          <div className="container mx-auto px-4 max-w-4xl flex justify-center">
+            <img
+              src={aiHrLabLogo}
+              alt="AI HR LAB Logo"
+              className="h-24 md:h-32 w-auto object-contain"
+            />
+          </div>
         </div>
 
-        {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            AI HR LAB
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-4">
-            Warsztat AI dla HR-ów ze Szczecina
-          </p>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            To nie jest event z prezentacjami.<br/>
-            <strong>To jest system pracy z AI w HR.</strong>
-          </p>
-        </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          {/* Hero Section */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              AI HR LAB
+            </h1>
+            <p className="text-xl md:text-2xl text-white mb-4">
+              Warsztat AI dla HR-ów ze Szczecina
+            </p>
+            <p className="text-lg text-white max-w-2xl mx-auto">
+              To nie jest event z prezentacjami.<br/>
+              <strong>To jest system pracy z AI w HR.</strong>
+            </p>
+          </div>
 
         {/* Main Pitch */}
         <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-8 md:p-12 mb-12">
@@ -148,10 +151,10 @@ const HR = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <p className="text-xl font-semibold text-gray-900 mb-6">
+          <p className="text-xl font-semibold text-white mb-6">
             Lokalnie. Kameralnie. Praktycznie.
           </p>
-          <p className="text-lg text-gray-700 mb-8">
+          <p className="text-lg text-white mb-8">
             Jeśli chcesz pracować z AI bez chaosu i bez ściemy – dołącz.
           </p>
           <Button
@@ -164,8 +167,9 @@ const HR = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-16 text-center text-gray-600 text-sm">
-          <p>Pytania? Skontaktuj się: <a href="mailto:kontakt@powerskills.ai" className="text-blue-600 hover:underline">kontakt@powerskills.ai</a></p>
+        <div className="mt-16 text-center text-white text-sm">
+          <p>Pytania? Skontaktuj się: <a href="mailto:kontakt@powerskills.ai" className="text-blue-300 hover:underline">kontakt@powerskills.ai</a></p>
+        </div>
         </div>
       </div>
     </div>
