@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 // Fallback to existing assets for now
 import aiHrLabLogo from '@/assets/HRwhite.png';
 import backgroundImage from '@/assets/bgrhr.png';
-import headerBackgroundImage from '@/assets/dodatek.png';
+import headerBackgroundImage from '@/assets/dodatek1.png';
 
 const HR = () => {
   return (
