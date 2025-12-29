@@ -41,7 +41,7 @@ const HR = () => {
       <div className="relative z-10">
         {/* Logo - Image background bar */}
         <div
-          className="py-8 mb-12 bg-cover bg-center bg-no-repeat relative"
+          className="py-8 mb-12 bg-cover bg-top bg-no-repeat relative"
           style={{ backgroundImage: `url(${headerBackgroundImage})` }}
         >
           <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
