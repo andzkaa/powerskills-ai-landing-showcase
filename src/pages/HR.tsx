@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button';
 // import backgroundImage from '@/assets/background.png';
 
 // Fallback to existing assets for now
-import aiHrLabLogo from '@/assets/AI HR LAB czarne tło.png';
-import backgroundImage from '@/assets/background.jpg';
+import aiHrLabLogo from '@/assets/HR.png';
+import backgroundImage from '@/assets/background.png';
 
 const HR = () => {
   return (
