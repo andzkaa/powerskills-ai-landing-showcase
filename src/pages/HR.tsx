@@ -49,9 +49,9 @@ const HR = () => {
 
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          {/* <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             AI HR LAB
-          </h1>
+          </h1> */}
           <p className="text-xl md:text-2xl text-gray-700 mb-4">
             Warsztat AI dla HR-ów ze Szczecina
           </p>
@@ -165,7 +165,7 @@ const HR = () => {
 
         {/* Footer */}
         <div className="mt-16 text-center text-gray-600 text-sm">
-          <p>Pytania? Skontaktuj się: <a href="mailto:kontakt@powerskills.ai" className="text-blue-600 hover:underline">kontakt@powerskills.ai</a></p>
+          <p>Pytania? Skontaktuj się: <a href="mailto:kontakt@powerskills.ai" className="text-blue-600 hover:underline">contact@powerskills.ai</a></p>
         </div>
       </div>
     </div>
