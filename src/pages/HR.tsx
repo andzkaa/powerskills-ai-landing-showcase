@@ -44,12 +44,12 @@ const HR = () => {
           className="py-8 mb-12 bg-cover bg-center bg-no-repeat relative"
           style={{ backgroundImage: `url(${headerBackgroundImage})` }}
         >
-          <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-white/20"></div>
           <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
             <img
               src={aiHrLabLogo}
               alt="AI HR LAB Logo"
-              className="h-24 md:h-32 w-auto object-contain"
+              className="h-24 md:h-32 w-auto object-contain drop-shadow-lg"
             />
           </div>
         </div>
