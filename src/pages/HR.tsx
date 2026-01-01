@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import aiHrLabLogo from '@/assets/HRwhite.png';
 import backgroundImage from '@/assets/bgrhr.png';
 import headerBackgroundImage from '@/assets/dodatek1.png';
+import logo from '@/assets/logo.png'
 
 const HR = () => {
   return (
@@ -46,6 +47,13 @@ const HR = () => {
         >
           <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
             <img
+              src={logo}
+              alt="logo"
+              className="h-24 md:h-32 w-auto object-contain drop-shadow-2xl"
+            />
+          </div>
+          <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
+            <img
               src={aiHrLabLogo}
               alt="AI HR LAB Logo"
               className="h-24 md:h-32 w-auto object-contain drop-shadow-2xl"
@@ -58,10 +66,10 @@ const HR = () => {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Warsztat AI dla HR-owców
+           Nienaturalnie dobrzy
             </h1>
             <p className="text-xl md:text-2xl text-white mb-4">
-              ze Szczecina
+            Warsztat AI dla HR-owców ze Szczecina
             </p>
             <p className="text-lg text-white max-w-2xl mx-auto">
               To nie jest event z prezentacjami.<br/>
