@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import aiHrLabLogo from '@/assets/HRwhite.png';
 import backgroundImage from '@/assets/bgrhr.png';
 import headerBackgroundImage from '@/assets/dodatek1.png';
-import logo from '@/assets/logo.png'
+import logowht from '@/assets/logowht.png'
 
 const HR = () => {
   return (
@@ -45,13 +45,7 @@ const HR = () => {
           className="py-8 mb-12 bg-cover bg-top bg-no-repeat relative"
           style={{ backgroundImage: `url(${headerBackgroundImage})` }}
         >
-          <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
-            <img
-              src={logo}
-              alt="logo"
-              className="h-24 md:h-32 w-auto object-contain drop-shadow-2xl"
-            />
-          </div>
+         
           <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
             <img
               src={aiHrLabLogo}
@@ -64,6 +58,14 @@ const HR = () => {
 
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Hero Section */}
+          <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
+            <img
+              src={logowht}
+              alt="logo"
+              className="h-14 md:h-20 w-auto object-contain drop-shadow-2xl"
+            />
+          </div>
+          <br></br>
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
            Nienaturalnie dobrzy
