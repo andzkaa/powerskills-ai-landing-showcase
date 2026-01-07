@@ -105,26 +105,34 @@ const HR = () => {
 
         {/* How It Works */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-white mb-6 text-center">Jak to działa</h2>
-          <div className="space-y-6">
-            <div className="bg-white/70 backdrop-blur-sm rounded-lg p-6 border-l-4 border-blue-600">
-              <h3 className="font-bold text-gray-900 mb-2">Przed szkoleniem</h3>
-              <p className="text-gray-700">Dostajesz prework, który wyrównuje poziom wiedzy i przygotowuje do pracy</p>
-            </div>
-            <div className="bg-white/70 backdrop-blur-sm rounded-lg p-6 border-l-4 border-blue-600">
-              <h3 className="font-bold text-gray-900 mb-2">Dzień 1</h3>
-              <p className="text-gray-700">Uczysz się, jak sensownie pracować z AI w zadaniach HR (bez technicznego żargonu)</p>
-            </div>
-            <div className="bg-white/70 backdrop-blur-sm rounded-lg p-6 border-l-4 border-blue-600">
-              <h3 className="font-bold text-gray-900 mb-2">Tydzień przerwy</h3>
-              <p className="text-gray-700">Testujesz AI w swojej realnej pracy</p>
-            </div>
-            <div className="bg-white/70 backdrop-blur-sm rounded-lg p-6 border-l-4 border-blue-600">
-              <h3 className="font-bold text-gray-900 mb-2">Dzień 2</h3>
-              <p className="text-gray-700">Pracujemy na Twoich przypadkach, poprawiamy błędy, dopasowujemy rozwiązania</p>
-            </div>
-          </div>
-        </div>
+  <h2 className="text-3xl font-bold text-white mb-6 text-center">Jak to działa</h2>
+  <div className="space-y-6">
+    <div className="relative bg-white/70 backdrop-blur-sm rounded-lg p-6 overflow-hidden">
+      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#ff3131] to-[#ff914d]" />
+      <h3 className="font-bold text-gray-900 mb-2 pl-4">Przed szkoleniem</h3>
+      <p className="text-gray-700 pl-4">Dostajesz prework, który wyrównuje poziom wiedzy i przygotowuje do pracy</p>
+    </div>
+
+    <div className="relative bg-white/70 backdrop-blur-sm rounded-lg p-6 overflow-hidden">
+      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#ff3131] to-[#ff914d]" />
+      <h3 className="font-bold text-gray-900 mb-2 pl-4">Dzień 1</h3>
+      <p className="text-gray-700 pl-4">Uczysz się, jak sensownie pracować z AI w zadaniach HR (bez technicznego żargonu)</p>
+    </div>
+
+    <div className="relative bg-white/70 backdrop-blur-sm rounded-lg p-6 overflow-hidden">
+      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#ff3131] to-[#ff914d]" />
+      <h3 className="font-bold text-gray-900 mb-2 pl-4">Tydzień przerwy</h3>
+      <p className="text-gray-700 pl-4">Testujesz AI w swojej realnej pracy</p>
+    </div>
+
+    <div className="relative bg-white/70 backdrop-blur-sm rounded-lg p-6 overflow-hidden">
+      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#ff3131] to-[#ff914d]" />
+      <h3 className="font-bold text-gray-900 mb-2 pl-4">Dzień 2</h3>
+      <p className="text-gray-700 pl-4">Pracujemy na Twoich przypadkach, poprawiamy błędy, dopasowujemy rozwiązania</p>
+    </div>
+  </div>
+</div>
+
 
         {/* After Training */}
         <div className="bg-blue-600 text-white rounded-lg p-8 md:p-10 mb-12">
