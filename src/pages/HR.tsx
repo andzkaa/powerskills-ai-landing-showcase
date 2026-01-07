@@ -135,28 +135,19 @@ const HR = () => {
 
 
         {/* After Training */}
-        <div className="relative rounded-lg p-8 md:p-10 mb-12 text-white overflow-hidden">
-  {/* jaśniejsza, większa poświata */}
-  <div className="absolute -inset-8 bg-gradient-to-r from-[#ff3131]/65 to-[#ff914d]/65 blur-3xl opacity-90" />
-  {/* mniej ciemne tło (to robi największą różnicę) */}
-  <div className="absolute inset-0 bg-[#0B1220]/55" />
-
-  <div className="relative">
-    <h2 className="text-2xl md:text-3xl font-bold mb-4">Po szkoleniu nie zostajesz sam/a</h2>
-    <ul className="space-y-3 text-lg">
-      <li className="flex items-start">
-        <span className="mr-3">✓</span>
-        <span>Zamknięta grupa na Discordzie tylko dla uczestników</span>
-      </li>
-      <li className="flex items-start">
-        <span className="mr-3">✓</span>
-        <span>Dwa webinary kilka tygodni po szkoleniu – konsultacje, pytania, realne problemy</span>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
+        <div className="bg-blue-600 text-white rounded-lg p-8 md:p-10 mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Po szkoleniu nie zostajesz sam/a</h2>
+          <ul className="space-y-3 text-lg">
+            <li className="flex items-start">
+              <span className="mr-3">✓</span>
+              <span>Zamknięta grupa na Discordzie tylko dla uczestników</span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-3">✓</span>
+              <span>Dwa webinary kilka tygodni po szkoleniu – konsultacje, pytania, realne problemy</span>
+            </li>
+          </ul>
+        </div>
 
         {/* What You Get */}
         <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-8 md:p-10 mb-12">
