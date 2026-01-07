@@ -137,7 +137,7 @@ const HR = () => {
         {/* After Training */}
         <div className="relative rounded-lg p-8 md:p-10 mb-12 text-white overflow-hidden">
   {/* subtelna gradientowa poświata */}
-  <div className="absolute inset-0 bg-gradient-to-r from-[#ff3131]/25 to-[#ff914d]/25" />
+  <div className="absolute inset-0 bg-gradient-to-r from-[#ff3131]/25 to-[#ff914d]/55" />
   {/* właściwe tło */}
   <div className="absolute inset-0 bg-[#0B1220]/80" />
   {/* content */}
