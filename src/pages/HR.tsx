@@ -136,11 +136,11 @@ const HR = () => {
 
         {/* After Training */}
         <div className="relative rounded-lg p-8 md:p-10 mb-12 text-white overflow-hidden">
-  {/* subtelna gradientowa poświata */}
-  <div className="absolute inset-0 bg-gradient-to-r from-[#ff3131]/25 to-[#ff914d]/55" />
-  {/* właściwe tło */}
-  <div className="absolute inset-0 bg-[#0B1220]/80" />
-  {/* content */}
+  {/* jaśniejsza, większa poświata */}
+  <div className="absolute -inset-8 bg-gradient-to-r from-[#ff3131]/65 to-[#ff914d]/65 blur-3xl opacity-90" />
+  {/* mniej ciemne tło (to robi największą różnicę) */}
+  <div className="absolute inset-0 bg-[#0B1220]/55" />
+
   <div className="relative">
     <h2 className="text-2xl md:text-3xl font-bold mb-4">Po szkoleniu nie zostajesz sam/a</h2>
     <ul className="space-y-3 text-lg">
@@ -155,6 +155,7 @@ const HR = () => {
     </ul>
   </div>
 </div>
+
 
 
         {/* What You Get */}
