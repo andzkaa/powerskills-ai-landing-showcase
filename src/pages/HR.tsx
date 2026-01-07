@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 // import backgroundImage from '@/assets/background.png';
 
 // Fallback to existing assets for now
-import aiHrLabLogo from '@/assets/HRwhite.png';
+import aiHrLabLogo from '@/assets/AIHRLAB.png';
 import backgroundImage from '@/assets/bgrhr.png';
 import headerBackgroundImage from '@/assets/dodatek1.png';
 import logowht from '@/assets/logowht.png'
