@@ -173,12 +173,17 @@ const HR = () => {
             Jeśli chcesz pracować z AI bez chaosu i bez ściemy – dołącz.
           </p>
           <Button
-            size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-6 text-lg font-semibold rounded-lg shadow-xl"
-            onClick={() => window.open('https://forms.office.com/r/cLgQKs5rKt', '_blank')}
-          >
-            Zapisz się na warsztat
-          </Button>
+  size="lg"
+  className="
+    bg-gradient-to-r from-[#ff3131] to-[#ff914d]
+    hover:from-[#e62b2b] hover:to-[#e68145]
+    text-white px-12 py-6 text-lg font-semibold
+    rounded-lg shadow-xl
+  "
+  onClick={() => window.open('https://forms.office.com/r/cLgQKs5rKt', '_blank')}
+>
+  Zapisz się na warsztat
+</Button>
         </div>
 
         {/* Footer */}
