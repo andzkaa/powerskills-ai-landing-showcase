@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import PowerDots from './PowerDots';
-import heroBg from '@/assets/hero-bg.jpg';
+import heroBg from '@/assets/green-waves.png';
 
 const Hero: React.FC = () => {
   return (
