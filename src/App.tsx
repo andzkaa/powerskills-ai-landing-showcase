@@ -9,6 +9,7 @@ import Matura from "./pages/Matura";
 import CopilotPresentation from "./pages/CopilotPresentation";
 import Copilot from "./pages/Copilot";
 import HR from "./pages/HR";
+import New from "./pages/New";
 
 
 
@@ -23,6 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/hr" element={<HR />} />
+          <Route path="/new" element={<New />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/matura" element={<Matura />} />
           <Route path="/copilot-presentation" element={<CopilotPresentation />} />
