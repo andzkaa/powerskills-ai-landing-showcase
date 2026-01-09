@@ -1,0 +1,70 @@
+/* Dark Theme for /new page - Neon Green #00ff88 */
+
+.dark-theme {
+  /* Dark mode colors */
+  --background: 0 0% 4%; /* #0a0a0a */
+  --foreground: 0 0% 88%; /* #e0e0e0 */
+
+  --card: 0 0% 10%; /* #1a1a1a */
+  --card-foreground: 0 0% 88%;
+
+  --popover: 0 0% 10%;
+  --popover-foreground: 0 0% 88%;
+
+  /* Neon Green colors */
+  --primary: 158 100% 50%; /* #00ff88 */
+  --primary-foreground: 0 0% 4%;
+  --primary-light: 158 100% 60%;
+  --primary-dark: 158 100% 40%; /* #00cc6f */
+
+  --secondary: 0 0% 8%; /* #151515 */
+  --secondary-foreground: 0 0% 88%;
+
+  --muted: 0 0% 8%;
+  --muted-foreground: 0 0% 69%; /* #b0b0b0 */
+
+  --accent: 158 100% 50%;
+  --accent-foreground: 0 0% 4%;
+
+  --border: 158 100% 50% / 0.2;
+  --input: 0 0% 10%;
+  --ring: 158 100% 50%;
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, hsl(158 100% 50%), hsl(158 100% 60%));
+
+  /* Shadows */
+  --shadow-glow: 0 0 30px hsl(158 100% 50% / 0.3);
+  --shadow-power: 0 10px 40px hsl(158 100% 50% / 0.2);
+}
+
+.dark-theme {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* Neon glow effects for dark theme */
+.dark-theme .neon-glow {
+  box-shadow: 0 0 10px hsl(158 100% 50% / 0.3),
+              0 0 20px hsl(158 100% 50% / 0.2);
+}
+
+.dark-theme .neon-text-glow {
+  text-shadow: 0 0 10px hsl(158 100% 50% / 0.5);
+}
+
+/* Glow pulse animation */
+@keyframes glow-pulse-dark {
+  0%, 100% {
+    box-shadow: 0 0 10px hsl(158 100% 50% / 0.3),
+                0 0 20px hsl(158 100% 50% / 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px hsl(158 100% 50% / 0.5),
+                0 0 30px hsl(158 100% 50% / 0.3);
+  }
+}
+
+.dark-theme .animate-glow-pulse {
+  animation: glow-pulse-dark 2s ease-in-out infinite;
+}

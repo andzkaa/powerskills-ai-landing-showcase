@@ -9,10 +9,11 @@ import SocialProof from '@/components/SocialProof';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import WaveSeparator from '@/components/WaveSeparator';
+import '../dark-theme.css';
 
 const New = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="dark-theme min-h-screen">
       <Header />
       <main>
         <HeroNew />

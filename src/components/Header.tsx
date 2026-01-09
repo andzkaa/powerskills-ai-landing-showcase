@@ -6,7 +6,7 @@ import Logo from "@/assets/logo.png";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-background/95 backdrop-blur-md border-b border-primary/10 sticky top-0 z-50">
+    <header className="bg-background/95 backdrop-blur-md border-b border-border/50 sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4">
 
         <div className="flex items-center justify-between">
@@ -26,16 +26,16 @@ const Header: React.FC = () => {
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-muted-foreground hover:text-primary transition-all duration-300 font-inter font-medium hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">
+            <a href="#services" className="text-foreground hover:text-primary transition-colors font-inter font-medium">
               Szkolenia
             </a>
-            <a href="#education" className="text-muted-foreground hover:text-primary transition-all duration-300 font-inter font-medium hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">
+            <a href="#education" className="text-foreground hover:text-primary transition-colors font-inter font-medium">
               Edukacja
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-all duration-300 font-inter font-medium hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">
+            <a href="#about" className="text-foreground hover:text-primary transition-colors font-inter font-medium">
               O nas
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-all duration-300 font-inter font-medium hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">
+            <a href="#contact" className="text-foreground hover:text-primary transition-colors font-inter font-medium">
               Kontakt
             </a>
           </nav>

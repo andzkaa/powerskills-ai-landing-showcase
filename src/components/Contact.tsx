@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <section id="contact" className="py-20 bg-secondary">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-4 mb-6">
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <Card className="border border-primary/20 bg-card/90 backdrop-blur-sm animate-fade-in">
+          <Card className="border-border/50 bg-card/50 backdrop-blur-sm animate-fade-in">
             <CardContent className="p-8">
               <h3 className="font-anton text-2xl text-foreground mb-6">Napisz do nas</h3>
 
@@ -135,7 +135,7 @@ const Contact: React.FC = () => {
                 <Button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="w-full bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold py-3 rounded-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] hover:-translate-y-0.5 disabled:opacity-70"
+                  className="w-full bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 disabled:opacity-70"
                 >
                   {status === 'submitting' ? 'Wysyłanie…' : 'Wyślij wiadomość'}
                 </Button>
@@ -145,11 +145,11 @@ const Contact: React.FC = () => {
 
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="space-y-8">
-              <Card className="border border-primary/20 hover:border-primary bg-card/90 backdrop-blur-sm hover:shadow-[0_0_15px_rgba(0,255,136,0.2)] transition-all duration-300">
+              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary/10 border border-primary/30 rounded-xl flex items-center justify-center">
-                      <Mail className="w-6 h-6 text-primary drop-shadow-[0_0_5px_rgba(0,255,136,0.3)]" />
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <h4 className="font-anton text-lg text-foreground">Email</h4>
@@ -159,11 +159,11 @@ const Contact: React.FC = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border border-primary/20 hover:border-primary bg-card/90 backdrop-blur-sm hover:shadow-[0_0_15px_rgba(0,255,136,0.2)] transition-all duration-300">
+              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary/10 border border-primary/30 rounded-xl flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-primary drop-shadow-[0_0_5px_rgba(0,255,136,0.3)]" />
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <Phone className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <h4 className="font-anton text-lg text-foreground">Telefon</h4>
@@ -173,11 +173,11 @@ const Contact: React.FC = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border border-primary/20 hover:border-primary bg-card/90 backdrop-blur-sm hover:shadow-[0_0_15px_rgba(0,255,136,0.2)] transition-all duration-300">
+              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary/10 border border-primary/30 rounded-xl flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-primary drop-shadow-[0_0_5px_rgba(0,255,136,0.3)]" />
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <h4 className="font-anton text-lg text-foreground">Lokalizacja</h4>
@@ -187,7 +187,7 @@ const Contact: React.FC = () => {
                 </CardContent>
               </Card>
 
-              <div className="bg-card/50 border border-primary/20 rounded-2xl p-6 backdrop-blur-sm">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/10">
                 <h4 className="font-anton text-xl text-foreground mb-4">Gotowy na start?</h4>
                 <p className="text-muted-foreground font-inter mb-4">
                   Dołącz do ludzi, którzy już nauczyli się mówić językiem przyszłości i wykorzystują AI na co dzień
