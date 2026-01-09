@@ -8,121 +8,71 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 15% 20%;
+    /* Dark mode - prawie czarny */
+    --background: 0 0% 4%; /* #0a0a0a */
+    --foreground: 0 0% 88%; /* #e0e0e0 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 20%;
+    --card: 0 0% 10%; /* #1a1a1a */
+    --card-foreground: 0 0% 88%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 20%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 88%;
 
-    /* PowerSkills.ai brand colors */
-    --primary: 130 75% 47%; /* #29C436 - Main green */
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 130 75% 57%;
-    --primary-dark: 130 75% 37%;
+    /* PowerSkills.ai brand colors - NEON GREEN */
+    --primary: 158 100% 50%; /* #00ff88 - Neon green */
+    --primary-foreground: 0 0% 4%; /* czarny tekst na zielonym */
+    --primary-light: 158 100% 60%;
+    --primary-dark: 158 100% 40%; /* #00cc6f */
 
-    --secondary: 220 15% 95%;
-    --secondary-foreground: 220 15% 20%;
+    --secondary: 0 0% 8%; /* #151515 - ciemnoszary */
+    --secondary-foreground: 0 0% 88%;
 
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 0 0% 8%;
+    --muted-foreground: 0 0% 69%; /* #b0b0b0 */
 
-    --accent: 130 75% 47%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 158 100% 50%;
+    --accent-foreground: 0 0% 4%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 130 75% 47%;
+    --border: 158 100% 50% / 0.2; /* zielony border z opacity */
+    --input: 0 0% 10%;
+    --ring: 158 100% 50%;
 
     --radius: 0.75rem;
 
-    /* PowerSkills.ai gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(130 75% 47%), hsl(130 75% 57%));
-    --gradient-power: linear-gradient(90deg, 
-      hsl(130 75% 47% / 0.2), 
-      hsl(130 75% 47% / 0.3), 
-      hsl(130 75% 47% / 0.4), 
-      hsl(130 75% 47% / 0.5), 
-      hsl(130 75% 47% / 0.6), 
-      hsl(130 75% 47% / 0.7), 
-      hsl(130 75% 47% / 0.8), 
-      hsl(130 75% 47% / 0.9), 
-      hsl(130 75% 47% / 0.95), 
-      hsl(130 75% 47% / 1)
+    /* PowerSkills.ai gradients - NEON GREEN */
+    --gradient-hero: linear-gradient(135deg, hsl(158 100% 50%), hsl(158 100% 60%));
+    --gradient-power: linear-gradient(90deg,
+      hsl(158 100% 50% / 0.2),
+      hsl(158 100% 50% / 0.3),
+      hsl(158 100% 50% / 0.4),
+      hsl(158 100% 50% / 0.5),
+      hsl(158 100% 50% / 0.6),
+      hsl(158 100% 50% / 0.7),
+      hsl(158 100% 50% / 0.8),
+      hsl(158 100% 50% / 0.9),
+      hsl(158 100% 50% / 0.95),
+      hsl(158 100% 50% / 1)
     );
 
-    /* PowerSkills.ai shadows */
-    --shadow-glow: 0 0 30px hsl(130 75% 47% / 0.3);
-    --shadow-power: 0 10px 40px hsl(130 75% 47% / 0.2);
+    /* PowerSkills.ai shadows - NEON GLOW */
+    --shadow-glow: 0 0 30px hsl(158 100% 50% / 0.3);
+    --shadow-power: 0 10px 40px hsl(158 100% 50% / 0.2);
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 88%;
+    --sidebar-primary: 158 100% 50%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 0% 88%;
+    --sidebar-border: 158 100% 50% / 0.1;
+    --sidebar-ring: 158 100% 50%;
   }
 
-  .dark {
-    --background: 220 20% 8%;
-    --foreground: 220 15% 95%;
-
-    --card: 220 20% 10%;
-    --card-foreground: 220 15% 95%;
-
-    --popover: 220 20% 8%;
-    --popover-foreground: 220 15% 95%;
-
-    --primary: 130 75% 47%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 130 75% 57%;
-    --primary-dark: 130 75% 37%;
-
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 220 15% 95%;
-
-    --muted: 220 20% 15%;
-    --muted-foreground: 220 10% 65%;
-
-    --accent: 130 75% 47%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 220 20% 15%;
-    --input: 220 20% 15%;
-    --ring: 130 75% 47%;
-
-    --gradient-hero: linear-gradient(135deg, hsl(130 75% 47%), hsl(130 75% 57%));
-    --shadow-glow: 0 0 30px hsl(130 75% 47% / 0.4);
-    --shadow-power: 0 10px 40px hsl(130 75% 47% / 0.3);
-
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
 }
 
 @layer base {
@@ -183,5 +133,27 @@ All colors MUST be HSL.
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  /* Neon glow effects */
+  .neon-glow {
+    box-shadow: 0 0 10px hsl(158 100% 50% / 0.3),
+                0 0 20px hsl(158 100% 50% / 0.2);
+  }
+
+  .neon-text-glow {
+    text-shadow: 0 0 10px hsl(158 100% 50% / 0.5);
+  }
+}
+
+/* Custom animations for neon effects */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px hsl(158 100% 50% / 0.3),
+                0 0 20px hsl(158 100% 50% / 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px hsl(158 100% 50% / 0.5),
+                0 0 30px hsl(158 100% 50% / 0.3);
   }
 }

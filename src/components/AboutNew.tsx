@@ -5,7 +5,7 @@ import TrainersSection from './TrainersSection';
 
 const AboutNew: React.FC = () => {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in">
@@ -34,7 +34,7 @@ const AboutNew: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-8 p-6 bg-primary/5 rounded-2xl border border-primary/10">
+            <div className="mt-8 p-6 bg-card/50 rounded-2xl border border-primary/20 backdrop-blur-sm">
               <h3 className="font-anton text-xl text-foreground mb-4">Dlaczego my</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
@@ -59,21 +59,21 @@ const AboutNew: React.FC = () => {
 
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative">
-              <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl p-8 backdrop-blur-sm">
+              <div className="bg-card/50 border border-primary/20 rounded-3xl p-8 backdrop-blur-sm">
                 <div className="grid grid-cols-2 gap-6">
-                  <div className="bg-card/80 rounded-2xl p-6 text-center backdrop-blur-sm">
+                  <div className="bg-background/80 border border-primary/10 rounded-2xl p-6 text-center backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
                     <div className="text-5xl mb-4">⚡</div>
                     <h4 className="font-anton text-2xl text-foreground mb-2">Oszczędź 20% dnia</h4>
                     <p className="text-muted-foreground font-inter text-sm">Odzyskaj czas i przeznaczyć go na to, co naprawdę ważne</p>
                   </div>
 
-                  <div className="bg-card/80 rounded-2xl p-6 text-center backdrop-blur-sm">
+                  <div className="bg-background/80 border border-primary/10 rounded-2xl p-6 text-center backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
                     <div className="text-5xl mb-4">🎯</div>
                     <h4 className="font-anton text-2xl text-foreground mb-2">Gotowe rozwiązania</h4>
                     <p className="text-muted-foreground font-inter text-sm">CV w godzinę, budżet w 5 minut, maile które wysyłają się same</p>
                   </div>
 
-                  <div className="bg-card/80 rounded-2xl p-6 text-center backdrop-blur-sm col-span-2">
+                  <div className="bg-background/80 border border-primary/10 rounded-2xl p-6 text-center backdrop-blur-sm hover:border-primary/30 transition-all duration-300 col-span-2">
                     <div className="flex justify-center mb-4">
                       <PowerDots className="scale-125" />
                     </div>

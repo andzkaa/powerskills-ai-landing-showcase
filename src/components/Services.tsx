@@ -32,7 +32,7 @@ const services = [
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-20 bg-muted/30">
+    <section id="services" className="py-20 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-4 mb-6">
@@ -55,12 +55,12 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <Card
               key={service.title}
-              className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm animate-fade-in"
+              className="group hover:shadow-[0_0_20px_rgba(0,255,136,0.2)] transition-all duration-500 border border-primary/20 hover:border-primary bg-card/90 backdrop-blur-sm animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-8">
                 <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:shadow-[0_0_10px_rgba(0,255,136,0.3)] transition-all duration-300">
                     <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
                   </div>
                   <h3 className="font-anton text-2xl text-foreground">{service.title}</h3>

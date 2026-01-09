@@ -1,16 +1,16 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import PowerDots from './PowerDots';
-import heroBg from '@/assets/hero-bg.jpg';
+import greenWaves from '@/assets/green-waves.png';
 
 const HeroNew: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        style={{ backgroundImage: `url(${greenWaves})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/35 to-background/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/85 to-background/60" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl">
@@ -41,10 +41,10 @@ const HeroNew: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Button className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 animate-power-glow">
+            <Button className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] hover:-translate-y-0.5 animate-glow-pulse">
               <a href="#contact">Dołącz do AI-Lab</a>
             </Button>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300">
+            <Button variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,136,0.3)]">
               <a href="#about">Dowiedz się więcej</a>
             </Button>
           </div>

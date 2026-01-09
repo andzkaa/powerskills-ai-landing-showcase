@@ -8,6 +8,7 @@ import AboutNew from '@/components/AboutNew';
 import SocialProof from '@/components/SocialProof';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import WaveSeparator from '@/components/WaveSeparator';
 
 const New = () => {
   return (
@@ -16,9 +17,12 @@ const New = () => {
       <main>
         <HeroNew />
         <Services />
+        <WaveSeparator opacity={0.15} />
         <LabsSection />
+        <WaveSeparator opacity={0.1} />
         <Education />
         <AboutNew />
+        <WaveSeparator opacity={0.15} />
         <SocialProof />
         <Contact />
       </main>
