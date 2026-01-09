@@ -14,6 +14,7 @@ import {
   Wrench
 } from 'lucide-react';
 import PowerDots from './PowerDots';
+import greenWaves from '@/assets/green-waves.png';
 
 const labs = [
   {
@@ -167,7 +168,11 @@ const labs = [
 const LabsSection: React.FC = () => {
   return (
     <section id="labs" className="py-20 bg-background relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_rgba(0,255,136,0.1)_0%,_transparent_70%)]" />
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: `url(${greenWaves})` }}
+      />
+      <div className="absolute inset-0 bg-background/40" />
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-4 mb-6">

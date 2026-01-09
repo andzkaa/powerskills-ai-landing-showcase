@@ -1,16 +1,16 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import PowerDots from './PowerDots';
-import heroBg from '@/assets/hero-bg.jpg';
+import greenWaves from '@/assets/green-waves.png';
 
 const HeroNew: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        style={{ backgroundImage: `url(${greenWaves})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/85 to-background/60" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl">
