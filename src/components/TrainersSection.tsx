@@ -10,11 +10,11 @@ const TrainersSection: React.FC = () => {
       </h3>
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">
-        <Card className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm">
+        <Card className="group hover:shadow-[0_0_20px_rgba(0,255,136,0.2)] transition-all duration-500 border border-primary/20 hover:border-primary bg-card/90 backdrop-blur-sm">
           <CardContent className="p-8">
             <div className="flex justify-center mb-6">
-              <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300">
-                <User className="w-16 h-16 text-primary" />
+              <div className="w-32 h-32 bg-primary/10 border-2 border-primary/30 rounded-full flex items-center justify-center group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(0,255,136,0.3)] transition-all duration-300">
+                <User className="w-16 h-16 text-primary drop-shadow-[0_0_5px_rgba(0,255,136,0.3)]" />
               </div>
             </div>
 
@@ -35,11 +35,11 @@ const TrainersSection: React.FC = () => {
           </CardContent>
         </Card>
 
-        <Card className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm">
+        <Card className="group hover:shadow-[0_0_20px_rgba(0,255,136,0.2)] transition-all duration-500 border border-primary/20 hover:border-primary bg-card/90 backdrop-blur-sm">
           <CardContent className="p-8">
             <div className="flex justify-center mb-6">
-              <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300">
-                <User className="w-16 h-16 text-primary" />
+              <div className="w-32 h-32 bg-primary/10 border-2 border-primary/30 rounded-full flex items-center justify-center group-hover:border-primary group-hover:shadow-[0_0_15px_rgba(0,255,136,0.3)] transition-all duration-300">
+                <User className="w-16 h-16 text-primary drop-shadow-[0_0_5px_rgba(0,255,136,0.3)]" />
               </div>
             </div>
 

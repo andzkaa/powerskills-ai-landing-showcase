@@ -166,7 +166,8 @@ const labs = [
 
 const LabsSection: React.FC = () => {
   return (
-    <section id="labs" className="py-20 bg-muted/30">
+    <section id="labs" className="py-20 bg-background relative overflow-hidden">
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_rgba(0,255,136,0.1)_0%,_transparent_70%)]" />
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-4 mb-6">
@@ -188,7 +189,7 @@ const LabsSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-primary/5 rounded-2xl p-6 max-w-4xl mx-auto border border-primary/10">
+          <div className="bg-card/50 rounded-2xl p-6 max-w-4xl mx-auto border border-primary/20 backdrop-blur-sm relative z-10">
             <p className="text-foreground font-inter font-semibold mb-4">Każdy LAB to:</p>
             <div className="grid md:grid-cols-2 gap-4 text-left">
               <div className="flex items-start space-x-3">
@@ -226,13 +227,13 @@ const LabsSection: React.FC = () => {
               {section.items.map((lab, index) => (
                 <Card
                   key={lab.title}
-                  className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm animate-fade-in"
+                  className="group hover:shadow-[0_0_20px_rgba(0,255,136,0.2)] transition-all duration-500 border border-primary/30 hover:border-primary bg-card/95 backdrop-blur-sm animate-fade-in relative z-10"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-8">
                     <div className="flex items-center space-x-4 mb-6">
-                      <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                        <lab.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+                      <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:shadow-[0_0_10px_rgba(0,255,136,0.3)] transition-all duration-300">
+                        <lab.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground drop-shadow-[0_0_5px_rgba(0,255,136,0.3)] transition-colors duration-300" />
                       </div>
                       <div>
                         <h4 className="font-anton text-2xl text-foreground">{lab.title}</h4>
@@ -268,7 +269,8 @@ const LabsSection: React.FC = () => {
                     </div>
 
                     <Button
-                      className="w-full bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold transition-all duration-300"
+                      variant="outline"
+                      className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_15px_rgba(0,255,136,0.3)] font-inter font-semibold transition-all duration-300"
                       onClick={() => window.location.href = '#contact'}
                     >
                       Zapytaj o ten LAB
@@ -280,7 +282,7 @@ const LabsSection: React.FC = () => {
           </div>
         ))}
 
-        <div className="text-center mt-16 p-8 bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl">
+        <div className="text-center mt-16 p-8 bg-card/50 border border-primary/20 rounded-2xl backdrop-blur-sm relative z-10">
           <p className="text-2xl font-anton text-foreground mb-4">
             Nie widzisz swojego przypadku?
           </p>
@@ -288,7 +290,7 @@ const LabsSection: React.FC = () => {
             Napisz do nas - zaprojektujemy LAB dla Ciebie.
           </p>
           <Button
-            className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 text-lg"
+            className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 text-lg hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] hover:-translate-y-0.5 transition-all duration-300"
             onClick={() => window.location.href = '#contact'}
           >
             Skontaktuj się

@@ -94,6 +94,10 @@ export default {
         "float": {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" }
+        },
+        "glow-pulse": {
+          "0%, 100%": { boxShadow: "0 0 10px hsl(158 100% 50% / 0.3), 0 0 20px hsl(158 100% 50% / 0.2)" },
+          "50%": { boxShadow: "0 0 20px hsl(158 100% 50% / 0.5), 0 0 30px hsl(158 100% 50% / 0.3)" }
         }
       },
       animation: {
@@ -103,6 +107,7 @@ export default {
         "slide-in": "slide-in 0.5s ease-out",
         "power-glow": "power-glow 2s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
+        "glow-pulse": "glow-pulse 2s ease-in-out infinite",
       },
     },
   },

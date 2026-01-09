@@ -3,7 +3,7 @@ import PowerDots from './PowerDots';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-card border-t border-border/50">
+    <footer className="bg-background border-t border-primary/10">
       <div className="container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8">
           <div className="space-y-4">
@@ -34,10 +34,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-anton text-lg text-foreground mb-4">Firma</h4>
             <ul className="space-y-2 text-muted-foreground font-inter">
-              <li><a href="#about" className="hover:text-primary transition-colors">O nas</a></li>
+              <li><a href="#about" className="hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">O nas</a></li>
               {/* <li><a href="#" className="hover:text-primary transition-colors">Our Mission</a></li> */}
-              <li><a href="#" className="hover:text-primary transition-colors">Szkolenia</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Kontakt</a></li>
+              <li><a href="#" className="hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">Szkolenia</a></li>
+              <li><a href="#contact" className="hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">Kontakt</a></li>
             </ul>
           </div>
 
@@ -52,14 +52,14 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-border/50 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+        <div className="border-t border-primary/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <p className="text-muted-foreground font-inter text-sm">
             © 2025 PowerSkills.ai. All rights reserved.
           </p>
           <div className="flex items-center space-x-6 text-muted-foreground font-inter text-sm">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
+            <a href="#" className="hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">Privacy Policy</a>
+            <a href="#" className="hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">Terms of Service</a>
+            <a href="#" className="hover:text-primary transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">Cookie Policy</a>
           </div>
         </div>
       </div>
