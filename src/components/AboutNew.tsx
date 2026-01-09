@@ -5,7 +5,7 @@ import TrainersSection from './TrainersSection';
 
 const AboutNew: React.FC = () => {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in">

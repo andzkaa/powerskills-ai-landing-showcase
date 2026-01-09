@@ -6,7 +6,7 @@ import Logo from "@/assets/logo.png";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-background/95 backdrop-blur-md border-b border-border/50 sticky top-0 z-50">
+    <header className="header-dark sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4">
 
         <div className="flex items-center justify-between">

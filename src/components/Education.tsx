@@ -5,7 +5,7 @@ import PowerDots from './PowerDots';
 
 const Education: React.FC = () => {
   return (
-    <section id="education" className="py-20 bg-gradient-to-b from-primary/5 to-background">
+    <section id="education" className="py-20 bg-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-4 mb-6">
@@ -27,7 +27,7 @@ const Education: React.FC = () => {
         {/* Main Programs Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12 max-w-6xl mx-auto">
           {/* Teachers Program */}
-          <Card className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 border-2 border-primary/30 bg-gradient-to-br from-card/90 to-card/50 backdrop-blur-sm animate-fade-in">
+          <Card className="card-hover group bg-card backdrop-blur-sm animate-fade-in">
             <CardContent className="p-8">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -77,7 +77,7 @@ const Education: React.FC = () => {
           </Card>
 
           {/* Students Program */}
-          <Card className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 border-2 border-primary/30 bg-gradient-to-br from-card/90 to-card/50 backdrop-blur-sm animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <Card className="card-hover group bg-card backdrop-blur-sm animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <CardContent className="p-8">
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -129,7 +129,7 @@ const Education: React.FC = () => {
 
         {/* Benefits Section */}
         <div className="max-w-4xl mx-auto">
-          <Card className="border-border/50 bg-card/80 backdrop-blur-sm animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <Card className="card-hover bg-card backdrop-blur-sm animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <CardContent className="p-8">
               <h3 className="font-anton text-2xl text-center text-foreground mb-8">
                 Dlaczego warto wdrożyć AI w szkole?

@@ -10,7 +10,7 @@ const TrainersSection: React.FC = () => {
       </h3>
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">
-        <Card className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm">
+        <Card className="card-hover group bg-card backdrop-blur-sm">
           <CardContent className="p-8">
             <div className="flex justify-center mb-6">
               <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300">
@@ -35,7 +35,7 @@ const TrainersSection: React.FC = () => {
           </CardContent>
         </Card>
 
-        <Card className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm">
+        <Card className="card-hover group bg-card backdrop-blur-sm">
           <CardContent className="p-8">
             <div className="flex justify-center mb-6">
               <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300">

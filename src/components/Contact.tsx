@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <Card className="border-border/50 bg-card/50 backdrop-blur-sm animate-fade-in">
+          <Card className="card-hover bg-card backdrop-blur-sm animate-fade-in">
             <CardContent className="p-8">
               <h3 className="font-anton text-2xl text-foreground mb-6">Napisz do nas</h3>
 
@@ -145,7 +145,7 @@ const Contact: React.FC = () => {
 
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="space-y-8">
-              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+              <Card className="card-hover bg-card backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
@@ -159,7 +159,7 @@ const Contact: React.FC = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+              <Card className="card-hover bg-card backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
@@ -173,7 +173,7 @@ const Contact: React.FC = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+              <Card className="card-hover bg-card backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">

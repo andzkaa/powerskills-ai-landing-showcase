@@ -55,7 +55,7 @@ const Services: React.FC = () => {
           {services.map((service, index) => (
             <Card
               key={service.title}
-              className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm animate-fade-in"
+              className="card-hover group bg-card backdrop-blur-sm animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-8">

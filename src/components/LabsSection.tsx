@@ -166,8 +166,9 @@ const labs = [
 
 const LabsSection: React.FC = () => {
   return (
-    <section id="labs" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-6">
+    <section id="labs" className="relative py-20 bg-background">
+      <div className="labs-bg wave-bg" />
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-4 mb-6">
             <PowerDots animated />
@@ -226,7 +227,7 @@ const LabsSection: React.FC = () => {
               {section.items.map((lab, index) => (
                 <Card
                   key={lab.title}
-                  className="group hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm animate-fade-in"
+                  className="card-hover group bg-card backdrop-blur-sm animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-8">

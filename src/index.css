@@ -8,121 +8,72 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 15% 20%;
+    /* Dark mode - prawie czarne tło */
+    --background: 0 0% 4%; /* #0a0a0a */
+    --foreground: 0 0% 88%; /* #e0e0e0 - jasny szary tekst */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 20%;
+    --card: 0 0% 10%; /* #1a1a1a - karty */
+    --card-foreground: 0 0% 88%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 20%;
+    --popover: 0 0% 8%; /* #151515 */
+    --popover-foreground: 0 0% 88%;
 
-    /* PowerSkills.ai brand colors */
-    --primary: 130 75% 47%; /* #29C436 - Main green */
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 130 75% 57%;
-    --primary-dark: 130 75% 37%;
+    /* PowerSkills.ai brand colors - NEON GREEN */
+    --primary: 156 100% 50%; /* #00ff88 - Neon green */
+    --primary-foreground: 0 0% 4%; /* czarny tekst na neon green */
+    --primary-light: 156 100% 60%; /* jaśniejszy neon */
+    --primary-dark: 156 100% 40%; /* ciemniejszy neon - #00cc6f */
 
-    --secondary: 220 15% 95%;
-    --secondary-foreground: 220 15% 20%;
+    --secondary: 0 0% 8%; /* #151515 - ciemnoszare */
+    --secondary-foreground: 0 0% 88%;
 
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 0 0% 8%;
+    --muted-foreground: 0 0% 69%; /* #b0b0b0 - jaśniejszy szary */
 
-    --accent: 130 75% 47%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 156 100% 50%; /* neon green */
+    --accent-foreground: 0 0% 4%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 130 75% 47%;
+    --border: 156 100% 50% / 0.2; /* zielony border z alpha */
+    --input: 0 0% 10%;
+    --ring: 156 100% 50%;
 
     --radius: 0.75rem;
 
-    /* PowerSkills.ai gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(130 75% 47%), hsl(130 75% 57%));
-    --gradient-power: linear-gradient(90deg, 
-      hsl(130 75% 47% / 0.2), 
-      hsl(130 75% 47% / 0.3), 
-      hsl(130 75% 47% / 0.4), 
-      hsl(130 75% 47% / 0.5), 
-      hsl(130 75% 47% / 0.6), 
-      hsl(130 75% 47% / 0.7), 
-      hsl(130 75% 47% / 0.8), 
-      hsl(130 75% 47% / 0.9), 
-      hsl(130 75% 47% / 0.95), 
-      hsl(130 75% 47% / 1)
+    /* PowerSkills.ai gradients - NEON GREEN */
+    --gradient-hero: linear-gradient(135deg, hsl(156 100% 50%), hsl(156 100% 60%));
+    --gradient-power: linear-gradient(90deg,
+      hsl(156 100% 50% / 0.2),
+      hsl(156 100% 50% / 0.3),
+      hsl(156 100% 50% / 0.4),
+      hsl(156 100% 50% / 0.5),
+      hsl(156 100% 50% / 0.6),
+      hsl(156 100% 50% / 0.7),
+      hsl(156 100% 50% / 0.8),
+      hsl(156 100% 50% / 0.9),
+      hsl(156 100% 50% / 0.95),
+      hsl(156 100% 50% / 1)
     );
 
-    /* PowerSkills.ai shadows */
-    --shadow-glow: 0 0 30px hsl(130 75% 47% / 0.3);
-    --shadow-power: 0 10px 40px hsl(130 75% 47% / 0.2);
+    /* PowerSkills.ai shadows - NEON GREEN GLOW */
+    --shadow-glow: 0 0 30px hsl(156 100% 50% / 0.3);
+    --shadow-power: 0 10px 40px hsl(156 100% 50% / 0.2);
+    --shadow-glow-strong: 0 0 20px hsl(156 100% 50% / 0.4);
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 88%;
+    --sidebar-primary: 156 100% 50%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 0% 88%;
+    --sidebar-border: 156 100% 50% / 0.1;
+    --sidebar-ring: 156 100% 50%;
   }
 
-  .dark {
-    --background: 220 20% 8%;
-    --foreground: 220 15% 95%;
-
-    --card: 220 20% 10%;
-    --card-foreground: 220 15% 95%;
-
-    --popover: 220 20% 8%;
-    --popover-foreground: 220 15% 95%;
-
-    --primary: 130 75% 47%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 130 75% 57%;
-    --primary-dark: 130 75% 37%;
-
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 220 15% 95%;
-
-    --muted: 220 20% 15%;
-    --muted-foreground: 220 10% 65%;
-
-    --accent: 130 75% 47%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 220 20% 15%;
-    --input: 220 20% 15%;
-    --ring: 130 75% 47%;
-
-    --gradient-hero: linear-gradient(135deg, hsl(130 75% 47%), hsl(130 75% 57%));
-    --shadow-glow: 0 0 30px hsl(130 75% 47% / 0.4);
-    --shadow-power: 0 10px 40px hsl(130 75% 47% / 0.3);
-
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
 }
 
 @layer base {
@@ -183,5 +134,165 @@ All colors MUST be HSL.
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  /* Dark mode section alternating backgrounds */
+  section:nth-child(even) {
+    background: hsl(0 0% 8%); /* #151515 */
+  }
+
+  /* Links with neon green */
+  a {
+    color: hsl(var(--primary));
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    color: hsl(var(--primary-dark));
+    text-shadow: var(--shadow-glow);
+  }
+
+  /* Neon green headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(0 0% 100%);
+  }
+
+  /* Card hover effects with glow */
+  .card-hover {
+    transition: all 0.3s ease;
+    border: 1px solid hsl(156 100% 50% / 0.2);
+  }
+
+  .card-hover:hover {
+    border-color: hsl(var(--primary));
+    box-shadow: var(--shadow-glow-strong);
+    transform: translateY(-5px);
+  }
+
+  /* Glow pulse animation */
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 10px hsl(156 100% 50% / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px hsl(156 100% 50% / 0.5);
+    }
+  }
+
+  .glow-element {
+    animation: glow-pulse 2s infinite;
+  }
+
+  /* Wave animation for background */
+  @keyframes wave-animation {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(-25px) translateY(10px);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+
+  .wave-bg {
+    animation: wave-animation 20s ease-in-out infinite;
+  }
+
+  /* Decorative dots with neon green */
+  .decorative-dots {
+    background: radial-gradient(circle, hsl(var(--primary)) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.4;
+  }
+
+  /* Button primary with neon green */
+  .btn-primary-neon {
+    background: hsl(var(--primary));
+    color: hsl(var(--background));
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary-neon:hover {
+    background: hsl(var(--primary-dark));
+    box-shadow: var(--shadow-glow-strong);
+    transform: translateY(-2px);
+  }
+
+  /* Button secondary with neon green */
+  .btn-secondary-neon {
+    background: transparent;
+    color: hsl(var(--primary));
+    border: 2px solid hsl(var(--primary));
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-secondary-neon:hover {
+    background: hsl(var(--primary));
+    color: hsl(var(--background));
+    box-shadow: 0 0 15px hsl(156 100% 50% / 0.3);
+  }
+
+  /* Hero background with waves */
+  .hero-bg-waves {
+    background: url('/green-waves-bg.svg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-bg-waves::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsl(0 0% 4% / 0.7);
+    z-index: 1;
+  }
+
+  .hero-bg-waves > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Labs section background */
+  .labs-bg {
+    background: url('/green-waves-bg.svg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  /* Icon glow effect */
+  .icon-glow {
+    color: hsl(var(--primary));
+    filter: drop-shadow(0 0 10px hsl(156 100% 50% / 0.3));
+  }
+
+  /* Header with backdrop blur */
+  .header-dark {
+    background: hsl(0 0% 4% / 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid hsl(156 100% 50% / 0.1);
+  }
+
+  /* Footer dark */
+  .footer-dark {
+    background: hsl(0 0% 4%);
+    border-top: 1px solid hsl(156 100% 50% / 0.1);
   }
 }

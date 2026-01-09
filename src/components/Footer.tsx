@@ -3,7 +3,7 @@ import PowerDots from './PowerDots';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-card border-t border-border/50">
+    <footer className="footer-dark">
       <div className="container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8">
           <div className="space-y-4">

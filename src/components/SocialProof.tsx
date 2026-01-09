@@ -37,7 +37,7 @@ const SocialProof: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-card/50 rounded-2xl border border-border/50 backdrop-blur-sm">
+            <div className="card-hover text-center p-6 bg-card backdrop-blur-sm">
               <div className="flex justify-center mb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Building2 className="w-8 h-8 text-primary" />
@@ -47,7 +47,7 @@ const SocialProof: React.FC = () => {
               <p className="text-muted-foreground font-inter text-sm">firm przeszkolonych</p>
             </div>
 
-            <div className="text-center p-6 bg-card/50 rounded-2xl border border-border/50 backdrop-blur-sm">
+            <div className="card-hover text-center p-6 bg-card backdrop-blur-sm">
               <div className="flex justify-center mb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
                   <Users className="w-8 h-8 text-primary" />
@@ -57,7 +57,7 @@ const SocialProof: React.FC = () => {
               <p className="text-muted-foreground font-inter text-sm">osób w LAB</p>
             </div>
 
-            <div className="text-center p-6 bg-card/50 rounded-2xl border border-border/50 backdrop-blur-sm">
+            <div className="card-hover text-center p-6 bg-card backdrop-blur-sm">
               <div className="flex justify-center mb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
                   <MapPin className="w-8 h-8 text-primary" />
