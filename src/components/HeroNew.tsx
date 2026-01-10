@@ -17,35 +17,54 @@ const HeroNew: React.FC = () => {
           <div className="flex items-center space-x-4 mb-6 animate-fade-in">
             <PowerDots animated className="text-primary" />
             <span className="text-primary font-inter font-semibold tracking-wide uppercase text-sm">
-              Język przyszłości
+              Twój strategiczny ruch
             </span>
           </div>
 
           <h1 className="font-anton text-6xl md:text-7xl lg:text-8xl leading-tight mb-6 animate-fade-in">
-            <span className="text-foreground">Kompetencje</span>
+            <span className="text-foreground">Zagraj Mądrze</span>
             <br />
-            <span className="gradient-text">Jutra</span>
+            <span className="gradient-text">z AI</span>
             <br />
-            <span className="text-foreground">Dziś w Twoich Rękach</span>
+            <span className="text-foreground">Nie Musisz Być Ekspertem</span>
           </h1>
 
-          <p className="text-2xl md:text-3xl text-foreground font-inter font-semibold leading-relaxed mb-4 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            Dwa spojrzenia, jedna praktyka.
-            <br />
-            <span className="text-primary">Nie szkolenie – laboratorium AI w Szczecinie.</span>
+          <p className="text-xl md:text-2xl text-muted-foreground font-inter font-light leading-relaxed mb-6 max-w-2xl animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            Sztuczna inteligencja to nie magia. To narzędzie, które dziś może Ci zaoszczędzić
+            godziny pracy – jeśli wiesz jak z niego korzystać.
           </p>
 
-          <p className="text-xl md:text-2xl text-muted-foreground font-inter font-light leading-relaxed mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            W świecie, w którym technologia zmienia się szybciej niż program szkolny, potrzebne są nowe umiejętności – <strong className="text-foreground">powerskills</strong>.
-            Pokazujemy, jak zamienić strach w ciekawość, teorię w działanie, a działanie w efekty: oszczędność czasu, lepszą organizację pracy i więcej przestrzeni na rozwój.
+          <div className="space-y-3 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="flex items-center space-x-3">
+              <span className="text-primary text-2xl">✓</span>
+              <span className="text-foreground font-inter text-lg md:text-xl">
+                Raport dla zarządu: <span className="text-primary font-semibold">z 2 godzin → 15 minut</span>
+              </span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <span className="text-primary text-2xl">✓</span>
+              <span className="text-foreground font-inter text-lg md:text-xl">
+                CV dla kandydata: <span className="text-primary font-semibold">z 3 godzin → 30 minut</span>
+              </span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <span className="text-primary text-2xl">✓</span>
+              <span className="text-foreground font-inter text-lg md:text-xl">
+                30 postów na social media: <span className="text-primary font-semibold">z 2 dni → pół godziny</span>
+              </span>
+            </div>
+          </div>
+
+          <p className="text-xl text-foreground font-inter font-semibold mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            Nie teoria. Konkretne narzędzia, które działają od pierwszego dnia.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Button className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] hover:-translate-y-0.5 animate-glow-pulse">
-              <a href="#contact">Dołącz do AI-Lab</a>
+              <a href="#programs">Sprawdź programy</a>
             </Button>
             <Button variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,136,0.3)]">
-              <a href="#about">Dowiedz się więcej</a>
+              <a href="#contact">Napisz do nas</a>
             </Button>
           </div>
         </div>

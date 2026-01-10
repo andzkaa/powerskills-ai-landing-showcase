@@ -63,14 +63,14 @@ const TrainersSection: React.FC = () => {
 
       <div className="text-center space-y-6 text-muted-foreground font-inter leading-relaxed max-w-3xl mx-auto">
         <p className="text-xl">
-          <strong className="text-foreground">Razem prowadzimy PowerSkills AI-Lab.</strong>
+          <strong className="text-foreground">Razem dajemy Ci:</strong>
         </p>
         <p className="text-lg">
-          W AI potrzebujemy różnych punktów widzenia. Dlatego w naszym LAB nie ma jednej prawdy.
-          Jest 80% praktyki i przestrzeń na Twoje pytania.
+          → Perspektywę biznesową (jak zarabiać więcej)<br />
+          → Perspektywę praktyczną (jak robić to szybciej)
         </p>
         <p className="text-lg">
-          <strong className="text-foreground">Bo prawdziwa zmiana rodzi się tam, gdzie spotykają się różne światy.</strong>
+          <strong className="text-foreground">Realne wyniki:</strong> Bridgestone wprowadza zmiany w organizacji po naszym szkoleniu.
         </p>
       </div>
     </div>

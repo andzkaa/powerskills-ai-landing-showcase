@@ -26,8 +26,8 @@ const Header: React.FC = () => {
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-muted-foreground hover:text-primary transition-all duration-300 font-inter font-medium hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">
-              Szkolenia
+            <a href="#programs" className="text-muted-foreground hover:text-primary transition-all duration-300 font-inter font-medium hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">
+              Programy
             </a>
             <a href="#education" className="text-muted-foreground hover:text-primary transition-all duration-300 font-inter font-medium hover:drop-shadow-[0_0_8px_rgba(0,255,136,0.5)]">
               Edukacja
