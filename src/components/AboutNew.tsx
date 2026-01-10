@@ -17,41 +17,89 @@ const AboutNew: React.FC = () => {
             </div>
 
             <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl text-foreground mb-8 leading-tight">
-              Szczecińska firma
-              <br />
-              <span className="gradient-text">z globalną wizją</span>
+              <span className="gradient-text">Szczecin z Globalną Wizją</span>
             </h2>
 
             <div className="space-y-6 text-muted-foreground font-inter leading-relaxed">
               <p className="text-lg">
-                <strong className="text-foreground">powerskills.ai</strong> to młoda, szczecińska firma szkoleniowa, która uczy, jak zaprzyjaźnić się ze sztuczną inteligencją i wykorzystać ją w codziennym życiu.
-                Wierzymy, że dobrze zadane pytanie – prompt – może być nowym „językiem angielskim" kompetencji cyfrowych, a AI nie jest zagrożeniem, lecz narzędziem dającym realną przewagę.
+                <strong className="text-foreground">Dwóch Trenerów. Różne Perspektywy. Jeden Cel.</strong>
+              </p>
+
+              <p className="text-lg text-foreground">
+                Nie jesteśmy ogólnopolską korporacją szkoleń.<br />
+                Jesteśmy szczecińską firmą, która zna lokalny rynek i potrafi mówić ludzkim językiem o AI.
               </p>
 
               <p className="text-lg">
-                <strong className="text-foreground">Nasza misja:</strong> Przełamujemy strach przed technologią. Pokazujemy, że AI może być naturalnym wsparciem – czymś, co ułatwia codzienność, a nie kolejnym skomplikowanym gadżetem.
-                Uczymy „języka przyszłości", budujemy pewność siebie i pokazujemy, że sztuczna inteligencja może działać dla każdego – od studenta po osobę 55+.
+                <strong className="text-foreground">Pracujemy z:</strong> Bridgestone, Microsoft, i innymi firmami
+              </p>
+
+              <p className="text-lg text-foreground">
+                <strong className="text-primary">Nasza misja:</strong> Pokazać że AI nie jest dla wybranych. Jest dla każdego, kto chce pracować mądrzej, nie ciężej.
               </p>
             </div>
 
             <div className="mt-8 p-6 bg-card/50 rounded-2xl border border-primary/20 backdrop-blur-sm">
-              <h3 className="font-anton text-xl text-foreground mb-4">Dlaczego my</h3>
-              <div className="space-y-3">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2" />
-                  <span className="font-inter text-foreground"><strong>Blisko i lokalnie</strong> – warsztaty w Szczecinie i okolicy, z kameralną atmosferą</span>
+              <h3 className="font-anton text-2xl text-foreground mb-6 text-center">
+                <span className="gradient-text">Dlaczego Powerskills</span>
+              </h3>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <div>
+                    <strong className="font-inter text-foreground text-lg block mb-2">Szczecin to Nasza Baza</strong>
+                    <p className="font-inter text-muted-foreground">
+                      Warsztaty w Szczecinie i okolicy - kameralna atmosfera, bez masowych kursów online.
+                      Znamy lokalny rynek. Pracujemy z firmami jak Bridgestone i Microsoft.
+                      Ale jeździmy też dalej (Poznań, Warszawa - wyższa cena).
+                    </p>
+                  </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2" />
-                  <span className="font-inter text-foreground"><strong>Od promptu do efektu</strong> – każda lekcja kończy się gotowym narzędziem</span>
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <div>
+                    <strong className="font-inter text-foreground text-lg block mb-2">Praktyka, Nie Teoria</strong>
+                    <p className="font-inter text-muted-foreground">
+                      80% czasu to praca na TWOICH realnych zadaniach. 20% to wiedza potrzebna żeby działać.
+                      Nie będzie: "AI to przyszłość". Będzie: "Jak napisać email w 3 minuty zamiast 20".
+                      Każda lekcja kończy się gotowym narzędziem, które działa w praktyce od zaraz.
+                    </p>
+                  </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2" />
-                  <span className="font-inter text-foreground"><strong>90 dni na utrwalenie</strong> – wsparcie i wyzwania po szkoleniu</span>
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <div>
+                    <strong className="font-inter text-foreground text-lg block mb-2">90 Dni z Nami</strong>
+                    <p className="font-inter text-muted-foreground mb-2">Po szkoleniu otrzymujesz:</p>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li className="flex items-center space-x-2">
+                        <span className="text-primary">✓</span>
+                        <span className="text-sm">Gotowe prompty do 15 zadań w pracy</span>
+                      </li>
+                      <li className="flex items-center space-x-2">
+                        <span className="text-primary">✓</span>
+                        <span className="text-sm">Dostęp do bazy narzędzi i inspiracji</span>
+                      </li>
+                      <li className="flex items-center space-x-2">
+                        <span className="text-primary">✓</span>
+                        <span className="text-sm">90 dni wsparcia (mail/Slack)</span>
+                      </li>
+                      <li className="flex items-center space-x-2">
+                        <span className="text-primary">✓</span>
+                        <span className="text-sm">Praktyczne wyzwania do wdrożenia</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2" />
-                  <span className="font-inter text-foreground"><strong>Produktowo, nie teoretycznie</strong> – realny zysk: więcej czasu, mniej rutyny</span>
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <div>
+                    <strong className="font-inter text-foreground text-lg block mb-2">Dwóch Trenerów, Dwa Spojrzenia</strong>
+                    <p className="font-inter text-muted-foreground">
+                      <strong className="text-foreground">Artur:</strong> 23 lata w biznesie. Patrzy przez procesy i ROI.<br />
+                      <strong className="text-foreground">Ania:</strong> Marketing i tech. Patrzy przez ludzi i narzędzia.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
