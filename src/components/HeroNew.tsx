@@ -59,13 +59,51 @@ const HeroNew: React.FC = () => {
             Nie teoria. Konkretne narzędzia, które działają od pierwszego dnia.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Button className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] hover:-translate-y-0.5 animate-glow-pulse">
-              <a href="#programs">Sprawdź programy</a>
-            </Button>
-            <Button variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,136,0.3)]">
-              <a href="#contact">Napisz do nas</a>
-            </Button>
+          {/* DLA KOGO TO JEST */}
+          <div className="mb-8 p-6 bg-card/60 border-2 border-primary/30 rounded-2xl backdrop-blur-sm animate-fade-in" style={{ animationDelay: '0.35s' }}>
+            <h3 className="font-anton text-2xl text-foreground mb-4">DLA KOGO TO JEST:</h3>
+            <div className="space-y-3 text-foreground font-inter">
+              <p className="text-lg">
+                Dla firm <strong className="text-primary">10–500 osób</strong>, które toną w mailach, raportach, rekrutacjach i contentach.
+              </p>
+              <p className="text-lg">
+                Dla zespołów, które chcą <strong className="text-primary">pracować mądrzej, nie ciężej</strong>.
+              </p>
+              <div className="pt-4 border-t border-primary/20 mt-4 space-y-2">
+                <p className="text-muted-foreground flex items-center space-x-2">
+                  <span className="text-red-400 text-xl">✗</span>
+                  <span>To NIE jest dla firm IT (wy już to ogarniecie sami)</span>
+                </p>
+                <p className="text-muted-foreground flex items-center space-x-2">
+                  <span className="text-red-400 text-xl">✗</span>
+                  <span>To NIE jest dla osób szukających kursu programowania</span>
+                </p>
+              </div>
+              <p className="text-lg font-semibold pt-3">
+                To JEST dla każdego, kto chce <span className="text-primary">odzyskać 2-3 godziny dziennie</span>.
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] hover:-translate-y-0.5 animate-glow-pulse">
+                <a href="#contact">Porozmawiajmy 15 min</a>
+              </Button>
+              <Button variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,136,0.3)]">
+                <a href="#programs">Zobacz programy</a>
+              </Button>
+            </div>
+            <p className="text-sm text-muted-foreground font-inter flex items-center space-x-4">
+              <span className="flex items-center space-x-2">
+                <span>📞</span>
+                <span>Oddzwaniamy w 24h</span>
+              </span>
+              <span className="flex items-center space-x-2">
+                <span>✉️</span>
+                <span>Bez spamu, bez zobowiązań</span>
+              </span>
+            </p>
           </div>
         </div>
       </div>

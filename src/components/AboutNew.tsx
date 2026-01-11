@@ -99,6 +99,97 @@ const AboutNew: React.FC = () => {
                       <strong className="text-foreground">Artur:</strong> 23 lata w biznesie. Patrzy przez procesy i ROI.<br />
                       <strong className="text-foreground">Ania:</strong> Marketing i tech. Patrzy przez ludzi i narzędzia.
                     </p>
+                    <p className="font-inter text-foreground mt-3">
+                      Razem dajemy Ci: <span className="text-primary">perspektywę biznesową</span> (jak zarabiać więcej) +{' '}
+                      <span className="text-primary">perspektywę praktyczną</span> (jak robić to szybciej)
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <div>
+                    <strong className="font-inter text-foreground text-lg block mb-2">Bezpieczeństwo i Spokój</strong>
+                    <p className="font-inter text-muted-foreground mb-3">
+                      AI to potężne narzędzie. Ale tylko jeśli używasz go odpowiedzialnie.
+                    </p>
+                    <p className="font-inter text-muted-foreground mb-2">Na każdym warsztacie:</p>
+                    <ul className="space-y-1 text-muted-foreground">
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary">→</span>
+                        <span className="text-sm">GDPR i compliance (co wolno, czego nie)</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary">→</span>
+                        <span className="text-sm">Jak chronić dane firmowe</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <span className="text-primary">→</span>
+                        <span className="text-sm">Jak ustawić politykę AI w organizacji</span>
+                      </li>
+                    </ul>
+                    <p className="font-inter text-foreground mt-3">
+                      <strong>Nie eksperymentujemy na Twoich danych.</strong> Uczymy jak to robić bezpiecznie.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* PROOF OF EXPERTISE */}
+            <div className="mt-8 p-6 bg-card/50 rounded-2xl border border-primary/20 backdrop-blur-sm">
+              <h3 className="font-anton text-2xl text-foreground mb-6 text-center">
+                <span className="gradient-text">Nasze Doświadczenie w Liczbach</span>
+              </h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-anton text-xl text-primary mb-3">Artur:</h4>
+                  <ul className="space-y-2 text-muted-foreground font-inter">
+                    <li className="flex items-start space-x-2">
+                      <span className="text-primary">→</span>
+                      <span>23 lata w biznesie (bankowość, sprzedaż)</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <span className="text-primary">→</span>
+                      <span>Pomysłodawca stowarzyszenia ON.AI</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <span className="text-primary">→</span>
+                      <span>50+ kursów i certyfikatów AI</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-anton text-xl text-primary mb-3">Ania:</h4>
+                  <ul className="space-y-2 text-muted-foreground font-inter">
+                    <li className="flex items-start space-x-2">
+                      <span className="text-primary">→</span>
+                      <span>+4000 followersów w 3 tygodnie (AI content)</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <span className="text-primary">→</span>
+                      <span>Współtwórczyni Ryōshin AI Podcast</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <span className="text-primary">→</span>
+                      <span>100+ szkoleń indywidualnych</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-6 pt-6 border-t border-primary/20">
+                <h4 className="font-anton text-xl text-foreground mb-3 text-center">Razem:</h4>
+                <div className="grid md:grid-cols-3 gap-4 text-center">
+                  <div className="p-4 bg-background/60 rounded-lg border border-primary/10">
+                    <p className="font-anton text-3xl text-primary mb-1">15+</p>
+                    <p className="text-sm text-muted-foreground font-inter">firm korporacyjnych</p>
+                  </div>
+                  <div className="p-4 bg-background/60 rounded-lg border border-primary/10">
+                    <p className="font-anton text-3xl text-primary mb-1">200+</p>
+                    <p className="text-sm text-muted-foreground font-inter">osób przeszkolonych</p>
+                  </div>
+                  <div className="p-4 bg-background/60 rounded-lg border border-primary/10">
+                    <p className="font-anton text-3xl text-primary mb-1">90%</p>
+                    <p className="text-sm text-muted-foreground font-inter">klientów wraca po więcej</p>
                   </div>
                 </div>
               </div>

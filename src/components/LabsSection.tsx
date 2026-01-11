@@ -193,6 +193,33 @@ const LabsSection: React.FC = () => {
           </p>
         </div>
 
+        {/* OD CZEGO ZACZĄĆ */}
+        <div className="max-w-4xl mx-auto mb-16 p-8 bg-card/60 border-2 border-primary/30 rounded-2xl backdrop-blur-sm">
+          <h3 className="font-anton text-3xl text-foreground mb-4 text-center">
+            <span className="gradient-text">OD CZEGO ZACZĄĆ?</span>
+          </h3>
+          <p className="text-xl text-foreground font-inter text-center mb-4">
+            <strong className="text-primary">90% firm</strong> zaczyna od <strong>AI Start</strong> – podstawy dla całego zespołu.
+          </p>
+          <p className="text-lg text-muted-foreground font-inter text-center mb-6">
+            Potem decydujemy razem co dalej: strategia, konkretne działy, czy scaling.
+          </p>
+          <div className="border-t border-primary/20 pt-6 text-center">
+            <p className="text-lg text-foreground font-inter mb-4">
+              Nie wiesz co wybrać? Napisz – dobierzemy program do Twoich potrzeb.
+            </p>
+            <Button
+              className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-3 hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] transition-all duration-300"
+              onClick={() => window.location.href = '#contact'}
+            >
+              Porozmawiajmy 15 min
+            </Button>
+            <p className="text-sm text-muted-foreground font-inter mt-3">
+              📞 Oddzwaniamy w 24h • ✉️ Bez spamu, bez zobowiązań
+            </p>
+          </div>
+        </div>
+
         {/* Quick overview cards */}
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
           {programs.map((program, index) => (
@@ -265,13 +292,42 @@ const LabsSection: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="mb-6 pt-4 border-t border-border/50">
-                    <p className="text-foreground font-inter">
-                      <strong className="text-primary">{program.details}</strong>
-                    </p>
-                    <p className="text-sm text-muted-foreground font-inter mt-2">
-                      Lokalizacja: Szczecin, zachodniopomorskie, Poznań
-                    </p>
+                  <div className="mb-6 pt-4 border-t border-border/50 space-y-4">
+                    <div>
+                      <p className="text-foreground font-inter mb-2">
+                        <strong className="text-primary">Format: 6 godzin (sprint wdrożeniowy)</strong>
+                      </p>
+                      <p className="text-sm text-muted-foreground font-inter italic bg-primary/5 p-3 rounded-lg border border-primary/10">
+                        To nie jest szkolenie. To intensywna praca na Twoich realnych przypadkach.
+                        <strong className="text-foreground"> 80% praktyki</strong> = narzędzia gotowe do użycia pierwszego dnia po warsztacie.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-foreground font-inter">
+                        <strong>Cena:</strong> <span className="text-primary">10 000 PLN netto</span> |
+                        <strong> Grupa:</strong> do 15 osób
+                      </p>
+                      <p className="text-sm text-muted-foreground font-inter mt-1">
+                        Lokalizacja: Szczecin, zachodniopomorskie, Poznań
+                      </p>
+                    </div>
+                    <div className="bg-card/50 p-4 rounded-lg border border-primary/20">
+                      <p className="text-sm font-inter font-semibold text-foreground mb-2">Bezpieczeństwo:</p>
+                      <div className="space-y-1 text-sm text-muted-foreground font-inter">
+                        <p className="flex items-center space-x-2">
+                          <span className="text-primary">✓</span>
+                          <span>Zgodnie z GDPR i polityką firmy</span>
+                        </p>
+                        <p className="flex items-center space-x-2">
+                          <span className="text-primary">✓</span>
+                          <span>Bez wycieku danych wrażliwych</span>
+                        </p>
+                        <p className="flex items-center space-x-2">
+                          <span className="text-primary">✓</span>
+                          <span>Zasady bezpiecznego używania AI</span>
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
                   {program.showPlan && program.plan && (
@@ -378,20 +434,71 @@ const LabsSection: React.FC = () => {
                     </div>
                   )}
 
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Button
-                      className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-6 py-3 hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] transition-all duration-300"
-                      onClick={() => window.location.href = '#contact'}
-                    >
-                      Chcę ten program
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-6 py-3"
-                      onClick={() => window.location.href = '#contact'}
-                    >
-                      Zapytaj o szczegóły
-                    </Button>
+                  {/* CASE STUDY - tylko dla AI Start */}
+                  {program.title === "AI Start" && (
+                    <div className="mb-6 p-6 bg-secondary/50 border-2 border-primary/20 rounded-xl">
+                      <h4 className="font-anton text-xl text-primary mb-4">PRZYKŁAD Z ŻYCIA:</h4>
+                      <p className="text-sm text-muted-foreground font-inter font-semibold mb-4">
+                        Zespół HR w firmie produkcyjnej (80 osób):
+                      </p>
+                      <div className="grid md:grid-cols-2 gap-6 mb-4">
+                        <div>
+                          <p className="text-sm font-inter font-semibold text-foreground mb-2">PRZED:</p>
+                          <div className="space-y-1 text-sm text-muted-foreground">
+                            <p className="flex items-start space-x-2">
+                              <span className="text-primary">→</span>
+                              <span>Screening 50 CV = <strong className="text-foreground">4 godziny</strong> pracy</span>
+                            </p>
+                            <p className="flex items-start space-x-2">
+                              <span className="text-primary">→</span>
+                              <span>Pisanie ogłoszenia = <strong className="text-foreground">2 godziny</strong></span>
+                            </p>
+                          </div>
+                        </div>
+                        <div>
+                          <p className="text-sm font-inter font-semibold text-primary mb-2">PO WARSZTACIE:</p>
+                          <div className="space-y-1 text-sm text-muted-foreground">
+                            <p className="flex items-start space-x-2">
+                              <span className="text-primary">✓</span>
+                              <span>Screening 50 CV = <strong className="text-primary">45 minut</strong></span>
+                            </p>
+                            <p className="flex items-start space-x-2">
+                              <span className="text-primary">✓</span>
+                              <span>Pisanie ogłoszenia = <strong className="text-primary">20 minut</strong></span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="pt-4 border-t border-primary/20">
+                        <p className="text-sm font-inter font-semibold text-foreground">
+                          Zaoszczędzony czas: <span className="text-primary">~12h tygodniowo</span>
+                        </p>
+                        <p className="text-sm font-inter text-muted-foreground">
+                          ROI po 1 miesiącu
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="space-y-3">
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <Button
+                        className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-6 py-3 hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] transition-all duration-300"
+                        onClick={() => window.location.href = '#contact'}
+                      >
+                        Porozmawiajmy 15 min
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-6 py-3"
+                        onClick={() => window.location.href = '#programs'}
+                      >
+                        Zobacz wszystkie programy
+                      </Button>
+                    </div>
+                    <p className="text-xs text-muted-foreground font-inter text-center">
+                      📞 Oddzwaniamy w 24h • ✉️ Bez spamu, bez zobowiązań
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -414,20 +521,25 @@ const LabsSection: React.FC = () => {
             Bo AI nie jest dla wybranych.<br />
             <span className="text-primary">Jest dla każdego, kto chce pracować mądrzej.</span>
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 text-lg hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] hover:-translate-y-0.5 transition-all duration-300"
-              onClick={() => window.location.href = '#contact'}
-            >
-              Sprawdź terminy szkoleń
-            </Button>
-            <Button
-              variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-8 py-4 text-lg"
-              onClick={() => window.location.href = '#contact'}
-            >
-              Napisz do nas
-            </Button>
+          <div className="space-y-3">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                className="bg-primary hover:bg-primary-dark text-primary-foreground font-inter font-semibold px-8 py-4 text-lg hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] hover:-translate-y-0.5 transition-all duration-300"
+                onClick={() => window.location.href = '#contact'}
+              >
+                Porozmawiajmy 15 min
+              </Button>
+              <Button
+                variant="outline"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-inter font-semibold px-8 py-4 text-lg"
+                onClick={() => window.location.href = '#programs'}
+              >
+                Zobacz programy
+              </Button>
+            </div>
+            <p className="text-sm text-muted-foreground font-inter">
+              📞 Oddzwaniamy w 24h • ✉️ Bez spamu, bez zobowiązań
+            </p>
           </div>
         </div>
       </div>

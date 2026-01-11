@@ -6,6 +6,7 @@ import LabsSection from '@/components/LabsSection';
 import Education from '@/components/Education';
 import AboutNew from '@/components/AboutNew';
 import SocialProof from '@/components/SocialProof';
+import FAQ from '@/components/FAQ';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import WaveSeparator from '@/components/WaveSeparator';
@@ -24,6 +25,8 @@ const New = () => {
         <AboutNew />
         <WaveSeparator opacity={0.15} />
         <SocialProof />
+        <WaveSeparator opacity={0.1} />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
