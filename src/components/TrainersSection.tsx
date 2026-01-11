@@ -23,7 +23,7 @@ const TrainersSection: React.FC = () => {
 
             <div className="space-y-4 text-muted-foreground font-inter leading-relaxed mb-6">
               <p>23 lata w bankowości i sprzedaży na wysokich stanowiskach.</p>
-              <p>Pomysłodawca stowarzyszenia ON.AI.</p>
+              <p>Pomysłodawca Stowarzyszenia ON.AI.</p>
               <p>Kilkadziesiąt kursów AI za pasem.</p>
             </div>
 
@@ -48,7 +48,7 @@ const TrainersSection: React.FC = () => {
 
             <div className="space-y-4 text-muted-foreground font-inter leading-relaxed mb-6">
               <p>Marketing, technologia i edukacja.</p>
-              <p>Współtwórczyni Yourtwinmind, członkini Stowarztszeia ON.AI</p>
+              <p>Współtwórczyni Yourtwinmind, członkini Stowarzyszenia ON.AI</p>
               <p>+6000 followersów w 3 tygodnie.</p>
             </div>
 

@@ -153,7 +153,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-anton text-lg text-foreground">Email</h4>
-                      <p className="text-muted-foreground font-inter">office@powerskills.ai</p>
+                      <p className="text-muted-foreground font-inter">contact@powerskills.ai</p>
                     </div>
                   </div>
                 </CardContent>
