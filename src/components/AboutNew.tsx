@@ -31,7 +31,7 @@ const AboutNew: React.FC = () => {
               </p>
 
               <p className="text-lg">
-                <strong className="text-foreground">Pracujemy z:</strong> Bridgestone, Microsoft, i innymi firmami
+                <strong className="text-foreground">Pracujemy z:</strong> Bridgestone, Albatros, Widrog, i innymi firmami
               </p>
 
               <p className="text-lg text-foreground">
@@ -50,7 +50,7 @@ const AboutNew: React.FC = () => {
                     <strong className="font-inter text-foreground text-lg block mb-2">Szczecin to Nasza Baza</strong>
                     <p className="font-inter text-muted-foreground">
                       Warsztaty w Szczecinie i okolicy - kameralna atmosfera, bez masowych kursów online.
-                      Znamy lokalny rynek. Pracujemy z firmami jak Bridgestone i Microsoft.
+                      Znamy lokalny rynek. Pracujemy z firmami jak Bridgestone czy szkołami.
                       Ale jeździmy też dalej (Poznań, Warszawa - wyższa cena).
                     </p>
                   </div>

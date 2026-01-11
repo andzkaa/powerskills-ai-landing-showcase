@@ -43,13 +43,13 @@ const TrainersSection: React.FC = () => {
               </div>
             </div>
 
-            <h4 className="font-anton text-2xl text-foreground text-center mb-2">Ania Leśniewska</h4>
+            <h4 className="font-anton text-2xl text-foreground text-center mb-2">Anna Hawryluk-Wiraszka</h4>
             <p className="text-primary font-inter font-semibold text-center mb-6">Marketing i technologia</p>
 
             <div className="space-y-4 text-muted-foreground font-inter leading-relaxed mb-6">
               <p>Marketing, technologia i edukacja.</p>
-              <p>Współtwórczyni Ryōshin AI Podcast.</p>
-              <p>+4000 followersów w 3 tygodnie.</p>
+              <p>Współtwórczyni Yourtwinmind, członkini Stowarztszeia ON.AI</p>
+              <p>+6000 followersów w 3 tygodnie.</p>
             </div>
 
             <div className="pt-6 border-t border-border/50">

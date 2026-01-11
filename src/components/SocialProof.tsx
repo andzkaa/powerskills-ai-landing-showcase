@@ -55,7 +55,7 @@ const SocialProof: React.FC = () => {
                 </div>
               </div>
               <p className="font-anton text-3xl text-primary mb-2 neon-text-glow">200+</p>
-              <p className="text-muted-foreground font-inter text-sm">osób w LAB</p>
+              <p className="text-muted-foreground font-inter text-sm">osób w powerskills.ai</p>
             </div>
 
             <div className="text-center p-6 bg-card/50 rounded-2xl border border-primary/20 hover:border-primary backdrop-blur-sm hover:shadow-[0_0_15px_rgba(0,255,136,0.2)] transition-all duration-300">

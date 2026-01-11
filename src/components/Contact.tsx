@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
             <PowerDots animated />
           </div>
           <h2 className="font-anton text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-            Dołącz do <span className="gradient-text">AI-Lab</span>
+            Dołącz do <span className="gradient-text">powerskills.ai</span>
           </h2>
           <p className="text-xl text-muted-foreground font-inter font-light max-w-3xl mx-auto">
             Nie musisz być programistą – wystarczy ciekawość. Pokażemy Ci drogę od pierwszego promptu do realnych efektów,

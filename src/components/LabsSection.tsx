@@ -34,7 +34,7 @@ const programs = [
       "Research konkurencji: z 1 dnia → 1 godzina",
       "Automatyzacja powtarzalnych zadań"
     ],
-    details: "6 godzin | Do 15 osób | 10 000 PLN netto",
+    details: "6 godzin | Do 15 osób ",
     showPlan: true,
     plan: [
       {
@@ -98,7 +98,7 @@ const programs = [
       "Quick wins: co wdrożyć w pierwszy miesiąc",
       "Jak przygotować zespół do zmian"
     ],
-    details: "6 godzin | Do 15 osób | 10 000 PLN netto",
+    details: "6 godzin | Do 15 osób ",
     showPlan: false
   },
   {
@@ -115,7 +115,7 @@ const programs = [
       "Marketing: 30 dni contentu w 6 godzin",
       "Operations: Raport z 2 dni → 2 godziny"
     ],
-    details: "6 godzin | Do 15 osób | 10 000 PLN netto",
+    details: "6 godzin | Do 15 osób ",
     showPlan: false,
     subPrograms: [
       {
@@ -317,7 +317,7 @@ const LabsSection: React.FC = () => {
                           </div>
                           <div className="mt-6 pt-6 border-t border-primary/20 text-center">
                             <p className="text-foreground font-inter">
-                              <strong className="text-primary">Cena: 10 000 PLN netto</strong> | Grupa: do 15 osób
+                              <strong className="text-primary">Cena: do uzgodnienia</strong> | Grupa: do 15 osób
                             </p>
                             <p className="text-sm text-muted-foreground font-inter mt-2">
                               Lokalizacja: Szczecin, okolice

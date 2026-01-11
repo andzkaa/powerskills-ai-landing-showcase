@@ -17,7 +17,7 @@ const services = [
       "Automatyzacja powtarzalnych zadań"
     ],
     forWho: "Każdy dział, każde stanowisko",
-    details: "6 godzin | Do 15 osób | 10 000 PLN netto"
+    details: "6 godzin | Do 15 osób "
   },
   {
     icon: Crown,
@@ -31,7 +31,7 @@ const services = [
       "Jak przygotować zespół do zmian"
     ],
     forWho: "Zarząd, C-level, liderzy",
-    details: "6 godzin | Do 15 osób | 10 000 PLN netto"
+    details: "6 godzin | Do 15 osób "
   },
   {
     icon: Castle,
@@ -45,7 +45,7 @@ const services = [
       "Operations: Raport z 2 dni → 2 godziny"
     ],
     forWho: "Konkretne działy w firmie",
-    details: "6 godzin | Do 15 osób | 10 000 PLN netto"
+    details: "6 godzin | Do 15 osób "
   },
   {
     icon: Shield,
