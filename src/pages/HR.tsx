@@ -80,6 +80,9 @@ const HR = () => {
                 <h3 className="font-bold text-white mb-3 text-lg">
                   MODUŁ 1 (Dzień 1) - Sposób pracy HR z AI
                 </h3>
+                <p className="text-[#93c5fd] text-sm mb-2">
+                  14 marca 2025, 9:00-17:00
+                </p>
                 <p className="text-[#cbd5e1] leading-relaxed">
                   Fundament: gdzie AI pomaga, jak pisać/porządkować treści HR i jak pracować bez oddawania odpowiedzialności.
                 </p>
@@ -89,6 +92,9 @@ const HR = () => {
                 <h3 className="font-bold text-white mb-3 text-lg">
                   MODUŁ 2 (Dzień 2) - Praktyka na realnych przypadkach
                 </h3>
+                <p className="text-[#93c5fd] text-sm mb-2">
+                  21 marca 2025, 9:00-17:00
+                </p>
                 <p className="text-[#cbd5e1] leading-relaxed">
                   Dopasowanie do Twojej organizacji + korekta błędów + rozwiązania na konkretne problemy uczestników.
                 </p>
@@ -113,13 +119,26 @@ const HR = () => {
                 <h3 className="font-bold text-white text-lg mb-4">
                   PEŁNY PROGRAM: Moduł 1 + Moduł 2
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-3 mb-6">
                   <p className="text-[#cbd5e1]">
                     Cena regularna: <span className="text-white font-semibold line-through">2 998 zł netto</span>
                   </p>
                   <p className="text-2xl font-bold text-[#86efac]">
                     Early Bird do 31.01: 2 498 zł netto
                   </p>
+                </div>
+                <div className="border-t border-[#1f2a44] pt-4">
+                  <p className="text-sm text-[#cbd5e1] mb-3 font-semibold">W cenie pełnego programu:</p>
+                  <ul className="space-y-2 text-sm text-[#e5e7eb]">
+                    <li className="flex items-start">
+                      <span className="text-[#93c5fd] mr-2">✓</span>
+                      <span>Dostęp do grupy (Discord) tylko dla uczestników</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#93c5fd] mr-2">✓</span>
+                      <span>Dwa spotkania online po szkoleniu</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
@@ -133,7 +152,7 @@ const HR = () => {
                     Cena: 1 999 zł netto
                   </p>
                   <p className="text-sm text-[#cbd5e1]">
-                    (bez Modułu 2, bez rabatów)
+                    (bez Modułu 2, bez rabatów, bez Discorda i spotkań online)
                   </p>
                 </div>
               </div>
@@ -145,20 +164,12 @@ const HR = () => {
             <h2 className="text-xl md:text-2xl font-bold text-[#fde68a] mb-6">
               Bonus dla pierwszych 10 zapisów
             </h2>
-            <ul className="space-y-4 text-[#e5e7eb]">
-              <li className="flex items-start">
-                <span className="text-[#fde68a] mr-3">✓</span>
-                <span>Darmowa konsultacja wdrożeniowa (wartość 500 zł)</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#fde68a] mr-3">✓</span>
-                <span>Dostęp do grupy (Discord) tylko dla uczestników</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#fde68a] mr-3">✓</span>
-                <span>Dwa spotkania online po szkoleniu</span>
-              </li>
-            </ul>
+            <div className="flex items-start">
+              <span className="text-[#fde68a] mr-3 text-xl">✓</span>
+              <p className="text-[#e5e7eb] text-lg">
+                Darmowa konsultacja wdrożeniowa (wartość 500 zł)
+              </p>
+            </div>
           </div>
 
           {/* Dlaczego ten program powstał */}
