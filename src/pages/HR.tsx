@@ -265,23 +265,49 @@ const HR = () => {
 
           {/* CTA */}
           <div className="text-center mb-12">
-            <div className="space-y-4">
-              <Button
-                size="lg"
-                className="bg-[#93c5fd] hover:bg-[#c7d2fe] text-[#0b0f19] px-12 py-6 text-lg font-semibold rounded-lg shadow-xl w-full md:w-auto"
-                onClick={() => window.location.href = 'https://powerskills.ai/hr'}
-              >
-                Zapisuję się teraz
-              </Button>
-              <div>
+            <div className="space-y-8">
+              {/* Główne buttony płatności */}
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Button 1: Pełny program */}
+                <div className="flex flex-col">
+                  <Button
+                    size="lg"
+                    className="bg-[#93c5fd] hover:bg-[#c7d2fe] text-[#0b0f19] px-8 py-6 text-base md:text-lg font-semibold rounded-lg shadow-xl w-full"
+                    onClick={() => window.location.href = 'https://buy.stripe.com/bJe9AV3A8dGZePa2tC6g800'}
+                  >
+                    Kupuję pełny program (2 moduły)
+                  </Button>
+                  <p className="text-sm text-[#86efac] mt-3 font-medium">
+                    Early Bird do 31.01: użyj kodu EARLYHR i oszczędź 500 zł
+                  </p>
+                </div>
+
+                {/* Button 2: Tylko Moduł 1 */}
+                <div className="flex flex-col">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-[#93c5fd] text-[#93c5fd] hover:bg-[#93c5fd]/10 px-8 py-6 text-base md:text-lg font-semibold rounded-lg w-full"
+                    onClick={() => window.location.href = 'https://buy.stripe.com/5kQeVf7Qo6excH29W46g801'}
+                  >
+                    Kupuję tylko Moduł 1
+                  </Button>
+                  <p className="text-sm text-[#94a3b8] mt-3">
+                    1 999 zł netto (bez rabatów)
+                  </p>
+                </div>
+              </div>
+
+              {/* Dodatkowy CTA - Pytanie */}
+              <div className="pt-4">
                 <Button
-                  size="lg"
+                  size="sm"
                   variant="outline"
-                  className="border-2 border-[#93c5fd] text-[#93c5fd] hover:bg-[#93c5fd]/10 px-12 py-6 text-lg font-semibold rounded-lg w-full md:w-auto"
+                  className="border border-[#1f2a44] text-[#cbd5e1] hover:bg-[#0f172a] hover:text-white px-6 py-3 text-sm rounded-lg"
                   onClick={() => window.location.href = 'mailto:contact@powerskills.ai?subject=AI%20HR%20LAB%20-%20zapytanie'}
                 >
                   Mam pytanie / potrzebuję faktury
-              </Button>
+                </Button>
               </div>
             </div>
           </div>
