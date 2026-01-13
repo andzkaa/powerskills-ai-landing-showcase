@@ -13,191 +13,320 @@ import logowht from '@/assets/logowht.png'
 
 const HR = () => {
   return (
-    <div className="min-h-screen relative overflow-hidden font-be-vietnam">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
-      </div>
-
-      {/* Old Background Pattern - keeping for fallback */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="hexagons" x="0" y="0" width="200" height="173.2" patternUnits="userSpaceOnUse">
-              <polygon points="100,0 150,43.3 150,129.9 100,173.2 50,129.9 50,43.3"
-                       fill="none" stroke="#93c5fd" strokeWidth="0.5" opacity="0.3"/>
-              <circle cx="100" cy="86.6" r="2" fill="#3b82f6" opacity="0.3"/>
-              <circle cx="50" cy="43.3" r="1.5" fill="#3b82f6" opacity="0.2"/>
-              <circle cx="150" cy="43.3" r="1.5" fill="#3b82f6" opacity="0.2"/>
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#hexagons)" />
-        </svg>
-      </div>
-
+    <div className="min-h-screen bg-[#0b0f19] font-be-vietnam">
       {/* Main Content */}
-      <div className="relative z-10">
-        {/* Logo - Image background bar */}
-        <div
-          className="py-8 mb-12 bg-cover bg-top bg-no-repeat relative"
-          style={{ backgroundImage: `url(${headerBackgroundImage})` }}
-        >
-         
-          <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
+      <div className="relative">
+        {/* Logo Section */}
+        <div className="py-8 mb-12 bg-[#0f172a]/50 border-b border-[#1f2a44]">
+          <div className="container mx-auto px-4 max-w-4xl flex justify-center">
             <img
               src={aiHrLabLogo}
               alt="AI HR LAB Logo"
-              className="h-24 md:h-32 w-auto object-contain drop-shadow-2xl"
+              className="h-20 md:h-28 w-auto object-contain"
             />
           </div>
         </div>
 
-
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-4xl pb-16">
           {/* Hero Section */}
-          <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
-            <img
-              src={logowht}
-              alt="logo"
-              className="h-14 md:h-20 w-auto object-contain drop-shadow-2xl"
-            />
-          </div>
-          <br></br>
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-           Nienaturalnie dobrzy
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+              AI HR LAB — Nienaturalnie dobrzy
             </h1>
-            <p className="text-xl md:text-2xl text-white mb-4">
-            Warsztat AI dla HR-owców ze Szczecina
+            <p className="text-lg md:text-xl text-[#93c5fd] mb-2">
+              Dwudniowe warsztaty praktyczne: AI w HR
             </p>
-            <p className="text-lg text-white max-w-2xl mx-auto">
-              To nie jest event z prezentacjami.<br/>
-              <strong>To jest system pracy z AI w HR.</strong>
+            <p className="text-base text-[#c7d2fe] mb-6">
+              Szczecin
+            </p>
+            <p className="text-base md:text-lg text-[#e5e7eb] max-w-2xl mx-auto leading-relaxed">
+              Jeśli w HR chcesz oszczędzać czas bez utraty jakości i mieć jasne zasady:<br/>
+              co delegować AI, a czego nigdy — to jest program dla Ciebie.
             </p>
           </div>
 
-        {/* Main Pitch */}
-        <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-8 md:p-12 mb-12">
-          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Jeśli pracujesz w HR i masz poczucie, że:
-          </p>
-          <ul className="space-y-3 mb-8 text-gray-700">
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-3 text-xl">→</span>
-              <span>AI jest wszędzie, ale trudno z tego zrobić realny użytek</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-3 text-xl">→</span>
-              <span>jedni mówią „AI zrobi wszystko", inni straszą ryzykiem i prawem</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-3 text-xl">→</span>
-              <span>a Ty po prostu chcesz pracować mądrzej, szybciej i bezpiecznie</span>
-            </li>
-          </ul>
-          <p className="text-lg text-gray-800 font-semibold">
-            To zapraszamy Cię na dwudniowe szkolenie zaprojektowane specjalnie dla HR-ów ze Szczecina i regionu.
-          </p>
-        </div>
+          {/* Po AI HR LAB wychodzisz z */}
+          <div className="bg-[#0b1224] rounded-[14px] border border-[#1f2a44] p-8 md:p-10 mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-6">
+              Po AI HR LAB wychodzisz z
+            </h2>
+            <ul className="space-y-4 text-[#e5e7eb]">
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3 text-lg">→</span>
+                <span>modelem pracy HR + AI (do wdrożenia od razu)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3 text-lg">→</span>
+                <span>sposobem na pisanie i redakcję treści HR szybciej i lepiej</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3 text-lg">→</span>
+                <span>workflow do rekrutacji, onboardingu i komunikacji</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3 text-lg">→</span>
+                <span>granicami i bezpieczeństwem: człowiek decyduje, AI wspiera</span>
+              </li>
+            </ul>
+          </div>
 
-        {/* How It Works */}
-        <div className="mb-12">
-  <h2 className="text-3xl font-bold text-white mb-6 text-center">Jak to działa</h2>
-  <div className="space-y-6">
-    <div className="relative bg-white/70 backdrop-blur-sm rounded-lg p-6 overflow-hidden">
-      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#ff3131] to-[#ff914d]" />
-      <h3 className="font-bold text-gray-900 mb-2 pl-4">Przed szkoleniem</h3>
-      <p className="text-gray-700 pl-4">Dostajesz prework, który wyrównuje poziom wiedzy i przygotowuje do pracy</p>
-    </div>
+          {/* Jak to działa */}
+          <div className="mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-6 text-center">
+              Jak to działa
+            </h2>
+            <div className="space-y-6">
+              <div className="bg-[#0f172a] rounded-[14px] border border-[#233055] p-6">
+                <h3 className="font-bold text-white mb-3 text-lg">
+                  MODUŁ 1 (Dzień 1) - Sposób pracy HR z AI
+                </h3>
+                <p className="text-[#cbd5e1] leading-relaxed">
+                  Fundament: gdzie AI pomaga, jak pisać/porządkować treści HR i jak pracować bez oddawania odpowiedzialności.
+                </p>
+              </div>
 
-    <div className="relative bg-white/70 backdrop-blur-sm rounded-lg p-6 overflow-hidden">
-      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#ff3131] to-[#ff914d]" />
-      <h3 className="font-bold text-gray-900 mb-2 pl-4">Dzień 1</h3>
-      <p className="text-gray-700 pl-4">Uczysz się, jak sensownie pracować z AI w zadaniach HR (bez technicznego żargonu)</p>
-    </div>
+              <div className="bg-[#0f172a] rounded-[14px] border border-[#233055] p-6">
+                <h3 className="font-bold text-white mb-3 text-lg">
+                  MODUŁ 2 (Dzień 2) - Praktyka na realnych przypadkach
+                </h3>
+                <p className="text-[#cbd5e1] leading-relaxed">
+                  Dopasowanie do Twojej organizacji + korekta błędów + rozwiązania na konkretne problemy uczestników.
+                </p>
+              </div>
 
-    <div className="relative bg-white/70 backdrop-blur-sm rounded-lg p-6 overflow-hidden">
-      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#ff3131] to-[#ff914d]" />
-      <h3 className="font-bold text-gray-900 mb-2 pl-4">Tydzień przerwy</h3>
-      <p className="text-gray-700 pl-4">Testujesz AI w swojej realnej pracy</p>
-    </div>
-
-    <div className="relative bg-white/70 backdrop-blur-sm rounded-lg p-6 overflow-hidden">
-      <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[#ff3131] to-[#ff914d]" />
-      <h3 className="font-bold text-gray-900 mb-2 pl-4">Dzień 2</h3>
-      <p className="text-gray-700 pl-4">Pracujemy na Twoich przypadkach, poprawiamy błędy, dopasowujemy rozwiązania</p>
-    </div>
-  </div>
-</div>
-
-
-        {/* After Training */}
-        <div className="bg-blue-600 text-white rounded-lg p-8 md:p-10 mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Po szkoleniu nie zostajesz sam/a</h2>
-          <ul className="space-y-3 text-lg">
-            <li className="flex items-start">
-              <span className="mr-3">✓</span>
-              <span>Zamknięta grupa na Discordzie tylko dla uczestników</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-3">✓</span>
-              <span>Dwa webinary kilka tygodni po szkoleniu – konsultacje, pytania, realne problemy</span>
-            </li>
-          </ul>
-        </div>
-
-        {/* What You Get */}
-        <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-lg p-8 md:p-10 mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Co wynosisz</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="flex items-start space-x-3">
-              <span className="text-blue-600 text-2xl">→</span>
-              <span className="text-gray-700">Mniej ręcznej roboty</span>
-            </div>
-            <div className="flex items-start space-x-3">
-              <span className="text-blue-600 text-2xl">→</span>
-              <span className="text-gray-700">Większa kontrola</span>
-            </div>
-            <div className="flex items-start space-x-3">
-              <span className="text-blue-600 text-2xl">→</span>
-              <span className="text-gray-700">Jasne granice, gdzie AI pomaga, a gdzie nie</span>
-            </div>
-            <div className="flex items-start space-x-3">
-              <span className="text-blue-600 text-2xl">→</span>
-              <span className="text-gray-700">Gotowe schematy do użycia następnego dnia</span>
+              <div className="bg-[#0b1224] rounded-[14px] border border-[#1f2a44] p-6">
+                <p className="text-[#e5e7eb] leading-relaxed">
+                  <span className="font-semibold text-white">Uwaga:</span> Dla osób biorących 2 moduły: prework + tydzień praktyki między modułami (żeby przerobić to na realnych zadaniach HR).
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <p className="text-xl font-semibold text-white mb-6">
-            Lokalnie. Kameralnie. Praktycznie.
-          </p>
-          <p className="text-lg text-white mb-8">
-            Jeśli chcesz pracować z AI bez chaosu i bez ściemy – dołącz.
-          </p>
-          <Button
-  size="lg"
-  className="
-    bg-gradient-to-r from-[#ff3131] to-[#ff914d]
-    hover:from-[#e62b2b] hover:to-[#e68145]
-    text-white px-12 py-6 text-lg font-semibold
-    rounded-lg shadow-xl
-  "
-  onClick={() => window.open('https://forms.office.com/r/cLgQKs5rKt', '_blank')}
->
-  Zapisz się na warsztat
-</Button>
-        </div>
+          {/* Ceny */}
+          <div className="mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-6 text-center">
+              Ceny (netto)
+            </h2>
+            <div className="space-y-6">
+              {/* Pełny program */}
+              <div className="bg-[#0b1224] rounded-[14px] border-2 border-[#93c5fd] p-8">
+                <h3 className="font-bold text-white text-lg mb-4">
+                  PEŁNY PROGRAM: Moduł 1 + Moduł 2
+                </h3>
+                <div className="space-y-3">
+                  <p className="text-[#cbd5e1]">
+                    Cena regularna: <span className="text-white font-semibold line-through">2 998 zł netto</span>
+                  </p>
+                  <p className="text-2xl font-bold text-[#86efac]">
+                    Early Bird do 31.01: 2 498 zł netto
+                  </p>
+                </div>
+              </div>
 
-        {/* Footer */}
-        <div className="mt-16 text-center text-white text-sm">
-          <p>Pytania? Skontaktuj się: <a href="mailto:kontakt@powerskills.ai" className="text-blue-300 hover:underline">contact@powerskills.ai</a></p>
-        </div>
+              {/* Opcja awaryjna */}
+              <div className="bg-[#0f172a] rounded-[14px] border border-[#233055] p-8">
+                <h3 className="font-bold text-white text-lg mb-4">
+                  OPCJA AWARYJNA: Tylko Moduł 1
+                </h3>
+                <div className="space-y-3">
+                  <p className="text-xl font-semibold text-white">
+                    Cena: 1 999 zł netto
+                  </p>
+                  <p className="text-sm text-[#cbd5e1]">
+                    (bez Modułu 2, bez rabatów)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bonus */}
+          <div className="bg-gradient-to-br from-[#0b1224] to-[#0f172a] rounded-[14px] border-2 border-[#fde68a] p-8 md:p-10 mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-[#fde68a] mb-6">
+              Bonus dla pierwszych 10 zapisów
+            </h2>
+            <ul className="space-y-4 text-[#e5e7eb]">
+              <li className="flex items-start">
+                <span className="text-[#fde68a] mr-3">✓</span>
+                <span>Darmowa konsultacja wdrożeniowa (wartość 500 zł)</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#fde68a] mr-3">✓</span>
+                <span>Dostęp do grupy (Discord) tylko dla uczestników</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#fde68a] mr-3">✓</span>
+                <span>Dwa spotkania online po szkoleniu</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Dlaczego ten program powstał */}
+          <div className="bg-[#0f172a] rounded-[14px] border border-[#1f2a44] p-8 md:p-10 mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-6">
+              Dlaczego ten program powstał
+            </h2>
+            <div className="space-y-4 text-[#e5e7eb] leading-relaxed">
+              <p>
+                AI w HR jest dziś wszędzie. W prezentacjach, w artykułach, w ofertach narzędzi.
+                A jednocześnie bardzo rzadko wiadomo, jak korzystać z niej normalnie, spokojnie i odpowiedzialnie.
+              </p>
+              <p>
+                HR został wciągnięty pomiędzy:
+              </p>
+              <ul className="space-y-2 ml-6">
+                <li className="flex items-start">
+                  <span className="text-[#93c5fd] mr-2">•</span>
+                  <span>obietnice, że „AI zrobi wszystko"</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#93c5fd] mr-2">•</span>
+                  <span>strach przed błędami, prawem i odpowiedzialnością</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#93c5fd] mr-2">•</span>
+                  <span>realną, codzienną pracę, która musi być wykonana dobrze</span>
+                </li>
+              </ul>
+              <p className="font-semibold text-white">
+                AI HR LAB powstało po to, aby HR odzyskał kontrolę. Nie nad technologią. Nad sposobem pracy z technologią.
+              </p>
+            </div>
+          </div>
+
+          {/* Co oznacza "Nienaturalnie dobrzy" */}
+          <div className="bg-[#0b1224] rounded-[14px] border border-[#233055] p-8 md:p-10 mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-6">
+              Co oznacza „Nienaturalnie dobrzy"
+            </h2>
+            <p className="text-[#e5e7eb] leading-relaxed mb-4">
+              „Nienaturalnie dobrzy" to HR, którzy:
+            </p>
+            <ul className="space-y-3 text-[#e5e7eb]">
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3">→</span>
+                <span>wiedzą, kiedy AI pomaga, a kiedy przeszkadza</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3">→</span>
+                <span>potrafią używać AI bez utraty jakości i odpowiedzialności</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3">→</span>
+                <span>zachowują decyzyjność po stronie człowieka</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3">→</span>
+                <span>pracują spokojniej, czyściej i pewniej</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Dla kogo */}
+          <div className="bg-[#0f172a] rounded-[14px] border border-[#1f2a44] p-8 md:p-10 mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-6">
+              Dla kogo jest to szkolenie
+            </h2>
+            <ul className="space-y-3 text-[#e5e7eb]">
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3">•</span>
+                <span>HR Business Partnerzy</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3">•</span>
+                <span>Specjaliści i liderzy HR</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3">•</span>
+                <span>Osoby odpowiedzialne za rekrutację, onboarding i komunikację</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3">•</span>
+                <span>HR z małych, średnich i większych organizacji</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#93c5fd] mr-3">•</span>
+                <span>Osoby, które chcą korzystać z AI odpowiedzialnie, nie modnie</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Dlaczego lokalnie */}
+          <div className="bg-[#0b1224] rounded-[14px] border border-[#233055] p-8 md:p-10 mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-6">
+              Dlaczego lokalnie
+            </h2>
+            <div className="space-y-4 text-[#e5e7eb] leading-relaxed">
+              <p>To nie jest szkolenie „z centrali".</p>
+              <p>Pracujemy na realiach firm ze Szczecin i regionu.</p>
+              <p className="font-semibold text-white">Kameralnie. Bez sceny. Bez marketingowego show.</p>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mb-12">
+            <div className="space-y-8">
+              {/* Główne buttony płatności */}
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Button 1: Pełny program */}
+                <div className="flex flex-col">
+                  <Button
+                    size="lg"
+                    className="bg-[#93c5fd] hover:bg-[#c7d2fe] text-[#0b0f19] px-8 py-6 text-base md:text-lg font-semibold rounded-lg shadow-xl w-full"
+                    onClick={() => window.location.href = 'https://buy.stripe.com/bJe9AV3A8dGZePa2tC6g800'}
+                  >
+                    Kupuję pełny program (2 moduły)
+                  </Button>
+                  <p className="text-sm text-[#86efac] mt-3 font-medium">
+                    Early Bird do 31.01: użyj kodu EARLYHR i oszczędź 500 zł
+                  </p>
+                </div>
+
+                {/* Button 2: Tylko Moduł 1 */}
+                <div className="flex flex-col">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-[#93c5fd] text-[#93c5fd] hover:bg-[#93c5fd]/10 px-8 py-6 text-base md:text-lg font-semibold rounded-lg w-full"
+                    onClick={() => window.location.href = 'https://buy.stripe.com/5kQeVf7Qo6excH29W46g801'}
+                  >
+                    Kupuję tylko Moduł 1
+                  </Button>
+                  <p className="text-sm text-[#94a3b8] mt-3">
+                    1 999 zł netto (bez rabatów)
+                  </p>
+                </div>
+              </div>
+
+              {/* Dodatkowy CTA - Pytanie */}
+              <div className="pt-4">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="border border-[#1f2a44] text-[#cbd5e1] hover:bg-[#0f172a] hover:text-white px-6 py-3 text-sm rounded-lg"
+                  onClick={() => window.location.href = 'mailto:contact@powerskills.ai?subject=AI%20HR%20LAB%20-%20zapytanie'}
+                >
+                  Mam pytanie / potrzebuję faktury
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer */}
+          <div className="text-center border-t border-[#1f2a44] pt-8">
+            <p className="text-[#e5e7eb] mb-2">
+              Pozdrawiamy,
+            </p>
+            <p className="text-white font-semibold mb-4">
+              Ania, Artur i Magda
+            </p>
+            <p className="text-[#93c5fd] font-semibold mb-6">
+              AI HR LAB
+            </p>
+            <p className="text-sm text-[#cbd5e1]">
+              Ceny netto (+VAT). Rabaty nie łączą się.
+            </p>
+          </div>
         </div>
       </div>
     </div>
