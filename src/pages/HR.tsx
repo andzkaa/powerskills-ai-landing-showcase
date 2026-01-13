@@ -298,16 +298,17 @@ const HR = () => {
                 </div>
               </div>
 
-              {/* Dodatkowy CTA - Pytanie */}
+              {/* Kontakt */}
               <div className="pt-4">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="border border-[#1f2a44] text-[#cbd5e1] hover:bg-[#0f172a] hover:text-white px-6 py-3 text-sm rounded-lg"
-                  onClick={() => window.location.href = 'mailto:contact@powerskills.ai?subject=AI%20HR%20LAB%20-%20zapytanie'}
-                >
-                  Mam pytanie / potrzebuję faktury
-                </Button>
+                <p className="text-sm text-[#cbd5e1]">
+                  Jeśli masz pytanie lub potrzebujesz faktury, napisz na{' '}
+                  <a
+                    href="mailto:contact@powerskills.ai?subject=AI%20HR%20LAB%20-%20zapytanie"
+                    className="text-[#93c5fd] hover:text-[#c7d2fe] underline"
+                  >
+                    contact@powerskills.ai
+                  </a>
+                </p>
               </div>
             </div>
           </div>
