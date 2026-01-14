@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import PowerDots from './PowerDots';
-import TrainersSection from './TrainersSection';
 
 const AboutNew: React.FC = () => {
   return (
@@ -136,8 +135,6 @@ const AboutNew: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <TrainersSection />
       </div>
     </section>
   );
