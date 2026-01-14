@@ -1,28 +1,33 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
-// Import images - add your files to src/assets folder
-// import aiHrLabLogo from '@/assets/AI HR LAB czarne tło.png';
-// import backgroundImage from '@/assets/background.png';
-
-// Fallback to existing assets for now
-import aiHrLabLogo from '@/assets/AIHRLAB.png';
+// Import images
+import logowht from '@/assets/logowht.png';
 import backgroundImage from '@/assets/bgrhr.png';
 import headerBackgroundImage from '@/assets/dodatek1.png';
-import logowht from '@/assets/logowht.png'
 
 const HR = () => {
   return (
-    <div className="min-h-screen bg-[#0b0f19] font-be-vietnam">
+    <div className="min-h-screen bg-[#0b0f19] font-be-vietnam relative">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
+
       {/* Main Content */}
-      <div className="relative">
-        {/* Logo Section */}
-        <div className="py-8 mb-12 bg-[#0f172a]/50 border-b border-[#1f2a44]">
-          <div className="container mx-auto px-4 max-w-4xl flex justify-center">
+      <div className="relative z-10">
+        {/* Logo Section with Header Background */}
+        <div
+          className="py-8 mb-12 bg-cover bg-top bg-no-repeat relative border-b border-[#1f2a44]"
+          style={{ backgroundImage: `url(${headerBackgroundImage})` }}
+        >
+          <div className="absolute inset-0 bg-[#0f172a]/30"></div>
+          <div className="container mx-auto px-4 max-w-4xl flex justify-center relative z-10">
             <img
               src={logowht}
               alt="AI HR LAB Logo"
-              className="h-20 md:h-28 w-auto object-contain"
+              className="h-20 md:h-28 w-auto object-contain drop-shadow-2xl"
             />
           </div>
         </div>
