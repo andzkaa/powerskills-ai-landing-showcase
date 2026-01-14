@@ -20,7 +20,7 @@ const HR = () => {
         <div className="py-8 mb-12 bg-[#0f172a]/50 border-b border-[#1f2a44]">
           <div className="container mx-auto px-4 max-w-4xl flex justify-center">
             <img
-              src={aiHrLabLogo}
+              src={logowht}
               alt="AI HR LAB Logo"
               className="h-20 md:h-28 w-auto object-contain"
             />
@@ -336,7 +336,7 @@ const HR = () => {
               AI HR LAB
             </p>
             <p className="text-sm text-[#cbd5e1]">
-              Ceny netto (+VAT). Rabaty nie łączą się.
+              Rabaty nie łączą się.
             </p>
           </div>
         </div>
