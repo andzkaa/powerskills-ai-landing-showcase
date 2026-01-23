@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import logowht from '@/assets/logowht.png';
 import backgroundImage from '@/assets/bgrhr.png';
 import headerBackgroundImage from '@/assets/dodatek1.png';
+import teamPhoto from '@/assets/team-airhrlab.png'
 
 const HR = () => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
@@ -94,7 +95,7 @@ const HR = () => {
                   </div>
                   <div className="text-center lg:text-left">
                     <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent leading-none mb-2">
-                      15
+                      30
                     </div>
                     <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
                       OSÓB MAX
@@ -154,11 +155,11 @@ const HR = () => {
                   </div>
 
                   {/* Gdy dodasz zdjęcie, odkomentuj to: */}
-                  {/* <img
+                  <img
                     src={teamPhoto}
                     alt="Zespół AI HR LAB"
                     className="w-full h-full object-cover"
-                  /> */}
+                  />
 
                   {/* Overlay text */}
                   <div className="absolute -bottom-8 -right-8 text-7xl md:text-9xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent opacity-10 pointer-events-none select-none hidden lg:block">
