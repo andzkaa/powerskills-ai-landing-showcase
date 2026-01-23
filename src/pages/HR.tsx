@@ -87,7 +87,7 @@ const HR = () => {
                   </div>
                   <div className="text-center lg:text-left">
                     <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent leading-none mb-2">
-                      14
+                      7
                     </div>
                     <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
                       MARCA 2026
@@ -95,7 +95,7 @@ const HR = () => {
                   </div>
                   <div className="text-center lg:text-left">
                     <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent leading-none mb-2">
-                      21
+                      14
                     </div>
                     <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
                       MARCA 2026
@@ -860,7 +860,7 @@ const HR = () => {
                 </div>
                 <div className="space-y-3">
                   <p className="text-2xl font-semibold text-white">
-                    1 999 zł netto
+                    1 999 zł 
                   </p>
                   <p className="text-sm text-[#cbd5e1]">
                     (bez Modułu 2, bez Discorda, bez webinarów)
