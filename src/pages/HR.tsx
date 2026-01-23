@@ -87,7 +87,15 @@ const HR = () => {
                   </div>
                   <div className="text-center lg:text-left">
                     <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent leading-none mb-2">
-                      14+21
+                      14
+                    </div>
+                    <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
+                      MARCA 2026
+                    </div>
+                  </div>
+                  <div className="text-center lg:text-left">
+                    <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent leading-none mb-2">
+                      21
                     </div>
                     <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
                       MARCA 2026
