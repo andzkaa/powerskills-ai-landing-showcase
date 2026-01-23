@@ -283,7 +283,7 @@ const HR = () => {
                       DZIEŃ 1 — Fundamenty pracy HR z AI + komunikacja i marka
                     </h3>
                     <p className="text-sm md:text-base text-[#60A5FA]">
-                      📅 14 marca 2026 | 9:00–17:00
+                      📅 7 marca 2026 | 9:00–17:00
                     </p>
                   </div>
                   <span className={`text-[#ff6142] text-2xl transition-transform ${openAccordion === 'day1' ? 'rotate-180' : ''}`}>
@@ -448,7 +448,7 @@ const HR = () => {
                       DZIEŃ 2 — Praktyka, korekta i dopasowanie do Twojej organizacji
                     </h3>
                     <p className="text-sm md:text-base text-[#60A5FA]">
-                      📅 21 marca 2026 | 9:00–17:00
+                      📅 14 marca 2026 | 9:00–17:00
                     </p>
                   </div>
                   <span className={`text-[#ff6142] text-2xl transition-transform ${openAccordion === 'day2' ? 'rotate-180' : ''}`}>
