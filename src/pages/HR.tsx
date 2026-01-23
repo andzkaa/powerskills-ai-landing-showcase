@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import logowht from '@/assets/logowht.png';
 import backgroundImage from '@/assets/bgrhr.png';
 import headerBackgroundImage from '@/assets/dodatek1.png';
+import teamPhoto from '@/assets/team-aihrlab.png';
 
 const HR = () => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
@@ -137,28 +138,13 @@ const HR = () => {
                   <div className="w-full h-full bg-gradient-radial from-[#ff3131]/30 via-[#ff914d]/20 to-transparent blur-[80px]"></div>
                 </div>
 
-                {/* Placeholder dla zdjęcia zespołu */}
-                <div className="relative w-full max-w-[600px] aspect-[4/3] rounded-2xl overflow-hidden">
-                  {/* TUTAJ DODAJ ZDJĘCIE ZESPOŁU */}
-                  {/* Na razie placeholder z gradientem */}
-                  <div className="w-full h-full bg-gradient-to-br from-[#1e293b] to-[#0a0e27] flex items-center justify-center border-2 border-[#ff6142]/30">
-                    <div className="text-center p-8">
-                      <div className="text-6xl md:text-8xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent mb-4 opacity-20">
-                        AI HR LAB
-                      </div>
-                      <p className="text-[#94a3b8] text-sm">
-                        Dodaj zdjęcie zespołu jako:<br/>
-                        <code className="text-[#ff6142]">src/assets/team-aihrlab.png</code>
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Gdy dodasz zdjęcie, odkomentuj to: */}
-                  {/* <img
+                {/* Zdjęcie zespołu */}
+                <div className="relative w-full max-w-[600px] aspect-[4/3] rounded-2xl overflow-hidden border-2 border-[#ff6142]/30 shadow-2xl">
+                  <img
                     src={teamPhoto}
                     alt="Zespół AI HR LAB"
                     className="w-full h-full object-cover"
-                  /> */}
+                  />
 
                   {/* Overlay text */}
                   <div className="absolute -bottom-8 -right-8 text-7xl md:text-9xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent opacity-10 pointer-events-none select-none hidden lg:block">
