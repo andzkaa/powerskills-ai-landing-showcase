@@ -236,7 +236,7 @@ const HR = () => {
           </section>
 
           {/* PROGRAM - ACCORDION - GRADIENT */}
-          <section className="py-12 md:py-16">
+          <section id="program" className="py-12 md:py-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
               PROGRAM
             </h2>
