@@ -93,14 +93,6 @@ const HR = () => {
                       MARCA 2026
                     </div>
                   </div>
-                  <div className="text-center lg:text-left">
-                    <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent leading-none mb-2">
-                      30
-                    </div>
-                    <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
-                      OSÓB MAX
-                    </div>
-                  </div>
                 </div>
 
                 {/* CTA BUTTONS */}
@@ -162,10 +154,10 @@ const HR = () => {
         </section>
 
         {/* MAIN CONTENT */}
-        <div className="container mx-auto px-4 max-w-[1200px] pb-16">
+        <div className="container mx-auto px-4 max-w-[1200px] pb-20">
 
           {/* Po AI HR LAB wychodzisz z - GRADIENT ARROWS */}
-          <section className="py-12 md:py-16">
+          <section className="py-12 md:py-20">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
               Po AI HR LAB wychodzisz z:
             </h2>
@@ -210,33 +202,62 @@ const HR = () => {
           </section>
 
           {/* Jak działa AI HR LAB */}
-          <section className="py-12 md:py-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-              Jak działa AI HR LAB
-            </h2>
-            <div className="bg-[#1e293b]/50 rounded-xl border border-[#334155] p-8">
-              <p className="text-[#e2e8f0] leading-relaxed mb-6 text-lg">
-                To <strong className="text-white">dwudniowy program rozłożony w czasie</strong>, żeby AI nie zostało „na sali", tylko realnie weszło do Twojej pracy.
-              </p>
-              <ul className="space-y-3 text-[#e2e8f0] text-base md:text-lg">
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3 text-xl">-</span>
-                  <span><strong className="text-white">Dzień 1</strong> — fundamenty, schematy, narzędzia</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3 text-xl">-</span>
-                  <span><strong className="text-white">Tydzień praktyki</strong> — testy w realnych zadaniach HR</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3 text-xl">-</span>
-                  <span><strong className="text-white">Dzień 2</strong> — korekta, dopasowanie, decyzje</span>
-                </li>
-              </ul>
+          <section className="py-12 md:py-20">
+            <div className="bg-gradient-to-br from-[#1e293b]/80 to-[#0f172a]/80 rounded-2xl border border-[#ff6142]/30 p-8 md:p-10 backdrop-blur-sm hover:transform hover:scale-[1.01] hover:shadow-2xl transition-all duration-300">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
+                Jak działa AI HR LAB
+              </h2>
+
+              <div className="max-w-3xl mx-auto space-y-6 text-[#e2e8f0] text-lg leading-relaxed">
+                <p className="text-xl font-bold text-center text-white">
+                  AI HR LAB to <span className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">proces</span>,
+                  nie jednorazowy warsztat.
+                </p>
+
+                <p>
+                  Program został rozłożony w czasie tak, aby AI <strong className="text-white">weszło w Twoją codzienną pracę HR</strong>,
+                  a nie zostało jedynie na poziomie teorii.
+                </p>
+
+                <div className="space-y-4 py-6">
+                  <div className="flex items-start gap-4 p-5 bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 transition-all">
+                    <span className="text-2xl font-bold bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent flex-shrink-0">01</span>
+                    <div>
+                      <p className="font-bold text-white mb-1">Dzień 1</p>
+                      <p className="text-[#cbd5e1]">budujemy fundamenty, schematy i sposób pracy</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-5 bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 transition-all">
+                    <span className="text-2xl font-bold bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent flex-shrink-0">02</span>
+                    <div>
+                      <p className="font-bold text-white mb-1">Tydzień praktyki</p>
+                      <p className="text-[#cbd5e1]">testujesz AI na własnych zadaniach i przypadkach</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-5 bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 transition-all">
+                    <span className="text-2xl font-bold bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent flex-shrink-0">03</span>
+                    <div>
+                      <p className="font-bold text-white mb-1">Dzień 2</p>
+                      <p className="text-[#cbd5e1]">wspólna korekta, dopasowanie i decyzje wdrożeniowe</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-[#ff6142]/10 rounded-xl border-l-4 border-[#ff6142] p-6 mt-8">
+                  <p className="text-xl font-bold text-white mb-3">Efekt?</p>
+                  <p className="text-xl">
+                    Nie wracasz do starego sposobu pracy —
+                    <strong className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent"> wracasz z nowym</strong>.
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
 
           {/* PROGRAM - ACCORDION - GRADIENT */}
-          <section id="program" className="py-12 md:py-16">
+          <section id="program" className="py-12 md:py-20">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
               PROGRAM
             </h2>
@@ -530,180 +551,255 @@ const HR = () => {
 
           {/* Pozostałe sekcje */}
 
-          {/* Dlaczego to szkolenie jest inne */}
-          <section className="py-12 md:py-16">
-            <div className="bg-[#1e293b]/50 rounded-xl border border-[#334155] p-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                Dlaczego to szkolenie jest inne
+          {/* HR w wersji roboczej, nie konferencyjnej */}
+          <section className="py-12 md:py-20">
+            <div className="bg-gradient-to-br from-[#1e293b]/80 to-[#0f172a]/80 rounded-2xl border border-[#ff6142]/30 p-8 md:p-12 backdrop-blur-sm hover:transform hover:scale-[1.01] hover:shadow-2xl transition-all duration-300">
+              <h2 className="text-3xl md:text-4xl font-black text-white mb-6 text-center">
+                HR w wersji roboczej, <br className="hidden md:block" />
+                <span className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">
+                  nie konferencyjnej
+                </span>
               </h2>
-              <div className="space-y-4 text-[#e2e8f0] leading-relaxed">
-                <p>
-                  To <strong className="text-white">nie jest ogólnopolski event z gotową prezentacją</strong>.
+
+              <div className="max-w-4xl mx-auto space-y-6 text-[#e2e8f0] text-lg leading-relaxed">
+                <p className="text-xl text-center font-medium text-white">
+                  To nie jest ogólnopolski event z gotową prezentacją objeżdżającą kolejne miasta.
                 </p>
-                <p>To:</p>
-                <ul className="space-y-2 ml-6">
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>lokalne, robocze spotkanie HR ze Szczecina i regionu,</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>praca na <strong className="text-white">realnych problemach Twojej firmy</strong>,</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>kameralna grupa,</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>brak sceny, brak show, brak „slajdów dla slajdów".</span>
-                  </li>
-                </ul>
+
+                <p>
+                  To <strong className="text-white">lokalne, robocze spotkanie HR ze Szczecina i regionu</strong>,
+                  zaprojektowane wokół realnych wyzwań, z którymi mierzą się organizacje tu i teraz.
+                </p>
+
+                <p>
+                  Pracujemy na <strong className="text-white">konkretnych problemach Twojej firmy</strong>,
+                  a nie na uniwersalnych case'ach i „inspiracjach ze sceny".
+                </p>
+
+                <p>
+                  Spotkanie odbywa się w <strong className="text-white">kameralnej grupie</strong>,
+                  co pozwala na prawdziwą rozmowę, wymianę doświadczeń i wspólne wypracowanie rozwiązań.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-8 mt-8 border-t border-b border-white/10">
+                  <div className="text-center hover:transform hover:scale-105 transition-all">
+                    <div className="text-5xl mb-3">🚫</div>
+                    <p className="text-[#94a3b8] font-medium">Bez sceny</p>
+                  </div>
+                  <div className="text-center hover:transform hover:scale-105 transition-all">
+                    <div className="text-5xl mb-3">🚫</div>
+                    <p className="text-[#94a3b8] font-medium">Bez show</p>
+                  </div>
+                  <div className="text-center hover:transform hover:scale-105 transition-all">
+                    <div className="text-5xl mb-3">🚫</div>
+                    <p className="text-[#94a3b8] font-medium">Bez „slajdów dla slajdów"</p>
+                  </div>
+                </div>
+
+                <p className="text-xl font-semibold text-center pt-4">
+                  <span className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">
+                    Jest za to praktyka, sens i wnioski, które można realnie wdrożyć.
+                  </span>
+                </p>
               </div>
             </div>
           </section>
 
           {/* Przygotowanie przed szkoleniem */}
-          <section className="py-12 md:py-16">
-            <div className="bg-[#1e293b]/50 rounded-xl border border-[#334155] p-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+          <section className="py-12 md:py-20">
+            <div className="bg-[#1e293b]/50 rounded-2xl border border-[#334155] p-8 md:p-10 hover:transform hover:scale-[1.01] hover:shadow-2xl transition-all duration-300">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
                 Przygotowanie przed szkoleniem
               </h2>
-              <div className="space-y-4 text-[#e2e8f0] leading-relaxed">
-                <p>Warsztat zaczyna się wcześniej.</p>
-                <p>
-                  Każdy uczestnik otrzymuje <strong className="text-white">prework</strong>, który:
+
+              <div className="max-w-3xl mx-auto space-y-5 text-[#e2e8f0] text-lg leading-relaxed">
+                <p className="text-xl font-semibold text-white text-center">
+                  To szkolenie nie zaczyna się w dniu warsztatu.
                 </p>
-                <ul className="space-y-2 ml-6">
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>wyrównuje poziom wiedzy,</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>wprowadza wspólny język AI i HR,</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>przygotowuje technicznie do pracy z narzędziami.</span>
-                  </li>
-                </ul>
+
                 <p>
-                  Dzięki temu na sali <strong className="text-white">pracujemy od razu na konkretach</strong>.
+                  Jeszcze przed spotkaniem każdy uczestnik otrzymuje <strong className="text-white">prework</strong>,
+                  który porządkuje wiedzę, ustawia wspólny kontekst AI i HR oraz przygotowuje do pracy z narzędziami.
                 </p>
+
+                <div className="bg-[#ff6142]/10 rounded-xl border-l-4 border-[#ff6142] p-6 my-6">
+                  <p className="text-xl font-bold text-white mb-4">Efekt?</p>
+                  <p className="text-lg">
+                    Na sali nie uczymy się definicji — <strong className="text-white">od pierwszej minuty pracujemy
+                    na realnych przypadkach i decyzjach</strong>.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
 
           {/* Społeczność i wsparcie po szkoleniu */}
-          <section className="py-12 md:py-16">
-            <div className="bg-[#1e293b]/50 rounded-xl border border-[#334155] p-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+          <section className="py-12 md:py-20">
+            <div className="bg-gradient-to-br from-[#1e293b]/80 to-[#0f172a]/80 rounded-2xl border border-[#ff6142]/30 p-8 md:p-10 backdrop-blur-sm hover:transform hover:scale-[1.01] hover:shadow-2xl transition-all duration-300">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
                 Społeczność i wsparcie po szkoleniu
               </h2>
-              <div className="space-y-4 text-[#e2e8f0] leading-relaxed">
-                <p>Po szkoleniu:</p>
-                <ul className="space-y-2 ml-6 mb-4">
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>dołączasz do <strong className="text-white">zamkniętej grupy na Discordzie</strong>,</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>możesz konsultować swoje przypadki,</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>wymieniasz się schematami pracy.</span>
-                  </li>
-                </ul>
-                <p>Dodatkowo:</p>
-                <ul className="space-y-2 ml-6">
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span><strong className="text-white">2 webinary online</strong> (2–3 tygodnie po szkoleniu),</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>omówienie tego, co zadziałało, a co nie,</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#ff6142] mr-3">-</span>
-                    <span>korekta realnych wdrożeń.</span>
-                  </li>
-                </ul>
+
+              <div className="max-w-3xl mx-auto space-y-5 text-[#e2e8f0] text-lg leading-relaxed">
+                <p className="text-xl font-bold text-white text-center">
+                  To nie jest jednorazowe szkolenie.
+                </p>
+
+                <p>
+                  Po warsztacie dołączasz do <strong className="text-white">zamkniętej grupy na Discordzie</strong>,
+                  gdzie możesz konsultować swoje przypadki, dzielić się schematami pracy i uczyć się na doświadczeniach innych.
+                </p>
+
+                <div className="bg-[#0a0e27]/50 rounded-xl border border-[#334155] p-6 my-6">
+                  <p className="font-semibold text-white mb-4">
+                    W ciągu kolejnych tygodni spotykamy się na <strong className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">dwóch webinarach online</strong> (2–3 tygodnie po szkoleniu), podczas których:
+                  </p>
+                  <ul className="space-y-3 text-[#cbd5e1]">
+                    <li className="flex items-start">
+                      <span className="text-[#ff6142] mr-3 text-xl font-bold">→</span>
+                      <span>omawiamy to, co faktycznie zadziałało,</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#ff6142] mr-3 text-xl font-bold">→</span>
+                      <span>analizujemy bariery i błędy,</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#ff6142] mr-3 text-xl font-bold">→</span>
+                      <span>korygujemy <strong className="text-white">realne wdrożenia</strong>, a nie teoretyczne założenia.</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </section>
 
           {/* Co wynosisz z AI HR LAB */}
-          <section className="py-12 md:py-16">
-            <div className="bg-[#1e293b]/50 rounded-xl border border-[#334155] p-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+          <section className="py-12 md:py-20">
+            <div className="bg-[#1e293b]/50 rounded-2xl border border-[#334155] p-8 md:p-10 hover:transform hover:scale-[1.01] hover:shadow-2xl transition-all duration-300">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
                 Co wynosisz z AI HR LAB
               </h2>
-              <ul className="space-y-3 text-[#e2e8f0]">
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">-</span>
-                  <span>gotowy sposób pracy HR + AI</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">-</span>
-                  <span>szablony i schematy do natychmiastowego użycia</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">-</span>
-                  <span>większą kontrolę nad jakością i decyzjami</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">-</span>
-                  <span>spokojniejszą pracę z AI</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">-</span>
-                  <span>lokalną sieć kontaktów HR</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">-</span>
-                  <span>wsparcie także po zakończeniu szkolenia</span>
-                </li>
-              </ul>
+
+              <div className="max-w-4xl mx-auto space-y-6">
+                <p className="text-xl font-bold text-center mb-8 bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">
+                  Nie wychodzisz z głową pełną inspiracji.<br />
+                  Wychodzisz z konkretnym sposobem pracy.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex items-start gap-4 p-5 bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 hover:transform hover:scale-[1.02] transition-all duration-300">
+                    <span className="text-2xl flex-shrink-0">✓</span>
+                    <p className="text-[#e2e8f0] leading-relaxed">
+                      <strong className="text-white">sprawdzony model współpracy HR z AI</strong>,
+                      który porządkuje decyzje i odpowiedzialność
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-5 bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 hover:transform hover:scale-[1.02] transition-all duration-300">
+                    <span className="text-2xl flex-shrink-0">✓</span>
+                    <p className="text-[#e2e8f0] leading-relaxed">
+                      <strong className="text-white">gotowe szablony i schematy</strong>,
+                      które możesz wdrożyć od razu — bez eksperymentów na ślepo
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-5 bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 hover:transform hover:scale-[1.02] transition-all duration-300">
+                    <span className="text-2xl flex-shrink-0">✓</span>
+                    <p className="text-[#e2e8f0] leading-relaxed">
+                      <strong className="text-white">większą kontrolę</strong> nad jakością, ryzykiem i efektami pracy z AI
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-5 bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 hover:transform hover:scale-[1.02] transition-all duration-300">
+                    <span className="text-2xl flex-shrink-0">✓</span>
+                    <p className="text-[#e2e8f0] leading-relaxed">
+                      <strong className="text-white">spokój i pewność</strong> w codziennym korzystaniu z narzędzi
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-5 bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 hover:transform hover:scale-[1.02] transition-all duration-300">
+                    <span className="text-2xl flex-shrink-0">✓</span>
+                    <p className="text-[#e2e8f0] leading-relaxed">
+                      dostęp do <strong className="text-white">lokalnej sieci HR</strong>,
+                      która mierzy się z podobnymi wyzwaniami
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-5 bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 hover:transform hover:scale-[1.02] transition-all duration-300">
+                    <span className="text-2xl flex-shrink-0">✓</span>
+                    <p className="text-[#e2e8f0] leading-relaxed">
+                      <strong className="text-white">realne wsparcie</strong> także po zakończeniu szkolenia
+                    </p>
+                  </div>
+                </div>
+
+                <div className="text-center pt-8 mt-8 border-t border-white/10">
+                  <p className="text-xl font-semibold text-white">
+                    To nie jest wiedza „na przyszłość".
+                  </p>
+                  <p className="text-2xl font-bold mt-2 bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">
+                    To jest operacyjna zmiana sposobu pracy.
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
 
           {/* Dla kogo jest AI HR LAB */}
-          <section className="py-12 md:py-16">
-            <div className="bg-[#1e293b]/50 rounded-xl border border-[#334155] p-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+          <section className="py-12 md:py-20">
+            <div className="bg-gradient-to-br from-[#1e293b]/80 to-[#0f172a]/80 rounded-2xl border border-[#ff6142]/30 p-8 md:p-10 backdrop-blur-sm hover:transform hover:scale-[1.01] hover:shadow-2xl transition-all duration-300">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">
                 Dla kogo jest AI HR LAB
               </h2>
-              <ul className="space-y-3 text-[#e2e8f0]">
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">•</span>
-                  <span>HR Business Partnerzy</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">•</span>
-                  <span>Specjaliści i liderzy HR</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">•</span>
-                  <span>Osoby odpowiedzialne za rekrutację, onboarding i komunikację</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">•</span>
-                  <span>HR z małych, średnich i większych organizacji</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">•</span>
-                  <span>Osoby, które chcą korzystać z AI <strong className="text-white">odpowiedzialnie, nie modnie</strong></span>
-                </li>
-              </ul>
+
+              <div className="max-w-3xl mx-auto space-y-6 text-[#e2e8f0] text-lg leading-relaxed">
+                <p className="text-xl text-center font-medium text-white">
+                  AI HR LAB jest dla osób, które <strong className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">realnie pracują w HR</strong> — nie obserwują trendów z boku.
+                </p>
+
+                <div className="py-6">
+                  <p className="font-semibold text-white mb-4">Dla:</p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start hover:transform hover:translate-x-2 transition-all">
+                      <span className="text-[#ff6142] mr-3 text-xl">•</span>
+                      <span>HR Business Partnerów,</span>
+                    </li>
+                    <li className="flex items-start hover:transform hover:translate-x-2 transition-all">
+                      <span className="text-[#ff6142] mr-3 text-xl">•</span>
+                      <span>specjalistów i liderów HR,</span>
+                    </li>
+                    <li className="flex items-start hover:transform hover:translate-x-2 transition-all">
+                      <span className="text-[#ff6142] mr-3 text-xl">•</span>
+                      <span>osób odpowiedzialnych za rekrutację, onboarding i komunikację,</span>
+                    </li>
+                    <li className="flex items-start hover:transform hover:translate-x-2 transition-all">
+                      <span className="text-[#ff6142] mr-3 text-xl">•</span>
+                      <span>HR z małych, średnich i większych organizacji,</span>
+                    </li>
+                    <li className="flex items-start hover:transform hover:translate-x-2 transition-all">
+                      <span className="text-[#ff6142] mr-3 text-xl">•</span>
+                      <span>tych, którzy chcą korzystać z AI <strong className="text-white">odpowiedzialnie i świadomie</strong> — a nie dlatego, że „tak wypada".</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-[#0a0e27]/50 rounded-xl border-l-4 border-[#ff6142] p-6 mt-8">
+                  <p className="mb-3">
+                    <strong className="text-white">Jeśli szukasz gotowych recept i modnych haseł</strong> —
+                    to nie jest to miejsce.
+                  </p>
+                  <p className="text-xl font-bold">
+                    <span className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">
+                      Jeśli chcesz poukładać AI w realnej pracy HR — jesteś we właściwym miejscu.
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
 
           {/* CENY - GRADIENT */}
-          <section className="py-12 md:py-16">
+          <section className="py-12 md:py-20">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
               Ceny (netto)
             </h2>
@@ -766,7 +862,7 @@ const HR = () => {
           </section>
 
           {/* CTA FINAL - GRADIENT */}
-          <section className="py-12 md:py-16">
+          <section className="py-12 md:py-20">
             <div className="text-center">
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
                 <Button
