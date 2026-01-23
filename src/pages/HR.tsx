@@ -90,7 +90,7 @@ const HR = () => {
                       14+21
                     </div>
                     <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
-                      MARCA 2025
+                      MARCA 2026
                     </div>
                   </div>
                   <div className="text-center lg:text-left">
@@ -253,7 +253,7 @@ const HR = () => {
                       DZIEŃ 1 — Fundamenty pracy HR z AI + komunikacja i marka
                     </h3>
                     <p className="text-sm md:text-base text-[#60A5FA]">
-                      📅 14 marca 2025 | 9:00–17:00
+                      📅 14 marca 2026 | 9:00–17:00
                     </p>
                   </div>
                   <span className={`text-[#ff6142] text-2xl transition-transform ${openAccordion === 'day1' ? 'rotate-180' : ''}`}>
@@ -418,7 +418,7 @@ const HR = () => {
                       DZIEŃ 2 — Praktyka, korekta i dopasowanie do Twojej organizacji
                     </h3>
                     <p className="text-sm md:text-base text-[#60A5FA]">
-                      📅 21 marca 2025 | 9:00–17:00
+                      📅 21 marca 2026 | 9:00–17:00
                     </p>
                   </div>
                   <span className={`text-[#ff6142] text-2xl transition-transform ${openAccordion === 'day2' ? 'rotate-180' : ''}`}>
