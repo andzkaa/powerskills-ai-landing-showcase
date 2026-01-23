@@ -72,7 +72,7 @@ const HR = () => {
 
                 {/* Description */}
                 <p className="text-lg md:text-xl text-[#cbd5e1] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Jeśli w HR chcesz <strong className="text-white">oszczędzać czas bez utraty jakości</strong> i mieć <strong className="text-white">jasne zasady: co delegować AI, a czego nigdy</strong> — to jest program dla Ciebie.
+                  Jeśli w HR chcesz <strong className="text-white">oszczędzać czas bez utraty jakości</strong> i mieć <strong className="text-white">jasne zasady: co delegować AI, a czego nigdy</strong> — AI HR LAB jest dla Ciebie.
                 </p>
 
                 {/* STATYSTYKI - 10XDEVS STYLE */}
@@ -117,9 +117,10 @@ const HR = () => {
                   </Button>
                 </div>
 
-                {/* 3 punkty */}
-                <p className="text-sm md:text-base text-[#94a3b8] italic">
-                  Bez hype'u. Bez straszenia. Bez korporacyjnego teatru.
+                {/* Tagline */}
+                <p className="text-xl md:text-2xl lg:text-3xl text-white font-bold leading-tight">
+                  Mniej narracji.<br />
+                  Więcej odpowiedzialnych decyzji.
                 </p>
               </div>
 
