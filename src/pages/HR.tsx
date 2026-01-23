@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import logowht from '@/assets/logowht.png';
 import backgroundImage from '@/assets/bgrhr.png';
 import headerBackgroundImage from '@/assets/dodatek1.png';
-import teamPhoto from '@/assets/team-airhrlab.png'
 
 const HR = () => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
@@ -142,7 +141,7 @@ const HR = () => {
                 <div className="relative w-full max-w-[600px] aspect-[4/3] rounded-2xl overflow-hidden">
                   {/* TUTAJ DODAJ ZDJĘCIE ZESPOŁU */}
                   {/* Na razie placeholder z gradientem */}
-                  {/* <div className="w-full h-full bg-gradient-to-br from-[#1e293b] to-[#0a0e27] flex items-center justify-center border-2 border-[#ff6142]/30">
+                  <div className="w-full h-full bg-gradient-to-br from-[#1e293b] to-[#0a0e27] flex items-center justify-center border-2 border-[#ff6142]/30">
                     <div className="text-center p-8">
                       <div className="text-6xl md:text-8xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent mb-4 opacity-20">
                         AI HR LAB
@@ -152,14 +151,14 @@ const HR = () => {
                         <code className="text-[#ff6142]">src/assets/team-aihrlab.png</code>
                       </p>
                     </div>
-                  </div> */}
+                  </div>
 
                   {/* Gdy dodasz zdjęcie, odkomentuj to: */}
-                  <img
+                  {/* <img
                     src={teamPhoto}
                     alt="Zespół AI HR LAB"
                     className="w-full h-full object-cover"
-                  />
+                  /> */}
 
                   {/* Overlay text */}
                   <div className="absolute -bottom-8 -right-8 text-7xl md:text-9xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent opacity-10 pointer-events-none select-none hidden lg:block">
