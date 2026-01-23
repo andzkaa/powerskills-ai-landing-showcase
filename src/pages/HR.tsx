@@ -14,18 +14,17 @@ const HR = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0F172A] font-inter relative">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      />
+    <div className="min-h-screen bg-[#0a0e27] font-inter relative overflow-hidden">
+      {/* Radial gradient glow background */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] pointer-events-none z-0">
+        <div className="w-full h-full bg-gradient-radial from-[#ff3131]/15 via-[#ff914d]/10 to-transparent blur-3xl"></div>
+      </div>
 
       {/* Main Content */}
       <div className="relative z-10">
         {/* Logo Section */}
         <div className="py-6 md:py-8 border-b border-[#1e293b]">
-          <div className="container mx-auto px-4 max-w-[1200px]">
+          <div className="container mx-auto px-4 max-w-[1400px]">
             <img
               src={logowht}
               alt="PowerSkills AI Logo"
@@ -34,90 +33,144 @@ const HR = () => {
           </div>
         </div>
 
-        {/* HERO SECTION */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 max-w-[1200px] text-center">
-            {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
-              AI HR LAB — Nienaturalnie dobrzy
-            </h1>
+        {/* HERO SECTION - 10XDEVS STYLE */}
+        <section className="min-h-[90vh] flex items-center py-16 md:py-20 relative">
+          {/* Background glow */}
+          <div className="absolute inset-0 pointer-events-none opacity-50">
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#ff3131]/20 rounded-full blur-[100px]"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#ff914d]/20 rounded-full blur-[100px]"></div>
+          </div>
 
-            {/* Subheading - GRADIENT */}
-            <p className="text-xl md:text-2xl font-semibold mb-4 bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">
-              Dwudniowe warsztaty praktyczne: AI w HR
-            </p>
+          <div className="container mx-auto px-4 md:px-6 max-w-[1400px] relative z-10">
+            {/* 2-COLUMN GRID */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
-            {/* Location */}
-            <p className="text-lg md:text-xl text-[#94a3b8] mb-10">
-              📍 Szczecin
-            </p>
+              {/* LEFT COLUMN - CONTENT */}
+              <div className="space-y-8 text-center lg:text-left">
+                {/* Main Heading with underline */}
+                <div>
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-[1.1] tracking-tight mb-4">
+                    AI HR LAB{' '}
+                    <span className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">|</span>
+                  </h1>
+                  <div className="w-full max-w-md h-1.5 bg-gradient-to-r from-[#ff3131] to-[#ff914d] rounded-full mb-4 mx-auto lg:mx-0"></div>
+                  <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#cbd5e1] mb-2">
+                    Nienaturalnie dobrzy
+                  </p>
+                </div>
 
-            {/* Lead Paragraph */}
-            <div className="max-w-[800px] mx-auto mb-10">
-              <p className="text-lg md:text-xl text-[#e2e8f0] leading-relaxed mb-2">
-                Jeśli w HR chcesz <strong className="text-white">oszczędzać czas bez utraty jakości</strong>
-              </p>
-              <p className="text-lg md:text-xl text-[#e2e8f0] leading-relaxed mb-2">
-                i mieć <strong className="text-white">jasne zasady: co delegować AI, a czego nigdy</strong> —
-              </p>
-              <p className="text-lg md:text-xl text-[#e2e8f0] leading-relaxed">
-                to jest program dla Ciebie.
-              </p>
-            </div>
+                {/* Lead */}
+                <div className="space-y-3">
+                  <p className="text-xl md:text-2xl text-[#94a3b8] font-medium">
+                    Dwudniowe warsztaty praktyczne: AI w HR
+                  </p>
+                  <p className="text-lg md:text-xl text-[#94a3b8]">
+                    📍 Szczecin
+                  </p>
+                </div>
 
-            {/* Three Points */}
-            <div className="mb-10 text-base md:text-lg text-[#cbd5e1] space-y-1">
-              <p>Bez hype'u.</p>
-              <p>Bez straszenia.</p>
-              <p>Bez korporacyjnego teatru.</p>
-            </div>
+                {/* Description */}
+                <p className="text-lg md:text-xl text-[#cbd5e1] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  Jeśli w HR chcesz <strong className="text-white">oszczędzać czas bez utraty jakości</strong> i mieć <strong className="text-white">jasne zasady: co delegować AI, a czego nigdy</strong> — to jest program dla Ciebie.
+                </p>
 
-            {/* Description */}
-            <div className="max-w-[900px] mx-auto mb-10">
-              <p className="text-base md:text-lg text-[#e2e8f0] mb-6 leading-relaxed">
-                AI HR LAB to <strong className="text-white">robocze warsztaty</strong>, po których:
-              </p>
-              <ul className="text-left inline-block text-base md:text-lg text-[#e2e8f0] space-y-2 leading-relaxed">
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">-</span>
-                  <span>wiesz <strong className="text-white">jak</strong> pracować z AI,</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">-</span>
-                  <span>wiesz <strong className="text-white">gdzie są granice</strong>,</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#ff6142] mr-3">-</span>
-                  <span>masz <strong className="text-white">gotowy model działania</strong>, a nie inspirację na 3 dni.</span>
-                </li>
-              </ul>
-            </div>
+                {/* STATYSTYKI - 10XDEVS STYLE */}
+                <div className="flex flex-wrap justify-center lg:justify-start gap-8 md:gap-12 py-8 border-y border-white/10">
+                  <div className="text-center lg:text-left">
+                    <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent leading-none mb-2">
+                      2
+                    </div>
+                    <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
+                      DNI PRAKTYKI
+                    </div>
+                  </div>
+                  <div className="text-center lg:text-left">
+                    <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent leading-none mb-2">
+                      14+21
+                    </div>
+                    <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
+                      MARCA 2025
+                    </div>
+                  </div>
+                  <div className="text-center lg:text-left">
+                    <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent leading-none mb-2">
+                      15
+                    </div>
+                    <div className="text-sm md:text-base text-[#94a3b8] uppercase tracking-wide">
+                      OSÓB MAX
+                    </div>
+                  </div>
+                </div>
 
-            {/* Closing Statement - GRADIENT */}
-            <p className="text-xl md:text-2xl font-bold mb-12">
-              <span className="text-white">Człowiek decyduje.</span>{' '}
-              <span className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">
-                AI wspiera.
-              </span>
-            </p>
+                {/* CTA BUTTONS */}
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(255,49,49,0.4)] text-white px-8 md:px-12 py-6 md:py-7 text-base md:text-lg font-bold rounded-lg shadow-xl transition-all uppercase tracking-wide"
+                    onClick={() => window.location.href = 'https://buy.stripe.com/bJe9AV3A8dGZePa2tC6g800'}
+                  >
+                    DOŁĄCZ TERAZ
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-[#ff6142] text-[#ff6142] hover:bg-[rgba(255,97,66,0.1)] px-8 md:px-12 py-6 md:py-7 text-base md:text-lg font-bold rounded-lg transition-all uppercase tracking-wide"
+                    onClick={() => {
+                      const programSection = document.getElementById('program');
+                      programSection?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    PROGRAM
+                  </Button>
+                </div>
 
-            {/* CTA Buttons - GRADIENT */}
-            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-[#ff3131] to-[#ff914d] hover:opacity-90 hover:shadow-[0_10px_25px_rgba(255,49,49,0.3)] text-white px-10 py-6 text-base md:text-lg font-semibold rounded-lg shadow-xl transition-all w-full md:w-auto"
-                onClick={() => window.location.href = 'https://buy.stripe.com/bJe9AV3A8dGZePa2tC6g800'}
-              >
-                Kupuję pełny program (2 moduły)
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-[#ff6142] text-[#ff6142] hover:bg-gradient-to-r hover:from-[#ff3131] hover:to-[#ff914d] hover:text-white hover:border-transparent px-10 py-6 text-base md:text-lg font-semibold rounded-lg transition-all w-full md:w-auto"
-                onClick={() => window.location.href = 'mailto:contact@powerskills.ai?subject=AI%20HR%20LAB%20-%20zapytanie'}
-              >
-                Zapytaj o szczegóły
-              </Button>
+                {/* 3 punkty */}
+                <p className="text-sm md:text-base text-[#94a3b8] italic">
+                  Bez hype'u. Bez straszenia. Bez korporacyjnego teatru.
+                </p>
+              </div>
+
+              {/* RIGHT COLUMN - ZDJĘCIE ZESPOŁU */}
+              <div className="relative flex items-center justify-center lg:justify-end order-first lg:order-last">
+                {/* Glow za zdjęciem */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] pointer-events-none">
+                  <div className="w-full h-full bg-gradient-radial from-[#ff3131]/30 via-[#ff914d]/20 to-transparent blur-[80px]"></div>
+                </div>
+
+                {/* Placeholder dla zdjęcia zespołu */}
+                <div className="relative w-full max-w-[600px] aspect-[4/3] rounded-2xl overflow-hidden">
+                  {/* TUTAJ DODAJ ZDJĘCIE ZESPOŁU */}
+                  {/* Na razie placeholder z gradientem */}
+                  <div className="w-full h-full bg-gradient-to-br from-[#1e293b] to-[#0a0e27] flex items-center justify-center border-2 border-[#ff6142]/30">
+                    <div className="text-center p-8">
+                      <div className="text-6xl md:text-8xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent mb-4 opacity-20">
+                        AI HR LAB
+                      </div>
+                      <p className="text-[#94a3b8] text-sm">
+                        Dodaj zdjęcie zespołu jako:<br/>
+                        <code className="text-[#ff6142]">src/assets/team-aihrlab.png</code>
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Gdy dodasz zdjęcie, odkomentuj to: */}
+                  {/* <img
+                    src={teamPhoto}
+                    alt="Zespół AI HR LAB"
+                    className="w-full h-full object-cover"
+                  /> */}
+
+                  {/* Overlay text */}
+                  <div className="absolute -bottom-8 -right-8 text-7xl md:text-9xl font-black bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent opacity-10 pointer-events-none select-none hidden lg:block">
+                    AI HR LAB
+                  </div>
+                </div>
+
+                {/* Drop shadow effect */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute inset-0 shadow-[0_20px_80px_rgba(0,0,0,0.5)] rounded-2xl"></div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
