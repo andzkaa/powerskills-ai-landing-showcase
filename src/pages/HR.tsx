@@ -174,37 +174,37 @@ const HR = () => {
               <div className="flex items-start gap-4 p-6 bg-[#1e293b]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 transition-all">
                 <span className="text-2xl font-bold flex-shrink-0 bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">→</span>
                 <p className="text-[#e2e8f0] leading-relaxed">
-                  <strong className="text-white">modelem pracy HR + AI</strong>, gotowym do wdrożenia od razu
+                  <strong className="text-white">spójnym modelem pracy HR + AI</strong>, gotowym do wdrożenia od razu
                 </p>
               </div>
               <div className="flex items-start gap-4 p-6 bg-[#1e293b]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 transition-all">
                 <span className="text-2xl font-bold flex-shrink-0 bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">→</span>
                 <p className="text-[#e2e8f0] leading-relaxed">
-                  <strong className="text-white">workflow do rekrutacji, onboardingu i komunikacji</strong>
+                  <strong className="text-white">konkretnymi workflow do rekrutacji, onboardingu i komunikacji</strong>
                 </p>
               </div>
               <div className="flex items-start gap-4 p-6 bg-[#1e293b]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 transition-all">
                 <span className="text-2xl font-bold flex-shrink-0 bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">→</span>
                 <p className="text-[#e2e8f0] leading-relaxed">
-                  <strong className="text-white">sposobem na pisanie i redakcję treści HR szybciej i lepiej</strong>
+                  <strong className="text-white">sposobem na szybsze i lepsze tworzenie treści HR (bez utraty jakości)</strong>
                 </p>
               </div>
               <div className="flex items-start gap-4 p-6 bg-[#1e293b]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 transition-all">
                 <span className="text-2xl font-bold flex-shrink-0 bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">→</span>
                 <p className="text-[#e2e8f0] leading-relaxed">
-                  <strong className="text-white">jasnymi granicami odpowiedzialności (AI Act – w praktyce)</strong>
+                  <strong className="text-white">jasnymi granicami odpowiedzialności (AI Act – w praktyce, nie w teorii)</strong>
                 </p>
               </div>
               <div className="flex items-start gap-4 p-6 bg-[#1e293b]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 transition-all">
                 <span className="text-2xl font-bold flex-shrink-0 bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">→</span>
                 <p className="text-[#e2e8f0] leading-relaxed">
-                  <strong className="text-white">narzędziownikiem do budowania marki HR i pracodawcy z pomocą AI</strong>
+                  <strong className="text-white">praktycznym narzędziownikiem do budowania marki HR i pracodawcy z pomocą AI</strong>
                 </p>
               </div>
               <div className="flex items-start gap-4 p-6 bg-[#1e293b]/50 rounded-xl border-l-4 border-[#ff6142] hover:bg-[#1e293b]/70 transition-all">
                 <span className="text-2xl font-bold flex-shrink-0 bg-gradient-to-r from-[#ff3131] to-[#ff914d] bg-clip-text text-transparent">→</span>
                 <p className="text-[#e2e8f0] leading-relaxed">
-                  <strong className="text-white">większym spokojem i kontrolą w codziennej pracy</strong>
+                  <strong className="text-white">większym spokojem i realną kontrolą w codziennej pracy HR</strong>
                 </p>
               </div>
             </div>
